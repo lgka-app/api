@@ -1,0 +1,12 @@
+{
+  "input": {
+    "file": "fixtures/substitution/history_v_schueler_morgen_5afb0f74.pdf",
+    "sha256": "9c8f5d747ac72f35f37bbe1193084002e6e8ab33d17c1c930b2f38b68155a7f9",
+    "bytes": 26004
+  },
+  "expected": {
+    "weekday": "Donnerstag",
+    "date": "18.09.2025",
+    "lastUpdated": ""
+  }
+}

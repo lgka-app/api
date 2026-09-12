@@ -1,0 +1,11 @@
+{
+  "input": {
+    "file": "fixtures/schedule/stundenplaene_j11j12_hj2_2025_2026_08012026_2026-08-01.pdf",
+    "sha256": "dcf91a23b32d6ef346a9a98a1da94b1f90bd213fdd6a2306b9ed2eb5db64d747",
+    "bytes": 43548,
+    "pageCount": 2
+  },
+  "expected": {
+    "classIndex5to10": {}
+  }
+}

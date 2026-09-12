@@ -1,0 +1,12 @@
+{
+  "input": {
+    "file": "fixtures/substitution/morgen_2026-09-12.pdf",
+    "sha256": "cedd1489487bae2c424096f45b3f34bc3fb3ef100e0e697398eb4edc12fcb98f",
+    "bytes": 31200
+  },
+  "expected": {
+    "weekday": "Dienstag",
+    "date": "15.09.2026",
+    "lastUpdated": "11.9.2026 8:55"
+  }
+}

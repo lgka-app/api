@@ -1,0 +1,344 @@
+{
+  "input": {
+    "file": "fixtures/substitution/morgen_2026-09-12.pdf",
+    "sha256": "cedd1489487bae2c424096f45b3f34bc3fb3ef100e0e697398eb4edc12fcb98f",
+    "bytes": 31200
+  },
+  "expected": {
+    "school": "Lessing-Gymnasium Karlsruhe",
+    "address": "D-76135, Sophienstr. 147",
+    "schoolYear": "Schuljahr 2026-2027",
+    "untisVersion": "Untis 2027",
+    "generatedAt": "11.9.2026 8:55",
+    "planDate": "15.09.2026",
+    "weekday": "Dienstag",
+    "isEmpty": false,
+    "announcements": [],
+    "absentTeachers": [
+      "Xce (3-4)",
+      "Xct (8-11)",
+      "Xbd (1-6)",
+      "Xck",
+      "Xac (7-7)"
+    ],
+    "absentClasses": [
+      "5a",
+      "5b",
+      "5c"
+    ],
+    "entries": [
+      {
+        "type": "Veranst.",
+        "period": "1-11",
+        "classes": [
+          "5a",
+          "5b",
+          "5c"
+        ],
+        "substitute": null,
+        "subject": null,
+        "room": null,
+        "originalSubject": null,
+        "originalTeacher": null,
+        "originalRoom": null,
+        "note": "vor Einschulung",
+        "classesRaw": "5abc"
+      },
+      {
+        "type": "Raum-Vtr.",
+        "period": "5",
+        "classes": [
+          "6a",
+          "6b"
+        ],
+        "substitute": "Xbz",
+        "subject": "eth",
+        "room": "BKOG",
+        "originalSubject": "eth",
+        "originalTeacher": "Xbz",
+        "originalRoom": "112",
+        "note": null,
+        "classesRaw": "6ab"
+      },
+      {
+        "type": "Raum-Vtr.",
+        "period": "6",
+        "classes": [
+          "6a",
+          "6b"
+        ],
+        "substitute": "Xbz",
+        "subject": "eth",
+        "room": "BKOG",
+        "originalSubject": "eth",
+        "originalTeacher": "Xbz",
+        "originalRoom": "112",
+        "note": null,
+        "classesRaw": "6ab"
+      },
+      {
+        "type": "Vertretung",
+        "period": "3",
+        "classes": [
+          "6b"
+        ],
+        "substitute": "Xak",
+        "subject": "D",
+        "room": "110",
+        "originalSubject": "D",
+        "originalTeacher": "Xce",
+        "originalRoom": "110",
+        "note": null,
+        "classesRaw": "6b"
+      },
+      {
+        "type": "Vertretung",
+        "period": "4",
+        "classes": [
+          "6b"
+        ],
+        "substitute": "Xbo",
+        "subject": "D",
+        "room": "110",
+        "originalSubject": "D",
+        "originalTeacher": "Xce",
+        "originalRoom": "110",
+        "note": null,
+        "classesRaw": "6b"
+      },
+      {
+        "type": "Raum-Vtr.",
+        "period": "1",
+        "classes": [
+          "7a"
+        ],
+        "substitute": "Xcd",
+        "subject": "Geo",
+        "room": "312",
+        "originalSubject": "Geo",
+        "originalTeacher": "Xcd",
+        "originalRoom": "111",
+        "note": null,
+        "classesRaw": "7a"
+      },
+      {
+        "type": "Raum-Vtr.",
+        "period": "2",
+        "classes": [
+          "7a"
+        ],
+        "substitute": "Xcd",
+        "subject": "Geo",
+        "room": "312",
+        "originalSubject": "Geo",
+        "originalTeacher": "Xcd",
+        "originalRoom": "111",
+        "note": null,
+        "classesRaw": "7a"
+      },
+      {
+        "type": "Entfall",
+        "period": "6",
+        "classes": [
+          "7a",
+          "7c"
+        ],
+        "substitute": "Xbw",
+        "subject": "---",
+        "room": "---",
+        "originalSubject": "SW",
+        "originalTeacher": "Xbw",
+        "originalRoom": "EBad2",
+        "note": null,
+        "classesRaw": "7ac"
+      },
+      {
+        "type": "Entfall",
+        "period": "7",
+        "classes": [
+          "7a",
+          "7c"
+        ],
+        "substitute": "Xbw",
+        "subject": "---",
+        "room": "---",
+        "originalSubject": "SW",
+        "originalTeacher": "Xbw",
+        "originalRoom": "EBad2",
+        "note": null,
+        "classesRaw": "7ac"
+      },
+      {
+        "type": "Entfall",
+        "period": "7",
+        "classes": [
+          "9d"
+        ],
+        "substitute": "---",
+        "subject": "---",
+        "room": "---",
+        "originalSubject": "FUE",
+        "originalTeacher": "Xac",
+        "originalRoom": "312",
+        "note": null,
+        "classesRaw": "9d"
+      },
+      {
+        "type": "Tausch",
+        "period": "5",
+        "classes": [
+          "10b"
+        ],
+        "substitute": "Xco",
+        "subject": "M",
+        "room": "322",
+        "originalSubject": "Ch",
+        "originalTeacher": "Xbd",
+        "originalRoom": "CHHS",
+        "note": null,
+        "classesRaw": "10b"
+      },
+      {
+        "type": "Tausch",
+        "period": "6",
+        "classes": [
+          "10b"
+        ],
+        "substitute": "Xco",
+        "subject": "M",
+        "room": "322",
+        "originalSubject": "Ch",
+        "originalTeacher": "Xbd",
+        "originalRoom": "CHHS",
+        "note": null,
+        "classesRaw": "10b"
+      },
+      {
+        "type": "Tausch",
+        "period": "3",
+        "classes": [
+          "10d"
+        ],
+        "substitute": "Xan",
+        "subject": "M",
+        "room": "409",
+        "originalSubject": "Ch",
+        "originalTeacher": "Xbd",
+        "originalRoom": "NWT3",
+        "note": null,
+        "classesRaw": "10d"
+      },
+      {
+        "type": "Tausch",
+        "period": "4",
+        "classes": [
+          "10d"
+        ],
+        "substitute": "Xan",
+        "subject": "M",
+        "room": "409",
+        "originalSubject": "Ch",
+        "originalTeacher": "Xbd",
+        "originalRoom": "NWT3",
+        "note": null,
+        "classesRaw": "10d"
+      },
+      {
+        "type": "Raum-Vtr.",
+        "period": "1",
+        "classes": [
+          "J11"
+        ],
+        "substitute": "Xbc",
+        "subject": "GK",
+        "room": "410",
+        "originalSubject": "GK",
+        "originalTeacher": "Xbc",
+        "originalRoom": "112",
+        "note": null,
+        "classesRaw": "J11"
+      },
+      {
+        "type": "Raum-Vtr.",
+        "period": "2",
+        "classes": [
+          "J11"
+        ],
+        "substitute": "Xbc",
+        "subject": "GK",
+        "room": "410",
+        "originalSubject": "GK",
+        "originalTeacher": "Xbc",
+        "originalRoom": "112",
+        "note": null,
+        "classesRaw": "J11"
+      },
+      {
+        "type": "Raum-Vtr.",
+        "period": "5",
+        "classes": [
+          "J11"
+        ],
+        "substitute": "Xbe",
+        "subject": "M2",
+        "room": "BIOPR",
+        "originalSubject": "M2",
+        "originalTeacher": "Xbe",
+        "originalRoom": "102",
+        "note": null,
+        "classesRaw": "J11"
+      },
+      {
+        "type": "Raum-Vtr.",
+        "period": "6",
+        "classes": [
+          "J11"
+        ],
+        "substitute": "Xbe",
+        "subject": "M2",
+        "room": "BIOPR",
+        "originalSubject": "M2",
+        "originalTeacher": "Xbe",
+        "originalRoom": "102",
+        "note": null,
+        "classesRaw": "J11"
+      },
+      {
+        "type": "Raum-Vtr.",
+        "period": "8",
+        "classes": [
+          "J11"
+        ],
+        "substitute": "Xa",
+        "subject": "d3",
+        "room": "201",
+        "originalSubject": "d3",
+        "originalTeacher": "Xa",
+        "originalRoom": "102",
+        "note": null,
+        "classesRaw": "J11"
+      },
+      {
+        "type": "Raum-Vtr.",
+        "period": "10",
+        "classes": [
+          "J11"
+        ],
+        "substitute": "Xba",
+        "subject": "m3",
+        "room": "310",
+        "originalSubject": "m3",
+        "originalTeacher": "Xba",
+        "originalRoom": "112",
+        "note": null,
+        "classesRaw": "J11"
+      }
+    ],
+    "footer": {
+      "untisPeriod": null,
+      "date": "15.09.2026",
+      "calendarWeek": 38,
+      "schoolYearShort": null
+    }
+  }
+}

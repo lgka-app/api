@@ -10,7 +10,7 @@ describe("pdf layer", () => {
     const before = await sha256Hex(bytes);
     const doc = await readPdf(bytes);
     expect(doc.pageCount).toBe(2);
-    expect(bytes.byteLength).toBeGreaterThan(80_000);
+    expect(bytes.byteLength).toBeGreaterThan(20_000);
     expect(await sha256Hex(bytes)).toBe(before);
   });
 

@@ -1,0 +1,12 @@
+{
+  "input": {
+    "file": "fixtures/substitution/heute_2026-08-01.pdf",
+    "sha256": "6fcfc9523661032b37e9cd22d613b05d080e55a2f421a5b025d052eb4dec514b",
+    "bytes": 26926
+  },
+  "expected": {
+    "weekday": "Mittwoch",
+    "date": "29.07.2026",
+    "lastUpdated": "27.7.2026 13:08"
+  }
+}

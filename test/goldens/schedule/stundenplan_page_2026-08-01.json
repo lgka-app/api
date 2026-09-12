@@ -1,0 +1,36 @@
+{
+  "input": {
+    "file": "fixtures/schedule/stundenplan_page_2026-08-01.html",
+    "sha256": "979a32f08a7dc65f5f352824b0cfeeb9f6cfd86a7306226e68d5809f6cd190a9"
+  },
+  "expected": [
+    {
+      "title": "Stundenpläne - 2025/2026 - 1.HJ - 5-10",
+      "url": "/cm3/../stundenplan/schueler/stundenplaene_kl5-10_hj1_2025_2026_16092025_1300.pdf",
+      "halbjahr": "1. Halbjahr",
+      "gradeLevel": "Klassen 5-10",
+      "fullUrl": "https://lessing-gymnasium-karlsruhe.de/stundenplan/schueler/stundenplaene_kl5-10_hj1_2025_2026_16092025_1300.pdf"
+    },
+    {
+      "title": "Stundenpläne - 2025/2026 - 1.HJ - J11/12",
+      "url": "/cm3/../stundenplan/schueler/stundenplaene_j11j12_hj1_2025_2026_16092025_1300.pdf",
+      "halbjahr": "1. Halbjahr",
+      "gradeLevel": "J11/J12",
+      "fullUrl": "https://lessing-gymnasium-karlsruhe.de/stundenplan/schueler/stundenplaene_j11j12_hj1_2025_2026_16092025_1300.pdf"
+    },
+    {
+      "title": "Stundenpläne - 2025/2026 - 2.HJ - 5-10",
+      "url": "/cm3/../stundenplan/schueler/stundenplaene_kl5-10_hj2_2025_2026_13042026.pdf",
+      "halbjahr": "2. Halbjahr",
+      "gradeLevel": "Klassen 5-10",
+      "fullUrl": "https://lessing-gymnasium-karlsruhe.de/stundenplan/schueler/stundenplaene_kl5-10_hj2_2025_2026_13042026.pdf"
+    },
+    {
+      "title": "Stundenpläne - 2025/2026 - 2.HJ - J11/12",
+      "url": "/cm3/../stundenplan/schueler/stundenplaene_j11j12_hj2_2025_2026_08012026.pdf",
+      "halbjahr": "2. Halbjahr",
+      "gradeLevel": "J11/J12",
+      "fullUrl": "https://lessing-gymnasium-karlsruhe.de/stundenplan/schueler/stundenplaene_j11j12_hj2_2025_2026_08012026.pdf"
+    }
+  ]
+}

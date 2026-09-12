@@ -1,0 +1,55 @@
+{
+  "input": {
+    "file": "fixtures/substitution/heute_2026-08-01.pdf",
+    "sha256": "6fcfc9523661032b37e9cd22d613b05d080e55a2f421a5b025d052eb4dec514b",
+    "bytes": 26926
+  },
+  "expected": {
+    "school": "Lessing-Gymnasium Karlsruhe",
+    "address": "D-76135, Sophienstr. 147",
+    "schoolYear": "SJ 2025-2026",
+    "untisVersion": "Untis 2027",
+    "generatedAt": "27.7.2026 13:08",
+    "planDate": "29.07.2026",
+    "weekday": "Mittwoch",
+    "isEmpty": false,
+    "announcements": [
+      "Hofdienst 7b",
+      "8:15 Gottesdienst Bonifatiuskirche",
+      "9:10 Treffen im Hof",
+      "10:00 KL-Stunde in den Klassenzimmern",
+      "J11: Fiktiv BkOGm, Platzhalter: 301; Xqzaaaa NWT1; Entwurfhausen BKOG"
+    ],
+    "absentTeachers": [
+      "Xbd",
+      "Xcu",
+      "Xcd"
+    ],
+    "absentClasses": [
+      "J12"
+    ],
+    "entries": [
+      {
+        "type": "Veranst.",
+        "period": "1-11",
+        "classes": [
+          "J12"
+        ],
+        "substitute": null,
+        "subject": null,
+        "room": null,
+        "originalSubject": null,
+        "originalTeacher": null,
+        "originalRoom": null,
+        "note": null,
+        "classesRaw": "J12"
+      }
+    ],
+    "footer": {
+      "untisPeriod": 5,
+      "date": "29.07.2026",
+      "calendarWeek": 31,
+      "schoolYearShort": "SJ 25/26"
+    }
+  }
+}

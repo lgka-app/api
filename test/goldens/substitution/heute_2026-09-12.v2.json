@@ -1,0 +1,232 @@
+{
+  "input": {
+    "file": "fixtures/substitution/heute_2026-09-12.pdf",
+    "sha256": "1c874513f91128113548482e403eea2eb22c7e739fb9f7f03cdacc14a993fdf3",
+    "bytes": 31657
+  },
+  "expected": {
+    "school": "Lessing-Gymnasium Karlsruhe",
+    "address": "D-76135, Sophienstr. 147",
+    "schoolYear": "Schuljahr 2026-2027",
+    "untisVersion": "Untis 2027",
+    "generatedAt": "11.9.2026 8:56",
+    "planDate": "14.09.2026",
+    "weekday": "Montag",
+    "isEmpty": false,
+    "announcements": [
+      "1./2. Stunde Klassenlehrerstunde in den Klassenräumen",
+      "J11 1. Stunde Oberstufenberatung Mensa",
+      "J12 1. Stunde Sicherheitsunterweisung Aula",
+      "J12 2. Stunde Oberstufenberatung Mensa",
+      "J11 2. Stunde Sicherheitsunterweisung Aula",
+      "Unterrichtsende heute nach der 6. Stunde."
+    ],
+    "absentTeachers": [
+      "Xaw (1-3)",
+      "Xck",
+      "Xak (3-6)",
+      "Xbp (5-6)"
+    ],
+    "absentClasses": [
+      "5a",
+      "5b",
+      "5c"
+    ],
+    "entries": [
+      {
+        "type": "Veranst.",
+        "period": "1-11",
+        "classes": [
+          "5a",
+          "5b",
+          "5c"
+        ],
+        "substitute": null,
+        "subject": null,
+        "room": null,
+        "originalSubject": null,
+        "originalTeacher": null,
+        "originalRoom": null,
+        "note": "vor Einschulung",
+        "classesRaw": "5abc"
+      },
+      {
+        "type": "Vertretung",
+        "period": "3",
+        "classes": [
+          "6a"
+        ],
+        "substitute": "Xcs",
+        "subject": "Mus",
+        "room": "109",
+        "originalSubject": "D",
+        "originalTeacher": "Xaw",
+        "originalRoom": "109",
+        "note": null,
+        "classesRaw": "6a"
+      },
+      {
+        "type": "Raum-Vtr.",
+        "period": "5",
+        "classes": [
+          "6b"
+        ],
+        "substitute": "Xay",
+        "subject": "Geo",
+        "room": "303",
+        "originalSubject": "Geo",
+        "originalTeacher": "Xay",
+        "originalRoom": "112",
+        "note": null,
+        "classesRaw": "6b"
+      },
+      {
+        "type": "Raum-Vtr.",
+        "period": "6",
+        "classes": [
+          "6b"
+        ],
+        "substitute": "Xay",
+        "subject": "Geo",
+        "room": "303",
+        "originalSubject": "Geo",
+        "originalTeacher": "Xay",
+        "originalRoom": "112",
+        "note": null,
+        "classesRaw": "6b"
+      },
+      {
+        "type": "Entfall",
+        "period": "5",
+        "classes": [
+          "7a"
+        ],
+        "substitute": "---",
+        "subject": "---",
+        "room": "---",
+        "originalSubject": "Ph",
+        "originalTeacher": "Xbp",
+        "originalRoom": "NWT2",
+        "note": null,
+        "classesRaw": "7a"
+      },
+      {
+        "type": "Entfall",
+        "period": "6",
+        "classes": [
+          "7a"
+        ],
+        "substitute": "---",
+        "subject": "---",
+        "room": "---",
+        "originalSubject": "Ph",
+        "originalTeacher": "Xbp",
+        "originalRoom": "NWT2",
+        "note": null,
+        "classesRaw": "7a"
+      },
+      {
+        "type": "Raum-Vtr.",
+        "period": "8",
+        "classes": [
+          "7b"
+        ],
+        "substitute": "Xbg",
+        "subject": "F",
+        "room": "312",
+        "originalSubject": "F",
+        "originalTeacher": "Xbg",
+        "originalRoom": "112",
+        "note": null,
+        "classesRaw": "7b"
+      },
+      {
+        "type": "Raum-Vtr.",
+        "period": "3 - 4",
+        "classes": [
+          "8c"
+        ],
+        "substitute": "Xcv",
+        "subject": "Ph",
+        "room": "BIOPR",
+        "originalSubject": "Ph",
+        "originalTeacher": "Xcv",
+        "originalRoom": "PHHS",
+        "note": null,
+        "classesRaw": "8c"
+      },
+      {
+        "type": "Raum-Vtr.",
+        "period": "8",
+        "classes": [
+          "9a",
+          "9b",
+          "9c",
+          "9d"
+        ],
+        "substitute": "Xab",
+        "subject": "kR",
+        "room": "301",
+        "originalSubject": "kR",
+        "originalTeacher": "Xab",
+        "originalRoom": "102",
+        "note": null,
+        "classesRaw": "9abcd"
+      },
+      {
+        "type": "Raum-Vtr.",
+        "period": "9",
+        "classes": [
+          "9a",
+          "9b",
+          "9c",
+          "9d"
+        ],
+        "substitute": "Xab",
+        "subject": "kR",
+        "room": "301",
+        "originalSubject": "kR",
+        "originalTeacher": "Xab",
+        "originalRoom": "102",
+        "note": null,
+        "classesRaw": "9abcd"
+      },
+      {
+        "type": "Verlegung",
+        "period": "3",
+        "classes": [
+          "9b"
+        ],
+        "substitute": "Xaac",
+        "subject": "G",
+        "room": "309",
+        "originalSubject": "D",
+        "originalTeacher": "Xak",
+        "originalRoom": "309",
+        "note": null,
+        "classesRaw": "9b"
+      },
+      {
+        "type": "Verlegung",
+        "period": "4",
+        "classes": [
+          "9b"
+        ],
+        "substitute": "Xaac",
+        "subject": "G",
+        "room": "309",
+        "originalSubject": "D",
+        "originalTeacher": "Xak",
+        "originalRoom": "309",
+        "note": null,
+        "classesRaw": "9b"
+      }
+    ],
+    "footer": {
+      "untisPeriod": null,
+      "date": "14.09.2026",
+      "calendarWeek": 38,
+      "schoolYearShort": null
+    }
+  }
+}
