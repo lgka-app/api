@@ -1,0 +1,27 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "lgka-api",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-09-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": false,
+  "preview_urls": false,
+  "routes": [{ "pattern": "api.lgka.app", "custom_domain": true }],
+  // Privacy: our own log lines only (cron summaries). Per-request invocation
+  // logs are off so no request metadata (IP, UA, path) is retained anywhere.
+  "observability": {
+    "enabled": true,
+    "logs": { "enabled": true, "invocation_logs": false, "head_sampling_rate": 1 }
+  },
+  "vars": {
+    "PUBLIC_BASE_URL": "https://api.lgka.app",
+    "SCHOOL_BASE_URL": "https://lessing-gymnasium-karlsruhe.de",
+    "USER_AGENT": "LGKA-API/1.0 (+https://api.lgka.app)"
+  },
+  "kv_namespaces": [{ "binding": "DATA", "id": "da79cae535ec40b2836e7b6372f4daea" }],
+  "r2_buckets": [{ "binding": "FILES", "bucket_name": "lgka-api-files", "jurisdiction": "eu" }],
+  "triggers": {
+    // One tick a minute; src/jobs/index.ts decides per job (Berlin time) what is due.
+    "crons": ["* * * * *"]
+  }
+}

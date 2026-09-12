@@ -1,0 +1,91 @@
+{
+  "input": {
+    "manifest": "fixtures/events/manifest_sept-week_2026-09-14.json",
+    "sha256": "23697f3aca5dde84418fb0d78d7dcd571f801cd30b3ab31657b4d5ebb459443a"
+  },
+  "params": {
+    "today": "2026-08-01"
+  },
+  "expected": [
+    {
+      "date": "2026-09-14T00:00:00.000",
+      "time": null,
+      "title": "Reservierung: nur Eintrag Klappklassen"
+    },
+    {
+      "date": "2026-09-14T00:00:00.000",
+      "time": "07:30",
+      "title": "Kurzkonferenz"
+    },
+    {
+      "date": "2026-09-14T00:00:00.000",
+      "time": "07:45",
+      "title": "J11: Oberstufeninfo"
+    },
+    {
+      "date": "2026-09-14T00:00:00.000",
+      "time": "07:45",
+      "title": "J12: Oberstufeninfo"
+    },
+    {
+      "date": "2026-09-14T00:00:00.000",
+      "time": "07:45",
+      "title": "J12: Sicherheitsunterweisung"
+    },
+    {
+      "date": "2026-09-14T00:00:00.000",
+      "time": "08:35",
+      "title": "J11: Sicherheitsunterweisung"
+    },
+    {
+      "date": "2026-09-15T00:00:00.000",
+      "time": "15:00",
+      "title": "Kl.5a: Einschulung"
+    },
+    {
+      "date": "2026-09-15T00:00:00.000",
+      "time": "16:00",
+      "title": "Kl.5b: Einschulung"
+    },
+    {
+      "date": "2026-09-15T00:00:00.000",
+      "time": "17:00",
+      "title": "Kl.5c: Einschulung"
+    },
+    {
+      "date": "2026-09-16T00:00:00.000",
+      "time": "07:45",
+      "title": "Kl.5: Einführungstag"
+    },
+    {
+      "date": "2026-09-17T00:00:00.000",
+      "time": "07:45",
+      "title": "Kl.6: Stufentag"
+    },
+    {
+      "date": "2026-09-17T00:00:00.000",
+      "time": "08:35",
+      "title": "Kl.7: Stufentag"
+    },
+    {
+      "date": "2026-09-17T00:00:00.000",
+      "time": "09:35",
+      "title": "Kl.8: Stufentag"
+    },
+    {
+      "date": "2026-09-17T00:00:00.000",
+      "time": "10:25",
+      "title": "Kl.9: Stufentag"
+    },
+    {
+      "date": "2026-09-17T00:00:00.000",
+      "time": "11:30",
+      "title": "Kl.10: Stufentag"
+    },
+    {
+      "date": "2026-09-17T00:00:00.000",
+      "time": "12:20",
+      "title": "J11/12: Stufentag"
+    }
+  ]
+}

@@ -1,0 +1,1055 @@
+{
+  "input": {
+    "manifest": "fixtures/news/manifest_2026-08-01.json",
+    "sha256": "ae03fd727e6247d6f969531224d915dee71a6e42b6520dddebb5231c9fd6f27f"
+  },
+  "expected": [
+    {
+      "title": "Schöne Ferien!",
+      "author": "Dr. Daniel Roth",
+      "description": "Die Schulleitung und das Kollegium haben einen neuen Elternbrief veröffentlicht. Sie finden den Brief hier. Wir wünschen Ihnen schöne Sommerferien!",
+      "content": "Die Schulleitung und das Kollegium haben einen neuen Elternbrief veröffentlicht. Sie finden den Brief hier. Wir wünschen Ihnen schöne Sommerferien!",
+      "html_content": "Die Schulleitung und das Kollegium haben einen neuen Elternbrief veröffentlicht. Sie finden den Brief <a title=\"Elternbrief - Juli 2026\" href=\"/cm3/index.php/medien/dokumente/elternbriefe/441-elternbrief-juli-2026/file\">hier</a>. Wir wünschen Ihnen schöne Sommerferien!",
+      "created_date": "28. Juli 2026",
+      "views": 506,
+      "url": "https://lessing-gymnasium-karlsruhe.de/cm3/index.php/neues/1019-schoene-ferien-2026",
+      "links": [
+        {
+          "text": "hier",
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/index.php/medien/dokumente/elternbriefe/441-elternbrief-juli-2026/file"
+        }
+      ],
+      "standalone_links": [],
+      "images": [],
+      "downloads": [],
+      "tags": [],
+      "parsed_date": null
+    },
+    {
+      "title": "Bundeswettbewerb Fremdsprachen",
+      "author": "Sophie Mehne",
+      "description": "Wir gratulieren unseren Landessiegerinnen des Bundeswettbewerbs Fremdsprachen, die beim Solo-Wettbewerb in Englisch einen ersten, zweiten und dritten Landespreis gewonnen haben. 1. Landespreis: Hanna Clauß, 2. Landespreise: Arina Artyomenko und Selina Schneider, 3. Landespreise: Hayat Baumeister, Ella Hellmann, Ana Lea Novaković, Aasiya Shige und Karlotta Wolf. Einen Kommentar von Frau Mehne sowie Eindrücke von der Preisverleihung finden Sie im Folgenden. Vielen Dank an Frau Mehne für die Organisation!",
+      "content": "Wir gratulieren unseren Landessiegerinnen des Bundeswettbewerbs Fremdsprachen, die beim Solo-Wettbewerb in Englisch einen ersten, zweiten und dritten Landespreis gewonnen haben. 1. Landespreis: Hanna Clauß, 2. Landespreise: Arina Artyomenko und Selina Schneider, 3. Landespreise: Hayat Baumeister, Ella Hellmann, Ana Lea Novaković, Aasiya Shige und Karlotta Wolf. Einen Kommentar von Frau Mehne sowie Eindrücke von der Preisverleihung finden Sie im Folgenden. Vielen Dank an Frau Mehne für die Organisation!\n\nVon neun Karlsruher grandiosen Sprachtalenten kommen acht vom Lessing. Alle acht haben es geschafft im diesjährigen Bundesfremdsprachenwettbewerb in Englisch dritte, zweite und einen ersten Preis zu erzielen. Euch in Calw auf der Bühne zu sehen, war toll! Wir sind unglaublich stolz auf euch und freuen uns schon aufs nächste Jahr. Seid ehrlich, die Preisverleihung hat so Lust gemacht, dass ihr am liebsten direkt schon euer Video zum Thema „Wenn ich Superkräfte hätte“ drehen würdet?",
+      "html_content": "Wir gratulieren unseren Landessiegerinnen des Bundeswettbewerbs Fremdsprachen, die beim Solo-Wettbewerb in Englisch einen ersten, zweiten und dritten Landespreis gewonnen haben. 1. Landespreis: Hanna Clauß, 2. Landespreise: Arina Artyomenko und Selina Schneider, 3. Landespreise: Hayat Baumeister, Ella Hellmann, Ana Lea Novaković, Aasiya Shige und Karlotta Wolf. Einen Kommentar von Frau Mehne sowie Eindrücke von der Preisverleihung finden Sie <a title=\"im Folgenden\" href=\"/cm3/index.php/neues/1018-bundeswettbewerb-fremdsprachen-4\">im Folgenden</a>. Vielen Dank an Frau Mehne für die Organisation!\n\nVon neun Karlsruher grandiosen Sprachtalenten kommen acht vom Lessing. Alle acht haben es geschafft im diesjährigen Bundesfremdsprachenwettbewerb in Englisch dritte, zweite und einen ersten Preis zu erzielen. Euch in Calw auf der Bühne zu sehen, war toll! Wir sind unglaublich stolz auf euch und freuen uns schon aufs nächste Jahr. Seid ehrlich, die Preisverleihung hat so Lust gemacht, dass ihr am liebsten direkt schon euer Video zum Thema „Wenn ich Superkräfte hätte“ drehen würdet?",
+      "created_date": "21. Juli 2026",
+      "views": 2405,
+      "url": "https://lessing-gymnasium-karlsruhe.de/cm3/index.php/neues/1018-bundeswettbewerb-fremdsprachen-4",
+      "links": [
+        {
+          "text": "im Folgenden",
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/index.php/neues/1018-bundeswettbewerb-fremdsprachen-4"
+        }
+      ],
+      "standalone_links": [],
+      "images": [
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_bundesfremdsprachenwettbewerb_2026//01.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_86fa73bc8e_01.jpg",
+          "alt": "Click to enlarge image 01.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_bundesfremdsprachenwettbewerb_2026//02.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_86fa73bc8e_02.jpg",
+          "alt": "Click to enlarge image 02.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_bundesfremdsprachenwettbewerb_2026//03.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_86fa73bc8e_03.jpg",
+          "alt": "Click to enlarge image 03.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_bundesfremdsprachenwettbewerb_2026//04.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_86fa73bc8e_04.jpg",
+          "alt": "Click to enlarge image 04.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_bundesfremdsprachenwettbewerb_2026//05.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_86fa73bc8e_05.jpg",
+          "alt": "Click to enlarge image 05.jpg"
+        }
+      ],
+      "downloads": [],
+      "tags": [],
+      "parsed_date": null
+    },
+    {
+      "title": "24h-Lauf",
+      "author": "Marco Kubacki",
+      "description": "Selbst die Hitze und das Freibad-Wetter konnten eine beträchtliche Zahl von Schülerinnen und Schülern, Eltern und Lehrkräften nicht davon abbringen, beim größten karitativen Lauf in Karlsruhe, dem 24h-Lauf, von Samstag auf Sonntag zu starten. Den Bericht von Herrn Kubacki lesen Sie im Folgenden. Vielen Dank an Ihn für die Organisation!",
+      "content": "Selbst die Hitze und das Freibad-Wetter konnten eine beträchtliche Zahl von Schülerinnen und Schülern, Eltern und Lehrkräften nicht davon abbringen, beim größten karitativen Lauf in Karlsruhe, dem 24h-Lauf, von Samstag auf Sonntag zu starten. Den Bericht von Herrn Kubacki lesen Sie im Folgenden. Vielen Dank an Ihn für die Organisation!\n\nDas Ende wurde am Sonntag wegen der hohen Temperaturen um drei Stunden vorverlegt, sodass dieses Jahr „nur“ 21 Stunden Runde für Runde im Stadion der Turnerschaft Mühlburg für die Finanzierung Karlsruher Projekte für Kinder gedreht wurde. Im Mittelpunkt standen dieses Jahr Projekte, die  sich für das Recht auf ein gewaltfreies Leben von Kindern einsetzen. Und die beste Nachricht für alle lautet: Mithilfe der Spenden konnten alle Projekte finanziert werden, es gingen über 68 000,- Euro  beim Stadtjugendausschuss ein, so viele wie noch nie. Auch das Lessing-Gymnasium konnte mit 556,60 Euro einen Teil dazu beisteuern und möchte sich an dieser Stelle bei allen Spenderinnen und Spender herzlich bedanken. Läuferisch wechselten sich wie immer junge Fünftklässlerinnen mit Oberstufenschülern ab, Siebtklässler standen hinter Neunern an und warten geduldig auf das Lessing-Staffelholz. Am Ende erreichte „Lessing läuft …“ mit 815 Runden einen soliden achten Platz und ließ immerhin 37 Teams hinter sich.\n\nDas alles läuft jedoch nur mit der tatkräftigen Unterstützung des Fördervereins im wahrsten Sinne des Wortes  „rund“, der sich in routinierter Art und Weise um die Einrichtung unseres Pavillons sowie die stetige Versorgung der Lessing-Läufer mit Kuchen, Brezeln, frischem Obst und immer ausreichend Wasser kümmert. Die sehr angenehme und entspannte Atmosphäre an unserem Stand hat auch dieses Jahr einmal mehr gezeigt, was man gemeinsam auf die Beine stellen kann - herzlichen Dank an alle Beteiligten, die den 24h-Lauf zu einem großen Laufereignis gemacht haben.",
+      "html_content": "Selbst die Hitze und das Freibad-Wetter konnten eine beträchtliche Zahl von Schülerinnen und Schülern, Eltern und Lehrkräften nicht davon abbringen, beim größten karitativen Lauf in Karlsruhe, dem 24h-Lauf, von Samstag auf Sonntag zu starten. Den Bericht von Herrn Kubacki lesen Sie <a title=\"im Folgenden\" href=\"/cm3/index.php/neues/1016-24h-lauf-2026-bericht\">im Folgenden</a>. Vielen Dank an Ihn für die Organisation!\n\nDas Ende wurde am Sonntag wegen der hohen Temperaturen um drei Stunden vorverlegt, sodass dieses Jahr „nur“ 21 Stunden Runde für Runde im Stadion der Turnerschaft Mühlburg für die Finanzierung Karlsruher Projekte für Kinder gedreht wurde. Im Mittelpunkt standen dieses Jahr Projekte, die &nbsp;sich für das Recht auf ein gewaltfreies Leben von Kindern einsetzen. Und die beste Nachricht für alle lautet: Mithilfe der Spenden konnten alle Projekte finanziert werden, es gingen über 68 000,- Euro &nbsp;beim Stadtjugendausschuss ein, so viele wie noch nie. Auch das Lessing-Gymnasium konnte mit 556,60 Euro einen Teil dazu beisteuern und möchte sich an dieser Stelle bei allen Spenderinnen und Spender herzlich bedanken. Läuferisch wechselten sich wie immer junge Fünftklässlerinnen mit Oberstufenschülern ab, Siebtklässler standen hinter Neunern an und warten geduldig auf das Lessing-Staffelholz. Am Ende erreichte „Lessing läuft …“ mit 815 Runden einen soliden achten Platz und ließ immerhin 37 Teams hinter sich.\n\nDas alles läuft jedoch nur mit der tatkräftigen Unterstützung des Fördervereins im wahrsten Sinne des Wortes &nbsp;„rund“, der sich in routinierter Art und Weise um die Einrichtung unseres Pavillons sowie die stetige Versorgung der Lessing-Läufer mit Kuchen, Brezeln, frischem Obst und immer ausreichend Wasser kümmert. Die sehr angenehme und entspannte Atmosphäre an unserem Stand hat auch dieses Jahr einmal mehr gezeigt, was man gemeinsam auf die Beine stellen kann - herzlichen Dank an alle Beteiligten, die den 24h-Lauf zu einem großen Laufereignis gemacht haben.",
+      "created_date": "16. Juli 2026",
+      "views": 4245,
+      "url": "https://lessing-gymnasium-karlsruhe.de/cm3/index.php/neues/1016-24h-lauf-2026-bericht",
+      "links": [
+        {
+          "text": "im Folgenden",
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/index.php/neues/1016-24h-lauf-2026-bericht"
+        }
+      ],
+      "standalone_links": [],
+      "images": [
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_24hlauf_2026//01.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_be712c0b9a_01.jpg",
+          "alt": "Click to enlarge image 01.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_24hlauf_2026//02.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_be712c0b9a_02.jpg",
+          "alt": "Click to enlarge image 02.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_24hlauf_2026//04.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_be712c0b9a_04.jpg",
+          "alt": "Click to enlarge image 04.jpg"
+        }
+      ],
+      "downloads": [],
+      "tags": [],
+      "parsed_date": null
+    },
+    {
+      "title": "Abiturfeier 2026",
+      "author": "Ursula Neumann",
+      "description": "Der Abiturjahrgang 2026 fand sich am Freitag, dem 9. Juli 2026, in der Schlossgartenhalle in Ettlingen ein, um gebührend sein Abitur zu feiern: 69 Abiturientinnen und Abiturienten bestanden in diesem Jahr ihr Abitur mit einem Gesamtschnitt von 2,2. Wir gratulieren sehr herzlich! Den Bericht über die Abiturfeier 2026 von Frau Neumann lesen Sie im Folgenden.",
+      "content": "Der Abiturjahrgang 2026 fand sich am Freitag, dem 9. Juli 2026, in der Schlossgartenhalle in Ettlingen ein, um gebührend sein Abitur zu feiern: 69 Abiturientinnen und Abiturienten bestanden in diesem Jahr ihr Abitur mit einem Gesamtschnitt von 2,2. Wir gratulieren sehr herzlich! Den Bericht über die Abiturfeier 2026 von Frau Neumann lesen Sie im Folgenden.\n\nDie Feier verlief sehr persönlich und stilvoll und begann um 16:00 Uhr mit einem Sektempfang auf dem Dach der Halle, bevor dann ab 17:00 Uhr der offizielle Teil mit einem Musikstück der Abi-Band begann. Durch die gesamte Feier leiteten die zwei charmanten Moderatorinnen Ricarda Ebersbach und Emma Ulrich. Nach den Reden von Frau Seitz, Herrn Koch als Elternbeirats-Vorsitzendem und Schülerinnenvater und der Scheffel-Preisträgerin Johanna Philipp, kam es dann endlich zur Ausgabe der lang ersehnten Abiturzeugnisse, mit der für die Schülerinnen und Schüler eine achtjährige Ära zu Ende ging. Es herrschte spürbare Freude und großer Stolz über das erreichte Ziel. Anschließend wurden außerdem zahlreiche externe und interne Preise verliehen, die ebenfalls für ausgiebigen Applaus sorgten. Nach einem guten Buffet und einer Diashow vergnügten sich die Abiturientinnen und Abiturienten in gelöster Stimmung mit ihren Lehrkräften bei sorgfältig vorbereiteten Spielen, bevor sie dann noch vor dem großen Finale ihre Leistungskurs-Lehrkräfte und Tutorinnen ehrten und diesen für die Betreuung und Vorbereitung in den vergangenen zwei Jahren der Oberstufe dankten. Nach abschließenden Songs und emotionalen Verabschiedungen endete die Feier dann gegen 23:00 Uhr. Die Absolventinnen und Absolventen feierten danach noch ausgelassener bis in die frühen Morgenstunden in der „Stadtmitte“ weiter.\n\nEs war sehr schön mit euch, liebe Abiturientinnen und Abiturienten, und wir freuen uns auf ein frohes und gesundes Wiedersehen mit eurem Jahrgang, wenn ihr dann erzählt, wie es euch weiter ergangen ist. Für eure Zukunft und eure neuen Ziele wünschen wir euch viel Erfolg!\n\nJohanna Philipps Scheffel-Preis-Rede finden Sie hier:",
+      "html_content": "Der Abiturjahrgang 2026 fand sich am Freitag, dem 9. Juli 2026, in der Schlossgartenhalle in Ettlingen ein, um gebührend sein Abitur zu feiern: 69 Abiturientinnen und Abiturienten bestanden in diesem Jahr ihr Abitur mit einem Gesamtschnitt von 2,2. Wir gratulieren sehr herzlich! Den Bericht über die Abiturfeier 2026 von Frau Neumann lesen Sie <a title=\"im Folgenden\" href=\"/cm3/index.php/neues/1017-abiturfeier-2026\">im Folgenden</a>.\n\nDie Feier verlief sehr persönlich und stilvoll und begann um 16:00 Uhr mit einem Sektempfang auf dem Dach der Halle, bevor dann ab 17:00 Uhr der offizielle Teil mit einem Musikstück der Abi-Band begann. Durch die gesamte Feier leiteten die zwei charmanten Moderatorinnen Ricarda Ebersbach und Emma Ulrich. Nach den Reden von Frau Seitz, Herrn Koch als Elternbeirats-Vorsitzendem und Schülerinnenvater und der Scheffel-Preisträgerin Johanna Philipp, kam es dann endlich zur Ausgabe der lang ersehnten Abiturzeugnisse, mit der für die Schülerinnen und Schüler eine achtjährige Ära zu Ende ging. Es herrschte spürbare Freude und großer Stolz über das erreichte Ziel. Anschließend wurden außerdem zahlreiche externe und interne Preise verliehen, die ebenfalls für ausgiebigen Applaus sorgten. Nach einem guten Buffet und einer Diashow vergnügten sich die Abiturientinnen und Abiturienten in gelöster Stimmung mit ihren Lehrkräften bei sorgfältig vorbereiteten Spielen, bevor sie dann noch vor dem großen Finale ihre Leistungskurs-Lehrkräfte und Tutorinnen ehrten und diesen für die Betreuung und Vorbereitung in den vergangenen zwei Jahren der Oberstufe dankten. Nach abschließenden Songs und emotionalen Verabschiedungen endete die Feier dann gegen 23:00 Uhr. Die Absolventinnen und Absolventen feierten danach noch ausgelassener bis in die frühen Morgenstunden in der „Stadtmitte“ weiter.\n\nEs war sehr schön mit euch, liebe Abiturientinnen und Abiturienten, und wir freuen uns auf ein frohes und gesundes Wiedersehen mit eurem Jahrgang, wenn ihr dann erzählt, wie es euch weiter ergangen ist. Für eure Zukunft und eure neuen Ziele wünschen wir euch viel Erfolg!\n\nJohanna Philipps Scheffel-Preis-Rede finden Sie hier:",
+      "created_date": "16. Juli 2026",
+      "views": 4332,
+      "url": "https://lessing-gymnasium-karlsruhe.de/cm3/index.php/neues/1017-abiturfeier-2026",
+      "links": [
+        {
+          "text": "im Folgenden",
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/index.php/neues/1017-abiturfeier-2026"
+        }
+      ],
+      "standalone_links": [],
+      "images": [],
+      "downloads": [
+        {
+          "title": "Rede Scheffelpreis 2026",
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/index.php/medien/dokumente/abitur/439-rede-scheffelpreis-2026",
+          "file_type": "pdf",
+          "size": "43 KB"
+        }
+      ],
+      "tags": [],
+      "parsed_date": null
+    },
+    {
+      "title": "Die Wanderung durch Oz",
+      "author": "Ursula Neumann",
+      "description": "Am 6. und 7. Juli 2026 führte die Unterstufen-Theater-AG den „Zauberer von Oz\" auf. Den Bericht von Frau Neumann lesen Sie im Folgenden.",
+      "content": "Am 6. und 7. Juli 2026 führte die Unterstufen-Theater-AG den „Zauberer von Oz\" auf. Den Bericht von Frau Neumann lesen Sie im Folgenden.\n\nUnter der engagierten Leitung von Frau Doktor Lenz und Frau Karathanos brachte die Theater-AG der Unterstufe am 6. und 7. Juli 2026 die märchenhafte Geschichte „Der Zauberer von Oz\" auf die Bühne.\n\nDie vier Hauptfiguren Dorothy, eine Blechfrau, eine Vogelscheuche und ein Löwe wandern auf der Suche nach der Vervollkommnung ihrer Selbst durch das Land Oz in die Smaragdstadt, um vom Zauberer des Landes etwas geschenkt zu bekommen, das ihnen fehlt: ihren Weg nach Hause, ein fühlendes Herz, ein kluges Gehirn oder auch Mut. Der Zauberer will ihnen jedoch nur für eine Gegenleistung helfen, nämlich dass sie die böse Hexe des Westens töten. Auf diesen brutalen Handel wollen die vier nicht eingehen, machen sich aber auf die Suche nach der Hexe, die sich schließlich als sehr freundlich entpuppt. Mit den vier Hexen aller vier Himmelsrichtungen schließen Dorothy und ihre drei Gefährtinnen und Gefährten Freundschaft und kehren mit ihnen gemeinsam erneut in die Stadt des Zauberers zurück. Dort decken sie auf, dass der Zauberer seine Untertanen durch Schein und Täuschung unterdrückt hat, und sie entlarven den scheinbar Mächtigen als kleines harmloses Männlein. Bei dieser wagemutigen Tat merken die vier, dass sie das, was sie suchten und ursprünglich vom Zauberer erhofft hatten, längst in sich tragen: Mut, ein fühlendes Herz und ein kluges Hirn. Auch Dorothy kann durch einen Zauber ihre Familie wieder in die Arme schließen und so bilden am Ende alle eine große friedliche Gemeinschaft in Oz.\n\nIn ästhetisch gestalteten, kreativen Bühnenbildern, die wie immer Frau Hold verantwortete, spielten die 20 jungen Schauspielerinnen und Schauspieler mit Herzblut die lebenskluge Geschichte einer Suche nach dem inneren Kern der eigenen Persönlichkeit. Allen auf der Bühne gelang es, in farbenfrohen und originellen Kostümen überzeugend und bewegt die Bilder einer Zauberwelt entstehen zu lassen. Jede geheimnisvolle Landschaft, jede Szene wurde mit großer Spielfreude verkörpert.\n\nDie Aufführung wurde vom Chor der Unter- und Mittelstufe (Leitung Frau Smikale) gekrönt, der mit dem Lied „Somewhere Over the Rainbow\" das begeistert jubelnde Publikum in den Abend entließ. Die Technik-AG unter der Leitung von Frau Bieringer kümmerte sich gewohnt zuverlässig um die passgenaue Toneinstellung und Beleuchtung.\n\nHerzlichen Dank für die nachklingenden zauberhaften Bilder der Wanderung durch Oz und diese inspirierende Aufführung mit der Botschaft, immer an sich selbst zu glauben.",
+      "html_content": "Am 6. und 7. Juli 2026 führte die Unterstufen-Theater-AG den „Zauberer von Oz\" auf. Den Bericht von Frau Neumann lesen Sie <a title=\"im Folgenden\" href=\"/cm3/index.php/neues/1015-die-wanderung-durch-oz\">im Folgenden</a>.\n\nUnter der engagierten Leitung von Frau Doktor Lenz und Frau Karathanos brachte die Theater-AG der Unterstufe am 6. und 7. Juli 2026 die märchenhafte Geschichte „Der Zauberer von Oz\" auf die Bühne.\n\nDie vier Hauptfiguren Dorothy, eine Blechfrau, eine Vogelscheuche und ein Löwe wandern auf der Suche nach der Vervollkommnung ihrer Selbst durch das Land Oz in die Smaragdstadt, um vom Zauberer des Landes etwas geschenkt zu bekommen, das ihnen fehlt: ihren Weg nach Hause, ein fühlendes Herz, ein kluges Gehirn oder auch Mut. Der Zauberer will ihnen jedoch nur für eine Gegenleistung helfen, nämlich dass sie die böse Hexe des Westens töten. Auf diesen brutalen Handel wollen die vier nicht eingehen, machen sich aber auf die Suche nach der Hexe, die sich schließlich als sehr freundlich entpuppt. Mit den vier Hexen aller vier Himmelsrichtungen schließen Dorothy und ihre drei Gefährtinnen und Gefährten Freundschaft und kehren mit ihnen gemeinsam erneut in die Stadt des Zauberers zurück. Dort decken sie auf, dass der Zauberer seine Untertanen durch Schein und Täuschung unterdrückt hat, und sie entlarven den scheinbar Mächtigen als kleines harmloses Männlein. Bei dieser wagemutigen Tat merken die vier, dass sie das, was sie suchten und ursprünglich vom Zauberer erhofft hatten, längst in sich tragen: Mut, ein fühlendes Herz und ein kluges Hirn. Auch Dorothy kann durch einen Zauber ihre Familie wieder in die Arme schließen und so bilden am Ende alle eine große friedliche Gemeinschaft in Oz.\n\nIn ästhetisch gestalteten, kreativen Bühnenbildern, die wie immer Frau Hold verantwortete, spielten die 20 jungen Schauspielerinnen und Schauspieler mit Herzblut die lebenskluge Geschichte einer Suche nach dem inneren Kern der eigenen Persönlichkeit. Allen auf der Bühne gelang es, in farbenfrohen und originellen Kostümen überzeugend und bewegt die Bilder einer Zauberwelt entstehen zu lassen. Jede geheimnisvolle Landschaft, jede Szene wurde mit großer Spielfreude verkörpert.\n\nDie Aufführung wurde vom Chor der Unter- und Mittelstufe (Leitung Frau Smikale) gekrönt, der mit dem Lied „Somewhere Over the Rainbow\" das begeistert jubelnde Publikum in den Abend entließ. Die Technik-AG unter der Leitung von Frau Bieringer kümmerte sich gewohnt zuverlässig um die passgenaue Toneinstellung und Beleuchtung.\n\nHerzlichen Dank für die nachklingenden zauberhaften Bilder der Wanderung durch Oz und diese inspirierende Aufführung mit der Botschaft, immer an sich selbst zu glauben.",
+      "created_date": "09. Juli 2026",
+      "views": 7908,
+      "url": "https://lessing-gymnasium-karlsruhe.de/cm3/index.php/neues/1015-die-wanderung-durch-oz",
+      "links": [
+        {
+          "text": "im Folgenden",
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/index.php/neues/1015-die-wanderung-durch-oz"
+        }
+      ],
+      "standalone_links": [],
+      "images": [
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_oz_2026//001.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_829d7775d9_001.jpg",
+          "alt": "Click to enlarge image 001.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_oz_2026//02.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_829d7775d9_02.jpg",
+          "alt": "Click to enlarge image 02.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_oz_2026//03.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_829d7775d9_03.jpg",
+          "alt": "Click to enlarge image 03.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_oz_2026//04.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_829d7775d9_04.jpg",
+          "alt": "Click to enlarge image 04.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_oz_2026//05.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_829d7775d9_05.jpg",
+          "alt": "Click to enlarge image 05.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_oz_2026//06.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_829d7775d9_06.jpg",
+          "alt": "Click to enlarge image 06.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_oz_2026//07.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_829d7775d9_07.jpg",
+          "alt": "Click to enlarge image 07.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_oz_2026//08.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_829d7775d9_08.jpg",
+          "alt": "Click to enlarge image 08.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_oz_2026//09.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_829d7775d9_09.jpg",
+          "alt": "Click to enlarge image 09.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_oz_2026//10.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_829d7775d9_10.jpg",
+          "alt": "Click to enlarge image 10.jpg"
+        }
+      ],
+      "downloads": [],
+      "tags": [],
+      "parsed_date": null
+    },
+    {
+      "title": "MINT-Festival 2026",
+      "author": "Dr. Daniel Roth",
+      "description": "Am 3, Juli 2026 nahm das Lessing-Gymnasium am MINT-Festival teil. Johan Becker, Matias Kühn und Luka Löhr stellten zusammen mit Herrn Dr. Roth das Projekt Ephraim vor. Gregor Dimitrić nahm für die AG Robocup am Schulrobotik-Cup teil. In der Disziplin Einparkroboter erreichte er den ersten Platz. Herzlichen Glückwunsch! Mit Felix Hörner und Michel Weber trafen wir zwei alte Bekannte aus der AG Tüfteln & Forschen wieder. Sie stellten vor, was aus Ihrem Projekt der mobilen Feinstaubmessung geworden ist: CycleSense. Ein paar Einblicke in das Festival erhalten Sie im Folgenden.",
+      "content": "Am 3, Juli 2026 nahm das Lessing-Gymnasium am MINT-Festival teil. Johan Becker, Matias Kühn und Luka Löhr stellten zusammen mit Herrn Dr. Roth das Projekt Ephraim vor. Gregor Dimitrić nahm für die AG Robocup am Schulrobotik-Cup teil. In der Disziplin Einparkroboter erreichte er den ersten Platz. Herzlichen Glückwunsch! Mit Felix Hörner und Michel Weber trafen wir zwei alte Bekannte aus der AG Tüfteln & Forschen wieder. Sie stellten vor, was aus Ihrem Projekt der mobilen Feinstaubmessung geworden ist: CycleSense. Ein paar Einblicke in das Festival erhalten Sie im Folgenden.\n\nDanke an unseren Partner Cyberforum e.V. und an Herrn Dirk Fox für die Organisation und Durchführung des Festivals.",
+      "html_content": "Am 3, Juli 2026 nahm das Lessing-Gymnasium am <a title=\"MINT-Festival\" href=\"https://karlsruher-technik-initiative.de/mint-festival/\" target=\"_blank\" rel=\"noopener\">MINT-Festival</a> teil. Johan Becker, Matias Kühn und Luka Löhr stellten zusammen mit Herrn Dr. Roth das <a title=\"Projekt Ephraim\" href=\"https://ephraim.lgka-online.de\" target=\"_blank\" rel=\"noopener\">Projekt Ephraim</a> vor. Gregor Dimitrić nahm für die&nbsp;<a title=\"AG Robocup\" href=\"/cm3/index.php/profil/mint/ag/502-ag-robocup\">AG Robocup</a> am Schulrobotik-Cup teil. In der Disziplin Einparkroboter erreichte er den ersten Platz. Herzlichen Glückwunsch! Mit Felix Hörner und Michel Weber trafen wir zwei alte Bekannte aus der <a title=\"AG Tüfteln &amp; Forschen\" href=\"/cm3/index.php/profil/mint/ag/500-ag-tuefteln-forschen\">AG Tüfteln &amp; Forschen</a> wieder. Sie stellten vor, was aus Ihrem&nbsp;<a title=\"mobile Feinstaubmessung\" href=\"/cm3/index.php/profil/mint/ag/500-ag-tuefteln-forschen\">Projekt der mobilen Feinstaubmessung</a> geworden ist: <a title=\"CycleSense\" href=\"https://cyclesense.de\" target=\"_blank\" rel=\"noopener\">CycleSense</a>. Ein paar Einblicke in das Festival erhalten Sie <a title=\"im Folgenden\" href=\"/cm3/index.php/neues/1014-mint-festival-2026\">im Folgenden</a>.\n\nDanke an unseren Partner <a title=\"Cyberforum e.V.\" href=\"/cm3/index.php/ansprechpartner/partner#partner_cyberforum\">Cyberforum e.V.</a> und an Herrn Dirk Fox für die Organisation und Durchführung des Festivals.",
+      "created_date": "05. Juli 2026",
+      "views": 9832,
+      "url": "https://lessing-gymnasium-karlsruhe.de/cm3/index.php/neues/1014-mint-festival-2026",
+      "links": [
+        {
+          "text": "MINT-Festival",
+          "url": "https://karlsruher-technik-initiative.de/mint-festival/"
+        },
+        {
+          "text": "Projekt Ephraim",
+          "url": "https://ephraim.lgka-online.de"
+        },
+        {
+          "text": "AG Robocup",
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/index.php/profil/mint/ag/502-ag-robocup"
+        },
+        {
+          "text": "AG Tüfteln & Forschen",
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/index.php/profil/mint/ag/500-ag-tuefteln-forschen"
+        },
+        {
+          "text": "Projekt der mobilen Feinstaubmessung",
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/index.php/profil/mint/ag/500-ag-tuefteln-forschen"
+        },
+        {
+          "text": "CycleSense",
+          "url": "https://cyclesense.de"
+        },
+        {
+          "text": "im Folgenden",
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/index.php/neues/1014-mint-festival-2026"
+        },
+        {
+          "text": "Cyberforum e.V.",
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/index.php/ansprechpartner/partner#partner_cyberforum"
+        }
+      ],
+      "standalone_links": [],
+      "images": [
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_mintfestival_2026//01.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_5ff4b70b65_01.jpg",
+          "alt": "Click to enlarge image 01.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_mintfestival_2026//02.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_5ff4b70b65_02.jpg",
+          "alt": "Click to enlarge image 02.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_mintfestival_2026//03.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_5ff4b70b65_03.jpg",
+          "alt": "Click to enlarge image 03.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_mintfestival_2026//04.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_5ff4b70b65_04.jpg",
+          "alt": "Click to enlarge image 04.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_mintfestival_2026//05.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_5ff4b70b65_05.jpg",
+          "alt": "Click to enlarge image 05.jpg"
+        }
+      ],
+      "downloads": [],
+      "tags": [
+        "NwT"
+      ],
+      "parsed_date": null
+    },
+    {
+      "title": "CyberTurtles",
+      "author": "Frank Balzer",
+      "description": "Wir suchen die Anteilseignerinnen und Anteilseigner, die am Infotag für die fünften Klassen am 26.02.2026 einen Anteilsschein unserer Schülerfirma CyberTurtles gekauft haben. Durch unglückliche Umstände sind leider die Daten dieser Anteilseignerinnen und Anteilseigner verloren gegangen. Falls Sie an diesem Tag einen Anteilsschein gekauft haben, melden Sie sich bitte umgehend bei uns: cyber-turtles@web.de. Unsere Abschlussversammlung findet am 21.07.2026 um 17:30 Uhr in der Mensa statt.",
+      "content": "Wir suchen die Anteilseignerinnen und Anteilseigner, die am Infotag für die fünften Klassen am 26.02.2026 einen Anteilsschein unserer Schülerfirma CyberTurtles gekauft haben. Durch unglückliche Umstände sind leider die Daten dieser Anteilseignerinnen und Anteilseigner verloren gegangen. Falls Sie an diesem Tag einen Anteilsschein gekauft haben, melden Sie sich bitte umgehend bei uns: cyber-turtles@web.de. Unsere Abschlussversammlung findet am 21.07.2026 um 17:30 Uhr in der Mensa statt.",
+      "html_content": "Wir suchen die Anteilseignerinnen und Anteilseigner, die am Infotag für die fünften Klassen am 26.02.2026 einen Anteilsschein unserer Schülerfirma CyberTurtles gekauft haben. Durch unglückliche Umstände sind leider die Daten dieser Anteilseignerinnen und Anteilseigner verloren gegangen. Falls Sie an diesem Tag einen Anteilsschein gekauft haben, melden Sie sich bitte umgehend bei uns: <a href=\"mailto:cyber-turtles@web.de\">cyber-turtles@web.de</a>. Unsere Abschlussversammlung findet am 21.07.2026 um 17:30 Uhr in der Mensa statt.",
+      "created_date": "05. Juli 2026",
+      "views": 9705,
+      "url": "https://lessing-gymnasium-karlsruhe.de/cm3/index.php/neues/1013-cyberturtles",
+      "links": [
+        {
+          "text": "cyber-turtles@web.de",
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/mailto:cyber-turtles@web.de"
+        }
+      ],
+      "standalone_links": [],
+      "images": [],
+      "downloads": [],
+      "tags": [],
+      "parsed_date": null
+    },
+    {
+      "title": "Lessing-Preis 2026",
+      "author": "Dr. Daniel Roth",
+      "description": "Auch in diesem Schuljahr möchten wir wieder „Lessing-Preise“ für besonderes Engagement für unsere Schulgemeinschaft vergeben. Vorschläge können über dieses Formular eingereicht werden.",
+      "content": "Auch in diesem Schuljahr möchten wir wieder „Lessing-Preise“ für besonderes Engagement für unsere Schulgemeinschaft vergeben. Vorschläge können über dieses Formular eingereicht werden.",
+      "html_content": "Auch in diesem Schuljahr möchten wir wieder „Lessing-Preise“ für besonderes Engagement für unsere Schulgemeinschaft vergeben. Vorschläge können über <a title=\"dieses Formular\" href=\"/cm3/index.php/medien/dokumente/formulare/382-formular-vorschlag-lessing-preis/file\" target=\"_blank\" rel=\"noopener\">dieses Formular</a> eingereicht werden.",
+      "created_date": "28. Juni 2026",
+      "views": 12107,
+      "url": "https://lessing-gymnasium-karlsruhe.de/cm3/index.php/neues/1012-lessing-preis-2026",
+      "links": [
+        {
+          "text": "dieses Formular",
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/index.php/medien/dokumente/formulare/382-formular-vorschlag-lessing-preis/file"
+        }
+      ],
+      "standalone_links": [],
+      "images": [],
+      "downloads": [],
+      "tags": [],
+      "parsed_date": null
+    },
+    {
+      "title": "Der Zauberer von Oz",
+      "author": "Dr. Daniel Roth",
+      "description": "Am 6. und am 7. Juli wird die Theater AG der Unterstufe um 19:30 Uhr in der Aula \"Der Zauberer von Oz\" aufführen. Karten können in der 2. Pause im 1.OG und im Sekretariat gekauft werden. Schüler bezahlen 3 €, Erwachsene bezahlen 6 €.",
+      "content": "Am 6. und am 7. Juli wird die Theater AG der Unterstufe um 19:30 Uhr in der Aula \"Der Zauberer von Oz\" aufführen. Karten können in der 2. Pause im 1.OG und im Sekretariat gekauft werden. Schüler bezahlen 3 €, Erwachsene bezahlen 6 €.",
+      "html_content": "Am 6. und am 7. Juli wird die Theater AG der Unterstufe um 19:30 Uhr in der Aula \"Der Zauberer von Oz\" aufführen. Karten können in der 2. Pause im 1.OG und im Sekretariat gekauft werden. Schüler bezahlen 3 €, Erwachsene bezahlen 6 €.\n\n<img src=\"/cm3/images/nf/nf_theaterunterstufe_2026.jpg\" width=\"2795\" height=\"2160\" loading=\"lazy\" data-path=\"local-images:/nf/nf_theaterunterstufe_2026.jpg\">",
+      "created_date": "22. Juni 2026",
+      "views": 14722,
+      "url": "https://lessing-gymnasium-karlsruhe.de/cm3/index.php/neues/1008-der-zauberer-von-oz",
+      "links": [],
+      "standalone_links": [],
+      "images": [
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/nf/nf_theaterunterstufe_2026.jpg"
+        }
+      ],
+      "downloads": [],
+      "tags": [],
+      "parsed_date": null
+    },
+    {
+      "title": "Fahrt nach Nottingham",
+      "author": "Sedra Altief (Klasse 8d) & Carla Metz (Klasse 8a)",
+      "description": "Frau Lohmann, Frau Mehne und Herr Zepfel fuhren in der Woche vor den Pfingstferien mit den Schülerinnen und Schülern der 8. Klassen nach Nottingham. Den Bericht von Carla und Sedra lesen Sie im Folgenden. Wir bedanken uns vielmals bei Frau Lohmann, Frau Mehne und Herrn Zepfel für die Organisation und Durchführung der Fahrt!",
+      "content": "Frau Lohmann, Frau Mehne und Herr Zepfel fuhren in der Woche vor den Pfingstferien mit den Schülerinnen und Schülern der 8. Klassen nach Nottingham. Den Bericht von Carla und Sedra lesen Sie im Folgenden. Wir bedanken uns vielmals bei Frau Lohmann, Frau Mehne und Herrn Zepfel für die Organisation und Durchführung der Fahrt!\n\nAm Sonntag, den 17. Mai, begann unsere einwöchige Fahrt nach Nottingham. Die Schülerinnen und Schüler der 8. Klassen trafen sich um 9:00 Uhr an der Europahalle. Von dort aus fuhren wir mit dem Bus in Richtung Niederlande. Während der langen Fahrt machten wir mehrere Pausen und passierten die Passkontrolle.\n\nAm Abend gingen wir an Bord der Fähre nach England. Nachdem wir unsere Kabinen betreten hatten, konnten wir die Fähre erkunden und den Abend gemeinsam verbringen. Über Nacht überquerten wir die Nordsee.\n\nAm Montagmorgen kamen wir in England an und setzten unsere Reise mit dem Bus fort. Zuvor machten wir jedoch noch einen Zwischenstopp im Sherwood Forest. Nach einer etwa einstündigen Busfahrt besuchten wir den berühmten Wald, der eng mit der Legende von Robin Hood verbunden ist. Während einer Führung erfuhren wir mehr über die Geschichte des Waldes und die Robin Hood Sagen. Trotz des regnerischen Wetters war der Besuch interessant und gab uns einen guten ersten Eindruck von der Umgebung.\n\nGegen 16:00 Uhr erreichten wir unser Hostel in Nottingham. Nach einer kurzen Pause besuchten wir die St Mary’s Church, eine der bekanntesten Kirchen der Stadt. Dort lernten wir das traditionelle „Bell Ringing“ kennen. Die Mitarbeitenden der Kirche erklärten uns die Geschichte der Kirchenglocken und zeigten uns, wie das Läuten funktioniert. Dabei erfuhren wir viel über eine Tradition, die in England bis heute gepflegt wird. Der Besuch war für viele von uns besonders interessant, da die meisten diese Art des Glockenläutens zuvor noch nie gesehen hatten.Nach dem Besuch kehrten wir ins Hostel zurück, aßen gemeinsam zu Abend und ließen den ersten Tag in Nottingham gemütlich ausklingen.\n\nAm Dienstag ging es morgens gegen 9 Uhr auch schon los. Auf dem Plan stand ein altes Gerichtsgebäude, das heute als Museum fungiert und in dem wir sogar eine Gerichtsverhandlung nachstellen durften. Vor Ort hatten wir sehr viel Spaß und lernten gleichzeitig viel dazu. Nach einer etwa einstündigen Mittagspause ging es dann unter die Stadt. In einer sehr interessanten Führung wurden uns die Tunnel unter Nottingham gezeigt und ihre Geschichte erzählt. Den Tag beendeten wir mit einer spannenden Runde Minigolf in kleinen Gruppen.\n\nAm Mittwoch ging es dann mit dem Bus zur Wollaton Hall, die als Drehort für einen Batman-Film diente. Dort liefen wir durch die Gärten und konnten unter anderem Rehe beobachten. Außerdem entstanden interessante Gespräche mit Lehrern und Mitschülern aus anderen Klassen sowie ein kleines Wettrennen zwischen Lehrern und Schülern. In einem Souvenirshop konnte man sich noch Andenken besorgen. Anschließend liefen wir zur Newstead Abbey. Dort schauten wir uns nicht die Gärten an, sondern zeichneten einen Teil des Schlosses. Das schönste Bild wurde am Freitag mit einem Preis ausgezeichnet.\n\nAm Abend aßen wir in einem Restaurant namens Cosy zu Abend. Anschließend machten wir noch einen kleinen Spaziergang durch Nottingham, um das leckere Essen zu verdauen. Dabei hielten wir an einer Robin Hood Statue an und machten direkt ein Gruppenfoto.\n\nAm Donnerstag besuchten wir noch das Rathaus. Dort bekamen wir eine Führung vom ehemaligen Bürgermeister. Nachdem wir das Rathaus wieder verlassen hatten, hatten wir eine längere Mittagspause, in der wir essen, entspannen und eine Stadtrallye ausfüllen konnten, für die es am nächsten Tag ebenfalls einen Preis gab.\n\nNach dieser Pause stiegen wir wieder in den Bus und fuhren gegen 14 Uhr los. Mit einigen Stopps, um Essen und Trinken zu holen, setzten wir unsere Fahrt zur Fähre fort. Von dort aus fuhren wir über Nacht über das Meer.\n\nAm Freitag, den 22. Mai, traten wir den Rest der Rückreise an. Nach der Busfahrt und der Fährüberfahrt kehrten wir am Abend gegen 18:00 Uhr wieder zur Europahalle in Karlsruhe zurück.Insgesamt war die Fahrt nach Nottingham eine sehr positive Erfahrung. Sie half uns, unsere Englischkenntnisse zu verbessern und im Alltag sicherer zu sprechen. Außerdem konnten wir viel über die Geschichte und Kultur Englands lernen und viele neue Eindrücke sammeln. Durch die gemeinsame Zeit lernten sich viele Schülerinnen und Schüler innerhalb der Jahrgangsstufe besser kennen. Es war eine bereichernde Woche voller schöner Erinnerungen und neuer Erfahrungen.",
+      "html_content": "Frau Lohmann, Frau Mehne und Herr Zepfel fuhren in der Woche vor den Pfingstferien mit den Schülerinnen und Schülern der 8. Klassen nach Nottingham. Den Bericht von Carla und Sedra lesen Sie <a title=\"im Folgenden\" href=\"/cm3/index.php/neues/1006-fahrt-nach-nottingham-2\">im Folgenden</a>. Wir bedanken uns vielmals bei Frau Lohmann, Frau Mehne und Herrn Zepfel für die Organisation und Durchführung der Fahrt!\n\nAm Sonntag, den 17. Mai, begann unsere einwöchige Fahrt nach Nottingham. Die Schülerinnen und Schüler der 8. Klassen trafen sich um 9:00 Uhr an der Europahalle. Von dort aus fuhren wir mit dem Bus in Richtung Niederlande. Während der langen Fahrt machten wir mehrere Pausen und passierten die Passkontrolle.\n\nAm Abend gingen wir an Bord der Fähre nach England. Nachdem wir unsere Kabinen betreten hatten, konnten wir die Fähre erkunden und den Abend gemeinsam verbringen. Über Nacht überquerten wir die Nordsee.\n\nAm Montagmorgen kamen wir in England an und setzten unsere Reise mit dem Bus fort. Zuvor machten wir jedoch noch einen Zwischenstopp im Sherwood Forest. Nach einer etwa einstündigen Busfahrt besuchten wir den berühmten Wald, der eng mit der Legende von Robin Hood verbunden ist. Während einer Führung erfuhren wir mehr über die Geschichte des Waldes und die Robin Hood Sagen. Trotz des regnerischen Wetters war der Besuch interessant und gab uns einen guten ersten Eindruck von der Umgebung.\n\nGegen 16:00 Uhr erreichten wir unser Hostel in Nottingham. Nach einer kurzen Pause besuchten wir die St Mary’s Church, eine der bekanntesten Kirchen der Stadt. Dort lernten wir das traditionelle „Bell Ringing“ kennen. Die Mitarbeitenden der Kirche erklärten uns die Geschichte der Kirchenglocken und zeigten uns, wie das Läuten funktioniert. Dabei erfuhren wir viel über eine Tradition, die in England bis heute gepflegt wird. Der Besuch war für viele von uns besonders interessant, da die meisten diese Art des Glockenläutens zuvor noch nie gesehen hatten.<br>Nach dem Besuch kehrten wir ins Hostel zurück, aßen gemeinsam zu Abend und ließen den ersten Tag in Nottingham gemütlich ausklingen.\n\nAm Dienstag ging es morgens gegen 9 Uhr auch schon los. Auf dem Plan stand ein altes Gerichtsgebäude, das heute als Museum fungiert und in dem wir sogar eine Gerichtsverhandlung nachstellen durften. Vor Ort hatten wir sehr viel Spaß und lernten gleichzeitig viel dazu. Nach einer etwa einstündigen Mittagspause ging es dann unter die Stadt. In einer sehr interessanten Führung wurden uns die Tunnel unter Nottingham gezeigt und ihre Geschichte erzählt. Den Tag beendeten wir mit einer spannenden Runde Minigolf in kleinen Gruppen.\n\nAm Mittwoch ging es dann mit dem Bus zur Wollaton Hall, die als Drehort für einen Batman-Film diente. Dort liefen wir durch die Gärten und konnten unter anderem Rehe beobachten. Außerdem entstanden interessante Gespräche mit Lehrern und Mitschülern aus anderen Klassen sowie ein kleines Wettrennen zwischen Lehrern und Schülern. In einem Souvenirshop konnte man sich noch Andenken besorgen. Anschließend liefen wir zur Newstead Abbey. Dort schauten wir uns nicht die Gärten an, sondern zeichneten einen Teil des Schlosses. Das schönste Bild wurde am Freitag mit einem Preis ausgezeichnet.\n\nAm Abend aßen wir in einem Restaurant namens Cosy zu Abend. Anschließend machten wir noch einen kleinen Spaziergang durch Nottingham, um das leckere Essen zu verdauen. Dabei hielten wir an einer Robin Hood Statue an und machten direkt ein Gruppenfoto.\n\nAm Donnerstag besuchten wir noch das Rathaus. Dort bekamen wir eine Führung vom ehemaligen Bürgermeister. Nachdem wir das Rathaus wieder verlassen hatten, hatten wir eine längere Mittagspause, in der wir essen, entspannen und eine Stadtrallye ausfüllen konnten, für die es am nächsten Tag ebenfalls einen Preis gab.\n\nNach dieser Pause stiegen wir wieder in den Bus und fuhren gegen 14 Uhr los. Mit einigen Stopps, um Essen und Trinken zu holen, setzten wir unsere Fahrt zur Fähre fort. Von dort aus fuhren wir über Nacht über das Meer.\n\nAm Freitag, den 22. Mai, traten wir den Rest der Rückreise an. Nach der Busfahrt und der Fährüberfahrt kehrten wir am Abend gegen 18:00 Uhr wieder zur Europahalle in Karlsruhe zurück.<br>Insgesamt war die Fahrt nach Nottingham eine sehr positive Erfahrung. Sie half uns, unsere Englischkenntnisse zu verbessern und im Alltag sicherer zu sprechen. Außerdem konnten wir viel über die Geschichte und Kultur Englands lernen und viele neue Eindrücke sammeln. Durch die gemeinsame Zeit lernten sich viele Schülerinnen und Schüler innerhalb der Jahrgangsstufe besser kennen. Es war eine bereichernde Woche voller schöner Erinnerungen und neuer Erfahrungen.",
+      "created_date": "22. Juni 2026",
+      "views": 14796,
+      "url": "https://lessing-gymnasium-karlsruhe.de/cm3/index.php/neues/1006-fahrt-nach-nottingham-2",
+      "links": [
+        {
+          "text": "im Folgenden",
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/index.php/neues/1006-fahrt-nach-nottingham-2"
+        }
+      ],
+      "standalone_links": [],
+      "images": [
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_nottingham_2026//01.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_ed4c0addbe_01.jpg",
+          "alt": "Click to enlarge image 01.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_nottingham_2026//02.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_ed4c0addbe_02.jpg",
+          "alt": "Click to enlarge image 02.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_nottingham_2026//03.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_ed4c0addbe_03.jpg",
+          "alt": "Click to enlarge image 03.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_nottingham_2026//04.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_ed4c0addbe_04.jpg",
+          "alt": "Click to enlarge image 04.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_nottingham_2026//05.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_ed4c0addbe_05.jpg",
+          "alt": "Click to enlarge image 05.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_nottingham_2026//06.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_ed4c0addbe_06.jpg",
+          "alt": "Click to enlarge image 06.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_nottingham_2026//07.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_ed4c0addbe_07.jpg",
+          "alt": "Click to enlarge image 07.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_nottingham_2026//08.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_ed4c0addbe_08.jpg",
+          "alt": "Click to enlarge image 08.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_nottingham_2026//09.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_ed4c0addbe_09.jpg",
+          "alt": "Click to enlarge image 09.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_nottingham_2026//10.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_ed4c0addbe_10.jpg",
+          "alt": "Click to enlarge image 10.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_nottingham_2026//11.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_ed4c0addbe_11.jpg",
+          "alt": "Click to enlarge image 11.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_nottingham_2026//12.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_ed4c0addbe_12.jpg",
+          "alt": "Click to enlarge image 12.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_nottingham_2026//13.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_ed4c0addbe_13.jpg",
+          "alt": "Click to enlarge image 13.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_nottingham_2026//14.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_ed4c0addbe_14.jpg",
+          "alt": "Click to enlarge image 14.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_nottingham_2026//15.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_ed4c0addbe_15.jpg",
+          "alt": "Click to enlarge image 15.jpg"
+        }
+      ],
+      "downloads": [],
+      "tags": [
+        "Englisch"
+      ],
+      "parsed_date": null
+    },
+    {
+      "title": "Lust am Lesen",
+      "author": "Dr. Franziska Lenz & Ulrike Seitz",
+      "description": "Die Schulgemeinschaft des Lessing-Gymnasium ist stolz auf die herausragenden Leistungen ihrer Schülerinnen beim diesjährigen Schreibwettbewerb der Jugendstiftung der Sparkasse Karlsruhe und der Literarischen Gesellschaft Karlsruhe. Zum Thema „Nähe und Distanz“ überzeugten gleich drei unserer Schülerinnen die Jury. Den Bericht von Frau Dr. Lenz und Frau Ulrike Seitz lesen Sie im Folgenden.",
+      "content": "Die Schulgemeinschaft des Lessing-Gymnasium ist stolz auf die herausragenden Leistungen ihrer Schülerinnen beim diesjährigen Schreibwettbewerb der Jugendstiftung der Sparkasse Karlsruhe und der Literarischen Gesellschaft Karlsruhe. Zum Thema „Nähe und Distanz“ überzeugten gleich drei unserer Schülerinnen die Jury. Den Bericht von Frau Dr. Lenz und Frau Ulrike Seitz lesen Sie im Folgenden.\n\nDreifacher Erfolg beim Schreibwettbewerb „Lust am Lesen“ - Wir feiern gemeinsam Erfolge Wir gratulieren Yuna Dirnberger aus der 6. Klasse, die mit ihrer einfallsreichen Geschichte „Lottas Reise ins Universum“ den 1. Platz in ihrer Altersgruppe (Klasse 6/7) gewann. Ihre Geschichte handelt von einem missverstandenen Mädchen, das in der Ferne des Weltalls durch ihre Reisegenossin Verbundenheit erfährt.  Auch in der 9. Klasse gibt es Grund zur Freude: Sima Khaled überzeugte die Jury mit ihrer feinfühligen Geschichte „Weil ich dich zu sehr liebe“, in welcher sie das emotionale Wechselspiel aus Nähe und plötzlicher Distanz in einer Beziehung einfängt. Sie erreichte den 1. Platz in ihrer Jahrgangsstufe (8/9). Zudem sind wir stolz auf den Erfolg von Yara Kratt aus der Jahrgangsstufe 1. Mit ihrer Geschichte „Fensterfreundin“ erreichte sie nicht nur den 1. Platz in ihrer Jahrgangsstufe an unserer Schule, sondern zudem den 3. Platz auf Stadtebene. Ihre ausgezeichnete Geschichte thematisiert die Sehnsucht nach Verbundenheit in der Anonymität der Großstadt und wird nun in einer Veröffentlichung der Sparkassenstiftung und der Literarischen Gesellschaft Karlsruhe erscheinen – eine besondere Anerkennung ihrer schriftstellerischen Leistung.\n\nAls Anerkennung für ihre Leistungen erhielten alle drei Schülerinnen einen Buchgutschein im Wert von 50 EuroWir gratulieren unseren Preisträgerinnen herzlich zu diesem großartigen Erfolg und freuen uns, dass sie mit ihrer Kreativität und ihrem Talent das Lessing-Gymnasium so erfolgreich vertreten haben.",
+      "html_content": "Die Schulgemeinschaft des Lessing-Gymnasium ist stolz auf die herausragenden Leistungen ihrer Schülerinnen beim diesjährigen Schreibwettbewerb der Jugendstiftung der Sparkasse Karlsruhe und der Literarischen Gesellschaft Karlsruhe. Zum Thema „Nähe und Distanz“ überzeugten gleich drei unserer Schülerinnen die Jury. Den Bericht von Frau Dr. Lenz und Frau Ulrike Seitz lesen Sie <a title=\"im Folgenden\" href=\"/cm3/index.php/neues/1011-lust-am-lesen\">im Folgenden</a>.\n\n<strong>Dreifacher Erfolg beim Schreibwettbewerb „Lust am Lesen“ - Wir feiern gemeinsam Erfolge</strong><br>&nbsp;<br>Wir gratulieren Yuna Dirnberger aus der 6. Klasse, die mit ihrer einfallsreichen Geschichte „Lottas Reise ins Universum“ den 1. Platz in ihrer Altersgruppe (Klasse 6/7) gewann. Ihre Geschichte handelt von einem missverstandenen Mädchen, das in der Ferne des Weltalls durch ihre Reisegenossin Verbundenheit erfährt.&nbsp;<br>&nbsp;<br>Auch in der 9. Klasse gibt es Grund zur Freude: Sima Khaled überzeugte die Jury mit ihrer feinfühligen Geschichte „Weil ich dich zu sehr liebe“, in welcher sie das emotionale Wechselspiel aus Nähe und plötzlicher Distanz in einer Beziehung einfängt. Sie erreichte den 1. Platz in ihrer Jahrgangsstufe (8/9).&nbsp;<br>Zudem sind wir stolz auf den Erfolg von Yara Kratt aus der Jahrgangsstufe 1. Mit ihrer Geschichte „Fensterfreundin“ erreichte sie nicht nur den 1. Platz in ihrer Jahrgangsstufe an unserer Schule, sondern zudem den 3. Platz auf Stadtebene. Ihre ausgezeichnete Geschichte thematisiert die Sehnsucht nach Verbundenheit in der Anonymität der Großstadt und wird nun in einer Veröffentlichung der Sparkassenstiftung und der Literarischen Gesellschaft Karlsruhe erscheinen – eine besondere Anerkennung ihrer schriftstellerischen Leistung.\n\nAls Anerkennung für ihre Leistungen erhielten alle drei Schülerinnen einen Buchgutschein im Wert von 50 Euro<br>Wir gratulieren unseren Preisträgerinnen herzlich zu diesem großartigen Erfolg und freuen uns, dass sie mit ihrer Kreativität und ihrem Talent das Lessing-Gymnasium so erfolgreich vertreten haben.\n\n<img src=\"/cm3/images/nf/nf_lustamlesen_2026.jpg\" width=\"1200\" height=\"878\" loading=\"lazy\" data-path=\"local-images:/nf/nf_lustamlesen_2026.jpg\">",
+      "created_date": "17. Juni 2026",
+      "views": 13566,
+      "url": "https://lessing-gymnasium-karlsruhe.de/cm3/index.php/neues/1011-lust-am-lesen",
+      "links": [
+        {
+          "text": "im Folgenden",
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/index.php/neues/1011-lust-am-lesen"
+        }
+      ],
+      "standalone_links": [],
+      "images": [
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/nf/nf_lustamlesen_2026.jpg"
+        }
+      ],
+      "downloads": [],
+      "tags": [
+        "Deutsch"
+      ],
+      "parsed_date": null
+    },
+    {
+      "title": "GER(A)ECHT?",
+      "author": "Franziska Lenz",
+      "description": "Ein besonderes Theatererlebnis erwartete die Schülerinnen und Schüler der Klassenstufe 9. Zu Gast war das Knirps Theater mit seinem Solo-Stück „GER(A)ECHT?“, einer eindrucksvollen Adaption von Friedrich Dürrenmatts Klassiker Der Besuch der alten Dame. Den Bericht von Frau Dr. Lenz finden Sie im Folgenden.",
+      "content": "Ein besonderes Theatererlebnis erwartete die Schülerinnen und Schüler der Klassenstufe 9. Zu Gast war das Knirps Theater mit seinem Solo-Stück „GER(A)ECHT?“, einer eindrucksvollen Adaption von Friedrich Dürrenmatts Klassiker Der Besuch der alten Dame. Den Bericht von Frau Dr. Lenz finden Sie im Folgenden.\n\nDie Schauspielerin Astrid Sacher überzeugte dabei in einer bemerkenswerten Ein-Frau-Inszenierung. Mit großer Spielfreude und beeindruckender Wandlungsfähigkeit verkörperte sie die unterschiedlichsten Figuren des Stücks und ließ die Handlung lebendig werden. Mühelos gelang es den Schülerinnen und Schülern, den schnellen Rollenwechseln zu folgen und in die spannende Geschichte einzutauchen.\n\nBesonders gewinnbringend war die Aufführung, da die Klassen das Drama derzeit auch im Deutschunterricht behandeln. Viele Schülerinnen und Schüler zeigten sich beeindruckt davon, wie ein komplexes Theaterstück von nur einer Darstellerin auf die Bühne gebracht werden kann. Die Inszenierung eröffnete neue Perspektiven auf die Figuren und zentralen Fragestellungen des Werks und ergänzte die Unterrichtslektüre auf anschauliche Weise.\n\nIm Anschluss an die Aufführung nahm sich Astrid Sacher Zeit für die Fragen des Publikums. Die Wortmeldungen zeigten, dass sich die Schülerinnen und Schüler mit der Inszenierung auseinandergesetzt hatten. Besonders interessierten sie sich für die Herausforderungen eines Ein-Frau-Stücks, die Gestaltung der verschiedenen Rollen sowie die Umsetzung des literarischen Originals für die Bühne.\n\nDie Veranstaltung bot nicht nur eine gelungene Ergänzung zum Deutschunterricht, sondern auch die Möglichkeit, Theater unmittelbar zu erleben. Ein herzlicher Dank gilt dem Knirps Theater und insbesondere Astrid Sacher für diese eindrucksvolle Aufführung.",
+      "html_content": "Ein besonderes Theatererlebnis erwartete die Schülerinnen und Schüler der Klassenstufe 9. Zu Gast war das Knirps Theater mit seinem Solo-Stück „GER(A)ECHT?“, einer eindrucksvollen Adaption von Friedrich Dürrenmatts Klassiker Der Besuch der alten Dame. Den Bericht von Frau Dr. Lenz finden Sie <a title=\"im Folgenden\" href=\"/cm3/index.php/neues/1010-ger-a-echt\">im Folgenden</a>.\n\nDie Schauspielerin Astrid Sacher überzeugte dabei in einer bemerkenswerten Ein-Frau-Inszenierung. Mit großer Spielfreude und beeindruckender Wandlungsfähigkeit verkörperte sie die unterschiedlichsten Figuren des Stücks und ließ die Handlung lebendig werden. Mühelos gelang es den Schülerinnen und Schülern, den schnellen Rollenwechseln zu folgen und in die spannende Geschichte einzutauchen.\n\nBesonders gewinnbringend war die Aufführung, da die Klassen das Drama derzeit auch im Deutschunterricht behandeln. Viele Schülerinnen und Schüler zeigten sich beeindruckt davon, wie ein komplexes Theaterstück von nur einer Darstellerin auf die Bühne gebracht werden kann. Die Inszenierung eröffnete neue Perspektiven auf die Figuren und zentralen Fragestellungen des Werks und ergänzte die Unterrichtslektüre auf anschauliche Weise.\n\nIm Anschluss an die Aufführung nahm sich Astrid Sacher Zeit für die Fragen des Publikums. Die Wortmeldungen zeigten, dass sich die Schülerinnen und Schüler mit der Inszenierung auseinandergesetzt hatten. Besonders interessierten sie sich für die Herausforderungen eines Ein-Frau-Stücks, die Gestaltung der verschiedenen Rollen sowie die Umsetzung des literarischen Originals für die Bühne.\n\nDie Veranstaltung bot nicht nur eine gelungene Ergänzung zum Deutschunterricht, sondern auch die Möglichkeit, Theater unmittelbar zu erleben. Ein herzlicher Dank gilt dem Knirps Theater und insbesondere Astrid Sacher für diese eindrucksvolle Aufführung.",
+      "created_date": "01. Juni 2026",
+      "views": 14661,
+      "url": "https://lessing-gymnasium-karlsruhe.de/cm3/index.php/neues/1010-ger-a-echt",
+      "links": [
+        {
+          "text": "im Folgenden",
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/index.php/neues/1010-ger-a-echt"
+        }
+      ],
+      "standalone_links": [],
+      "images": [
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_geraecht_2026//01.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_412827cf6a_01.jpg",
+          "alt": "Click to enlarge image 01.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_geraecht_2026//02.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_412827cf6a_02.jpg",
+          "alt": "Click to enlarge image 02.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_geraecht_2026//03.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_412827cf6a_03.jpg",
+          "alt": "Click to enlarge image 03.jpg"
+        }
+      ],
+      "downloads": [],
+      "tags": [],
+      "parsed_date": null
+    },
+    {
+      "title": "Dreck-weg-Wochen",
+      "author": "Franziska Lenz",
+      "description": "Auch in diesem Jahr hat das Lessing-Gymnasium Karlsruhe im Rahmen einer breit angelegten Aktion an den Dreck-weg-Wochen der Stadt Karlsruhe teilgenommen. Den Bericht von Frau Dr. Lenz lesen Sie im Folgenden.",
+      "content": "Auch in diesem Jahr hat das Lessing-Gymnasium Karlsruhe im Rahmen einer breit angelegten Aktion an den Dreck-weg-Wochen der Stadt Karlsruhe teilgenommen. Den Bericht von Frau Dr. Lenz lesen Sie im Folgenden.\n\nInsgesamt zehn Klassen engagierten sich für eine saubere Umwelt und befreiten das Schulumfeld sowie angrenzende Grünanlagen von achtlos weggeworfenem Müll.\n\nAusgestattet mit Müllzangen, Handschuhen und Müllsäcken machten sich die Schülerinnen und Schüler auf den Weg und säuberten großräumig die Umgebung des Lessing-Gymnasiums. Die Sammelgebiete reichten von der Günther-Klotz-Anlage über den Weinbrenner-Spielplatz bis hin zur Nottingham-Anlage sowie den Grünflächen im Bereich der Weststadt.\n\nMit großem Engagement sammelten die Schülerinnen und Schüler zahlreiche Abfälle ein, die entweder achtlos weggeworfen oder unsachgemäß entsorgt worden waren. Dabei gab es auch einige ungewöhnliche Funde zu bestaunen. Ein besonderes Highlight erlebte die Klasse 5a: Sie entdeckte bei ihrer Sammelaktion ein Klappmesser. Nach Rücksprache mit der Polizei kam ein Streifenwagen zur Schule, um das Messer fachgerecht sicherzustellen und zu entsorgen.\n\nFür zusätzliche Begeisterung sorgte die Tatsache, dass sich der junge Polizeibeamte als ehemaliger Schüler des Lessing-Gymnasiums herausstellte. Zum Abschluss entstand sogar noch ein ganz besonderes Klassenfoto mit dem Streifenwagen – inklusive Blaulicht.\n\nInsgesamt freuen wir uns sehr, an der gelungenen Aktion der Stadt Karlsruhe teilgenommen zu haben. Mit unserem Einsatz konnten wir einen Beitrag zu einem sauberen Stadtbild leisten und gleichzeitig das Bewusstsein unserer Schülerinnen und Schüler für Umwelt- und Naturschutz stärken. Die Dreck-weg-Wochen zeigen eindrucksvoll, dass nachhaltiges Handeln bereits im Kleinen beginnt und jede und jeder Einzelne Verantwortung für die eigene Umwelt übernehmen kann.",
+      "html_content": "Auch in diesem Jahr hat das Lessing-Gymnasium Karlsruhe im Rahmen einer breit angelegten Aktion an den Dreck-weg-Wochen der Stadt Karlsruhe teilgenommen. Den Bericht von Frau Dr. Lenz lesen Sie <a title=\"im Folgenden\" href=\"/cm3/index.php/neues/1009-dreck-weg-wochen-2\">im Folgenden</a>.\n\nInsgesamt zehn Klassen engagierten sich für eine saubere Umwelt und befreiten das Schulumfeld sowie angrenzende Grünanlagen von achtlos weggeworfenem Müll.\n\nAusgestattet mit Müllzangen, Handschuhen und Müllsäcken machten sich die Schülerinnen und Schüler auf den Weg und säuberten großräumig die Umgebung des Lessing-Gymnasiums. Die Sammelgebiete reichten von der Günther-Klotz-Anlage über den Weinbrenner-Spielplatz bis hin zur Nottingham-Anlage sowie den Grünflächen im Bereich der Weststadt.\n\nMit großem Engagement sammelten die Schülerinnen und Schüler zahlreiche Abfälle ein, die entweder achtlos weggeworfen oder unsachgemäß entsorgt worden waren. Dabei gab es auch einige ungewöhnliche Funde zu bestaunen. Ein besonderes Highlight erlebte die Klasse 5a: Sie entdeckte bei ihrer Sammelaktion ein Klappmesser. Nach Rücksprache mit der Polizei kam ein Streifenwagen zur Schule, um das Messer fachgerecht sicherzustellen und zu entsorgen.\n\nFür zusätzliche Begeisterung sorgte die Tatsache, dass sich der junge Polizeibeamte als ehemaliger Schüler des Lessing-Gymnasiums herausstellte. Zum Abschluss entstand sogar noch ein ganz besonderes Klassenfoto mit dem Streifenwagen – inklusive Blaulicht.\n\nInsgesamt freuen wir uns sehr, an der gelungenen Aktion der Stadt Karlsruhe teilgenommen zu haben. Mit unserem Einsatz konnten wir einen Beitrag zu einem sauberen Stadtbild leisten und gleichzeitig das Bewusstsein unserer Schülerinnen und Schüler für Umwelt- und Naturschutz stärken. Die Dreck-weg-Wochen zeigen eindrucksvoll, dass nachhaltiges Handeln bereits im Kleinen beginnt und jede und jeder Einzelne Verantwortung für die eigene Umwelt übernehmen kann.",
+      "created_date": "01. Juni 2026",
+      "views": 14646,
+      "url": "https://lessing-gymnasium-karlsruhe.de/cm3/index.php/neues/1009-dreck-weg-wochen-2",
+      "links": [
+        {
+          "text": "im Folgenden",
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/index.php/neues/1009-dreck-weg-wochen-2"
+        }
+      ],
+      "standalone_links": [],
+      "images": [
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_dreckwegwochen_2026//01.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_052dbbefa0_01.jpg",
+          "alt": "Click to enlarge image 01.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_dreckwegwochen_2026//02.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_052dbbefa0_02.jpg",
+          "alt": "Click to enlarge image 02.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_dreckwegwochen_2026//03.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_052dbbefa0_03.jpg",
+          "alt": "Click to enlarge image 03.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_dreckwegwochen_2026//04.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_052dbbefa0_04.jpg",
+          "alt": "Click to enlarge image 04.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_dreckwegwochen_2026//05.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_052dbbefa0_05.jpg",
+          "alt": "Click to enlarge image 05.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_dreckwegwochen_2026//06.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_052dbbefa0_06.jpg",
+          "alt": "Click to enlarge image 06.jpg"
+        }
+      ],
+      "downloads": [],
+      "tags": [
+        "Nachhaltigkeit"
+      ],
+      "parsed_date": null
+    },
+    {
+      "title": "Fühl-mal-Tag",
+      "author": "Benjamin Kugler",
+      "description": "Am 27. April 2026 fand bereits zum dritten Mal der „Fühl-mal-Tag“ statt. Ziel der Veranstaltung ist es, die Schülerinnen und Schüler der 9. Klassen des Lessing-Gymnasiums auf ihr bevorstehendes Sozialpraktikum vorzubereiten und ihnen alters- sowie krankheitsbedingte Einschränkungen erfahrbar zu machen. Den Bericht von Benjamin Kugler lesen Sie im Folgenden.",
+      "content": "Am 27. April 2026 fand bereits zum dritten Mal der „Fühl-mal-Tag“ statt. Ziel der Veranstaltung ist es, die Schülerinnen und Schüler der 9. Klassen des Lessing-Gymnasiums auf ihr bevorstehendes Sozialpraktikum vorzubereiten und ihnen alters- sowie krankheitsbedingte Einschränkungen erfahrbar zu machen. Den Bericht von Benjamin Kugler lesen Sie im Folgenden.\n\nIn diesem Jahr war dafür einem Team des Geriatrischen Zentrums der ViDia Klinik zu Besuch am Lessing. Unter guter Anleitung führten die Mitarbeitenden die Klassen durch einen Demenzsimulator, der aus verschiedenen praktischen Stationen bestand. Ergänzend dazu vermittelten sie grundlegende Informationen zum Krankheitsbild Demenz, gaben Einblicke in mögliche Berufsperspektiven und regten an, eigene Erfahrungen zu diesem Thema zu teilen. Der Demenzsimulator ermöglichte es, die Auswirkungen der Krankheit spürbar nachzuvollziehen, indem die Schülerinnen und Schüler beispielsweise Dinge zeichnen oder ausführen mussten, sie aber lediglich spiegelverkehrt sehen konnten.\n\nAm Nachmittag absolvierten die Schülerinnen und Schüler weitere Stationen, an denen unterschiedliche Einschränkungen praktisch erlebt werden konnten. Die Klassen durchliefen insgesamt vier Stationen inklusive einer Reflexion.\n\nIn Partnerarbeit wurde geübt, einer Person zu essen zu geben – allerdings durfte die „betroffene“ Person ihre Hände nicht benutzen und hatte in einer „verschärften“ Version sogar die Augen verbunden. Dabei wurde deutlich, wie viel Vertrauen und Geduld solche Alltagssituationen erfordern.\n\nDer „Altersanzug“ versetzte die Schülerinnen und Schüler in die körperliche Verfassung eines älteren Menschen, wodurch alltägliche Bewegungsabläufe, wie Treppensteigen, erheblich schwerer wurden. Die Station „Blind“ verdeutlichte einen Alltag mit Sehbeeinträchtigung. Mit Augenbinden versuchten die Jugendlichen sich mithilfe eines Blindenstocks zu orientieren. Mit speziellen Simulationsbrillen mussten sie Alltagssituationen lösen, wie Fotos beschreiben, Texte lesen und Fragebögen ausfüllen. In der letzten Station „Blindensport“ konnten sich die Schülerinnen und Schüler beim Blindenfußball selbst ausprobieren.\n\nDer Tag wurde durch die Kooperation der Reli/Ethik-Fachschaft, der Schulsozialarbeit, der Vidia Kliniken, der BBBank-Stiftung und der Stiftung Aktive Bürgerschaft ermöglicht. Finanziell unterstützt wurde das Lessing-Gymnasium hierbei erstmalig durch den sozialgenial hilft-Förderfond der Stiftung Aktive Bürgerschaft und der BBBank-Stiftung, nachdem wir uns erfolgreich für eine solche Unterstützung mit dem letztjährigen Programm unseres „Fühl-mal-Tages“ beworben hatten. Dank dieser Zuwendung konnten viele eigene Materialien beschafft werden. Wir bedanken uns hierfür herzlich bei der BBBank-Stiftung und der Stiftung Aktive Bürgerschaft. Gleichermaßen gilt unser Dank dem Team des Geriatrischen Zentrums der Vidia Kliniken, die mit viel Begeisterung für Ihre Sache unsere Schülerinnen und Schüler zum Nachdenken und zum Staunen gebracht haben.",
+      "html_content": "Am 27. April 2026 fand bereits zum dritten Mal der „Fühl-mal-Tag“ statt. Ziel der Veranstaltung ist es, die Schülerinnen und Schüler der 9. Klassen des Lessing-Gymnasiums auf ihr bevorstehendes Sozialpraktikum vorzubereiten und ihnen alters- sowie krankheitsbedingte Einschränkungen erfahrbar zu machen. Den Bericht von Benjamin Kugler lesen Sie <a title=\"im Folgenden\" href=\"/cm3/index.php/neues/1005-fuehl-mal-tag\">im Folgenden</a>.\n\nIn diesem Jahr war dafür einem Team des Geriatrischen Zentrums der ViDia Klinik zu Besuch am Lessing. Unter guter Anleitung führten die Mitarbeitenden die Klassen durch einen Demenzsimulator, der aus verschiedenen praktischen Stationen bestand. Ergänzend dazu vermittelten sie grundlegende Informationen zum Krankheitsbild Demenz, gaben Einblicke in mögliche Berufsperspektiven und regten an, eigene Erfahrungen zu diesem Thema zu teilen. Der Demenzsimulator ermöglichte es, die Auswirkungen der Krankheit spürbar nachzuvollziehen, indem die Schülerinnen und Schüler beispielsweise Dinge zeichnen oder ausführen mussten, sie aber lediglich spiegelverkehrt sehen konnten.\n\nAm Nachmittag absolvierten die Schülerinnen und Schüler weitere Stationen, an denen unterschiedliche Einschränkungen praktisch erlebt werden konnten. Die Klassen durchliefen insgesamt vier Stationen inklusive einer Reflexion.\n\nIn Partnerarbeit wurde geübt, einer Person zu essen zu geben – allerdings durfte die „betroffene“ Person ihre Hände nicht benutzen und hatte in einer „verschärften“ Version sogar die Augen verbunden. Dabei wurde deutlich, wie viel Vertrauen und Geduld solche Alltagssituationen erfordern.\n\nDer „Altersanzug“ versetzte die Schülerinnen und Schüler in die körperliche Verfassung eines älteren Menschen, wodurch alltägliche Bewegungsabläufe, wie Treppensteigen, erheblich schwerer wurden. Die Station „Blind“ verdeutlichte einen Alltag mit Sehbeeinträchtigung. Mit Augenbinden versuchten die Jugendlichen sich mithilfe eines Blindenstocks zu orientieren. Mit speziellen Simulationsbrillen mussten sie Alltagssituationen lösen, wie Fotos beschreiben, Texte lesen und Fragebögen ausfüllen. In der letzten Station „Blindensport“ konnten sich die Schülerinnen und Schüler beim Blindenfußball selbst ausprobieren.\n\nDer Tag wurde durch die Kooperation der Reli/Ethik-Fachschaft, der Schulsozialarbeit, der Vidia Kliniken, der BBBank-Stiftung und der Stiftung Aktive Bürgerschaft ermöglicht. Finanziell unterstützt wurde das Lessing-Gymnasium hierbei erstmalig durch den sozialgenial hilft-Förderfond der Stiftung Aktive Bürgerschaft und der BBBank-Stiftung, nachdem wir uns erfolgreich für eine solche Unterstützung mit dem letztjährigen Programm unseres „Fühl-mal-Tages“ beworben hatten. Dank dieser Zuwendung konnten viele eigene Materialien beschafft werden. Wir bedanken uns hierfür herzlich bei der BBBank-Stiftung und der Stiftung Aktive Bürgerschaft. Gleichermaßen gilt unser Dank dem Team des Geriatrischen Zentrums der Vidia Kliniken, die mit viel Begeisterung für Ihre Sache unsere Schülerinnen und Schüler zum Nachdenken und zum Staunen gebracht haben.",
+      "created_date": "21. Mai 2026",
+      "views": 23002,
+      "url": "https://lessing-gymnasium-karlsruhe.de/cm3/index.php/neues/1005-fuehl-mal-tag",
+      "links": [
+        {
+          "text": "im Folgenden",
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/index.php/neues/1005-fuehl-mal-tag"
+        }
+      ],
+      "standalone_links": [],
+      "images": [
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_fuehlmaltag_2026//01.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_7e23cd789a_01.jpg",
+          "alt": "Click to enlarge image 01.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_fuehlmaltag_2026//02.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_7e23cd789a_02.jpg",
+          "alt": "Click to enlarge image 02.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_fuehlmaltag_2026//03.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_7e23cd789a_03.jpg",
+          "alt": "Click to enlarge image 03.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_fuehlmaltag_2026//04.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_7e23cd789a_04.jpg",
+          "alt": "Click to enlarge image 04.jpg"
+        }
+      ],
+      "downloads": [],
+      "tags": [],
+      "parsed_date": null
+    },
+    {
+      "title": "Känguru der Mathematik",
+      "author": "Antje Jakobi",
+      "description": "Wie jedes Jahr fand auch in diesem Jahr der Känguru-Wettbewerb der Mathematik am dritten Donnerstag im März statt. Den Bericht von Frau Jakobi lesen Sie im Folgenden.",
+      "content": "Wie jedes Jahr fand auch in diesem Jahr der Känguru-Wettbewerb der Mathematik am dritten Donnerstag im März statt. Den Bericht von Frau Jakobi lesen Sie im Folgenden.\n\nAm 19.März 2026 haben erfreulicherweise 63 Schülerinnen und Schüler aus den Klassenstufen 5 bis 12 teilgenommen und in der Mensa den Test absolviert. Es gab viele Preise zu vergeben.\n\nWir gratulieren den folgenden Schülern und Schülerinnen zu ihrem Preis:\n\nZudem hat Luise Kreickemeier den größten Känguru-Sprung geschafft und dafür ein Känguru-T-Shirt bekommen.\n\nHerzlichen Glückwunsch allen Preisträgerinnen und Preisträgern!",
+      "html_content": "Wie jedes Jahr fand auch in diesem Jahr der Känguru-Wettbewerb der Mathematik am dritten Donnerstag im März statt. Den Bericht von Frau Jakobi lesen Sie&nbsp;<a title=\"im Folgenden\" href=\"/cm3/index.php/neues/1004-kaenguru-der-mathematik-13\">im Folgenden</a>.\n\nAm 19.März 2026 haben erfreulicherweise 63 Schülerinnen und Schüler aus den Klassenstufen 5 bis 12 teilgenommen und in der Mensa den Test absolviert. Es gab viele Preise zu vergeben.\n\n<img src=\"/cm3/images/nf/nf_kaenguru_2026.jpg\" width=\"1200\" height=\"451\" loading=\"lazy\" data-path=\"local-images:/nf/nf_kaenguru_2026.jpg\">\n\nWir gratulieren den folgenden Schülern und Schülerinnen zu ihrem Preis:&nbsp;\n\nZudem hat Luise Kreickemeier den größten Känguru-Sprung geschafft und dafür ein Känguru-T-Shirt bekommen.\n\nHerzlichen Glückwunsch allen Preisträgerinnen und Preisträgern!",
+      "created_date": "19. Mai 2026",
+      "views": 24330,
+      "url": "https://lessing-gymnasium-karlsruhe.de/cm3/index.php/neues/1004-kaenguru-der-mathematik-13",
+      "links": [
+        {
+          "text": "im Folgenden",
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/index.php/neues/1004-kaenguru-der-mathematik-13"
+        }
+      ],
+      "standalone_links": [],
+      "images": [
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/nf/nf_kaenguru_2026.jpg"
+        }
+      ],
+      "downloads": [],
+      "tags": [
+        "Mathematik"
+      ],
+      "parsed_date": null
+    },
+    {
+      "title": "Katastrophenschutztag",
+      "author": "Julien Debailleul",
+      "description": "Am Katastrophenschutztag konnten die Schülerinnen und Schüler der 6. Klassen an mehreren praxisnahen Stationen erfahren, wie wichtig gute Zusammenarbeit, klare Absprachen und grundlegende Erste-Hilfe-Kenntnisse in Ausnahmesituationen sind. Im Mittelpunkt stand dabei nicht nur das Kennenlernen von Abläufen im Katastrophenfall, sondern vor allem das eigene Ausprobieren – vom Hochwasserschutz bis zur Orientierung in einem „Auffanglager“. Den Bericht von Herrn Debailleul lesen Sie im Folgenden.",
+      "content": "Am Katastrophenschutztag konnten die Schülerinnen und Schüler der 6. Klassen an mehreren praxisnahen Stationen erfahren, wie wichtig gute Zusammenarbeit, klare Absprachen und grundlegende Erste-Hilfe-Kenntnisse in Ausnahmesituationen sind. Im Mittelpunkt stand dabei nicht nur das Kennenlernen von Abläufen im Katastrophenfall, sondern vor allem das eigene Ausprobieren – vom Hochwasserschutz bis zur Orientierung in einem „Auffanglager“. Den Bericht von Herrn Debailleul lesen Sie im Folgenden.\n\nWie bereitet man sich auf Katastrophen vor? Welche Abläufe müssen bekannt sein und eingeübt werden? Mithilfe der Hilfsorganisation der Johanniter-Unfall-Hilfe aus Karlsruhe wurde ein Stationenlauf entwickelt, um einen Einblick in den Katastrophenschutz zu bekommen. Ein ganz besonderer Dank geht an die Johanniter, die diesen Tag möglich gemacht haben. Ein weiterer Dank geht auch an die vielen Schülerinnen und Schüler der 10. und 11. Klassen sowie an die Lehrkräfte, die ebenfalls in vielerlei Hinsicht geholfen haben. Im Weiteren erfahren Sie mehr über die unterschiedlichen Stationen:\n\nStation 1: Hochwasser – Schlammfegen\n\nBei einer simulierten Hochwasserlage übernahmen die Schülerinnen und Schüler die Aufgabe, „Schlamm“ gemeinsam möglichst effektiv zu beseitigen. Dabei ging es um die Frage, mit welcher Technik und welcher Teamorganisation sich eine solche Aufgabe schnell und koordiniert bewältigen lässt.\n\nStation 2: Hochwasser erstellen & retten\n\nAn dieser Station wurde gezeigt, wie sich in kurzer Zeit mithilfe von Sandsäcken ein Hochwasserschutz aufbauen lässt – und wie wichtig abgestimmtes Vorgehen im Team ist. Zusätzlich lernten die Schülerinnen und Schüler Möglichkeiten kennen, verletzte Personen kräftesparend zu transportieren, z. B. mit einem Dreiecktuch oder Auffangtuch.\n\nStation 3: Erste Hilfe\n\nIn der Erste-Hilfe-Station übten die 6. Klassen Schülerinnen und 6. Klassen Schüler grundlegende Maßnahmen beim Antreffen verletzter Personen. Neben der stabilen Seitenlage stand auch das Anlegen eines Druckverbands auf dem Programm.\n\nStation 4: NKTW (Notfallkrankentransportwagen)\n\nEin besonderes Highlight war der Einblick in einen NKTW: Die Schülerinnen und Schüler lernten die Ausstattung kennen und erfuhren, wie sich der NKTW von einem klassischen Rettungswagen abgrenzt. Außerdem wurde erläutert, wie der Rettungsdienst Verletzte einschätzt und priorisiert. Beim Triage-Verfahren ordneten die Schülerinnen und Schüler fiktive Fälle selbstständig den Kategorien „schwer verletzt (sofortige Behandlung nötig)“, „mäßig verletzt (Beobachtung)“ und „leicht verletzt (Behandlung kann vorerst warten)“ zu.\n\nStation 5: Beschilderung im Einsatz\n\nZum Abschluss simulierten die Schülerinnen und Schüler den Fall, dass das Lessing-Gymnasium als Auffanglager in einer städtischen Katastrophenlage genutzt wird. Da ankommende Personen das Gebäude nicht kennen, erarbeiteten sie eine sinnvolle Beschilderung für wichtige Orte (z. B. Toiletten, Erste-Hilfe-Räume) und zentrale Ansprechpartner.\n\nMit großem Engagement und viel Teamgeist arbeiteten die Schülerinnen und Schüler an allen Stationen mit. Der Tag machte deutlich: Gute Vorbereitung, klare Kommunikation und praktische Grundkenntnisse können im Ernstfall entscheidend sein.",
+      "html_content": "Am Katastrophenschutztag konnten die Schülerinnen und Schüler der 6. Klassen an mehreren praxisnahen Stationen erfahren, wie wichtig gute Zusammenarbeit, klare Absprachen und grundlegende Erste-Hilfe-Kenntnisse in Ausnahmesituationen sind. Im Mittelpunkt stand dabei nicht nur das Kennenlernen von Abläufen im Katastrophenfall, sondern vor allem das eigene Ausprobieren – vom Hochwasserschutz bis zur Orientierung in einem „Auffanglager“. Den Bericht von Herrn Debailleul lesen Sie <a href=\"/cm3/index.php/neues/1003-katastrophenschutztag\">im Folgenden</a>.\n\nWie bereitet man sich auf Katastrophen vor? Welche Abläufe müssen bekannt sein und eingeübt werden? Mithilfe der Hilfsorganisation der Johanniter-Unfall-Hilfe aus Karlsruhe wurde ein Stationenlauf entwickelt, um einen Einblick in den Katastrophenschutz zu bekommen. Ein ganz besonderer Dank geht an die Johanniter, die diesen Tag möglich gemacht haben. Ein weiterer Dank geht auch an die vielen Schülerinnen und Schüler der 10. und 11. Klassen sowie an die Lehrkräfte, die ebenfalls in vielerlei Hinsicht geholfen haben. Im Weiteren erfahren Sie mehr über die unterschiedlichen Stationen:\n\n<strong>Station 1: Hochwasser – Schlammfegen</strong>\n\nBei einer simulierten Hochwasserlage übernahmen die Schülerinnen und Schüler die Aufgabe, „Schlamm“ gemeinsam möglichst effektiv zu beseitigen. Dabei ging es um die Frage, mit welcher Technik und welcher Teamorganisation sich eine solche Aufgabe schnell und koordiniert bewältigen lässt.\n\n<strong>Station 2: Hochwasser erstellen &amp; retten</strong>\n\nAn dieser Station wurde gezeigt, wie sich in kurzer Zeit mithilfe von Sandsäcken ein Hochwasserschutz aufbauen lässt – und wie wichtig abgestimmtes Vorgehen im Team ist. Zusätzlich lernten die Schülerinnen und Schüler Möglichkeiten kennen, verletzte Personen kräftesparend zu transportieren, z. B. mit einem Dreiecktuch oder Auffangtuch.\n\n<strong>Station 3: Erste Hilfe</strong>\n\nIn der Erste-Hilfe-Station übten die 6. Klassen Schülerinnen und 6. Klassen Schüler grundlegende Maßnahmen beim Antreffen verletzter Personen. Neben der stabilen Seitenlage stand auch das Anlegen eines Druckverbands auf dem Programm.\n\n<strong>Station 4: NKTW (Notfallkrankentransportwagen)</strong>\n\nEin besonderes Highlight war der Einblick in einen NKTW: Die Schülerinnen und Schüler lernten die Ausstattung kennen und erfuhren, wie sich der NKTW von einem klassischen Rettungswagen abgrenzt. Außerdem wurde erläutert, wie der Rettungsdienst Verletzte einschätzt und priorisiert. Beim Triage-Verfahren ordneten die Schülerinnen und Schüler fiktive Fälle selbstständig den Kategorien „schwer verletzt (sofortige Behandlung nötig)“, „mäßig verletzt (Beobachtung)“ und „leicht verletzt (Behandlung kann vorerst warten)“ zu.\n\n<strong>Station 5: Beschilderung im Einsatz</strong>\n\nZum Abschluss simulierten die Schülerinnen und Schüler den Fall, dass das Lessing-Gymnasium als Auffanglager in einer städtischen Katastrophenlage genutzt wird. Da ankommende Personen das Gebäude nicht kennen, erarbeiteten sie eine sinnvolle Beschilderung für wichtige Orte (z. B. Toiletten, Erste-Hilfe-Räume) und zentrale Ansprechpartner.\n\nMit großem Engagement und viel Teamgeist arbeiteten die Schülerinnen und Schüler an allen Stationen mit. Der Tag machte deutlich: Gute Vorbereitung, klare Kommunikation und praktische Grundkenntnisse können im Ernstfall entscheidend sein.",
+      "created_date": "12. Mai 2026",
+      "views": 26542,
+      "url": "https://lessing-gymnasium-karlsruhe.de/cm3/index.php/neues/1003-katastrophenschutztag",
+      "links": [
+        {
+          "text": "im Folgenden",
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/index.php/neues/1003-katastrophenschutztag"
+        }
+      ],
+      "standalone_links": [],
+      "images": [
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_katastrophenschutztag_2026//01.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_350a725184_01.jpg",
+          "alt": "Click to enlarge image 01.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_katastrophenschutztag_2026//02.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_350a725184_02.jpg",
+          "alt": "Click to enlarge image 02.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_katastrophenschutztag_2026//03.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_350a725184_03.jpg",
+          "alt": "Click to enlarge image 03.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_katastrophenschutztag_2026//04.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_350a725184_04.jpg",
+          "alt": "Click to enlarge image 04.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_katastrophenschutztag_2026//05.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_350a725184_05.jpg",
+          "alt": "Click to enlarge image 05.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_katastrophenschutztag_2026//06.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_350a725184_06.jpg",
+          "alt": "Click to enlarge image 06.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_katastrophenschutztag_2026//07.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_350a725184_07.jpg",
+          "alt": "Click to enlarge image 07.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_katastrophenschutztag_2026//08.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_350a725184_08.jpg",
+          "alt": "Click to enlarge image 08.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_katastrophenschutztag_2026//09.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_350a725184_09.jpg",
+          "alt": "Click to enlarge image 09.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_katastrophenschutztag_2026//10.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_350a725184_10.jpg",
+          "alt": "Click to enlarge image 10.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_katastrophenschutztag_2026//11.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_350a725184_11.jpg",
+          "alt": "Click to enlarge image 11.jpg"
+        }
+      ],
+      "downloads": [],
+      "tags": [],
+      "parsed_date": null
+    },
+    {
+      "title": "Total vernetzt - und alles klar!?",
+      "author": "Katja Baumer",
+      "description": "Am 13.4.2026 fand wieder das interaktive Theaterstück „Total vernetzt – und alles klar!?“ in der Aula des Lessing-Gymnasiums für alle 6. Klassen statt. Anhand typischer Szenen im Leben von Jugendlichen sollten den SchülerInnen Vorteile und vor allem Gefahren der neuen Medien verdeutlicht werden. Den Bericht von Frau Baumer lesen Sie im Folgenden.",
+      "content": "Am 13.4.2026 fand wieder das interaktive Theaterstück „Total vernetzt – und alles klar!?“ in der Aula des Lessing-Gymnasiums für alle 6. Klassen statt. Anhand typischer Szenen im Leben von Jugendlichen sollten den SchülerInnen Vorteile und vor allem Gefahren der neuen Medien verdeutlicht werden. Den Bericht von Frau Baumer lesen Sie im Folgenden.\n\nLisa und Henrik sind Geschwister und verbringen viel Zeit am Handy und im Netz. Lisa ist begeistert von TikTok und lädt selber gerne Videos hoch. Henrik verbringt viel Zeit am PC mit Zocken. Wenn er gefrustet ist, vergeht die Zeit wie im Flug und er sitzt bis spät in die Nacht vor dem Bildschirm. Eines Tages stellt Henrik ein \"cooles\" Partybild von sich bei Instagram ein. Zunächst findet er es witzig, dass er von anderen auf das Bild angesprochen wird und viele Likes bekommt. Doch die Stimmung kippt: blöde Hasskommentare tauchen auf, er wird zum Gespött der Schule. Lisa lernt derweil einen gewissen Tobi im Netz kennen, der ihre Fotos und Videos toll findet. Sie plant ein Treffen mit ihm...\n\nDas Theaterstück wurde immer wieder unterbrochen und ein Vertreter der Polizei reflektierte gemeinsam mit den Anwesenden das Geschehen. Zuvor waren die Schüler und Schülerinnen von ihren KlassenlehrerInnen auf das Thema im Unterricht vorbereitet worden. Daher konnten sich diese eifrig beteiligen, zeigten oftmals große Begeisterung und einige Vorkenntnisse zu den gestellten Fragen.\n\nWir danken auch herzlich dem Förderverein, da dieser das Projekt finanziell wieder unterstützt hat.",
+      "html_content": "Am 13.4.2026 fand wieder das interaktive Theaterstück „Total vernetzt – und alles klar!?“ in der Aula des Lessing-Gymnasiums für alle 6. Klassen statt. Anhand typischer Szenen im Leben von Jugendlichen sollten den SchülerInnen Vorteile und vor allem Gefahren der neuen Medien verdeutlicht werden. Den Bericht von Frau Baumer lesen Sie <a title=\"im Folgenden\" href=\"/cm3/index.php/neues/1002-total-vernetzt-und-alles-klar\">im Folgenden</a>.\n\nLisa und Henrik sind Geschwister und verbringen viel Zeit am Handy und im Netz. Lisa ist begeistert von TikTok und lädt selber gerne Videos hoch. Henrik verbringt viel Zeit am PC mit Zocken. Wenn er gefrustet ist, vergeht die Zeit wie im Flug und er sitzt bis spät in die Nacht vor dem Bildschirm. Eines Tages stellt Henrik ein \"cooles\" Partybild von sich bei Instagram ein. Zunächst findet er es witzig, dass er von anderen auf das Bild angesprochen wird und viele Likes bekommt. Doch die Stimmung kippt: blöde Hasskommentare tauchen auf, er wird zum Gespött der Schule. Lisa lernt derweil einen gewissen Tobi im Netz kennen, der ihre Fotos und Videos toll findet. Sie plant ein Treffen mit ihm...\n\nDas Theaterstück wurde immer wieder unterbrochen und ein Vertreter der Polizei reflektierte gemeinsam mit den Anwesenden das Geschehen. Zuvor waren die Schüler und Schülerinnen von ihren KlassenlehrerInnen auf das Thema im Unterricht vorbereitet worden. Daher konnten sich diese eifrig beteiligen, zeigten oftmals große Begeisterung und einige Vorkenntnisse zu den gestellten Fragen.\n\nWir danken auch herzlich dem Förderverein, da dieser das Projekt finanziell wieder unterstützt hat.",
+      "created_date": "20. April 2026",
+      "views": 36531,
+      "url": "https://lessing-gymnasium-karlsruhe.de/cm3/index.php/neues/1002-total-vernetzt-und-alles-klar",
+      "links": [
+        {
+          "text": "im Folgenden",
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/index.php/neues/1002-total-vernetzt-und-alles-klar"
+        }
+      ],
+      "standalone_links": [],
+      "images": [],
+      "downloads": [],
+      "tags": [],
+      "parsed_date": null
+    },
+    {
+      "title": "Aus alt mach neu",
+      "author": "Sophie Mehne",
+      "description": "Wer unseren Stand am MINT-Abend oder am Info-Abend entdeckt hat und schon immer mal kreativ werden wollte, ist bei uns genau richtig. In unserer Nachhaltigkeits-AG verwandeln wir die unterschiedlichsten gebrauchten Materialien in tolle neue Produkte (Geldbeutel, Mäppchen, Schmuck…). Das nächste Mal treffen wir uns am 19. Juni um 13:10 Uhr in Raum 203. Wir werkeln von der siebten bis zur neunten Stunde und freuen uns über jeden, der Lust hat, dabei zu sein!",
+      "content": "Wer unseren Stand am MINT-Abend oder am Info-Abend entdeckt hat und schon immer mal kreativ werden wollte, ist bei uns genau richtig. In unserer Nachhaltigkeits-AG verwandeln wir die unterschiedlichsten gebrauchten Materialien in tolle neue Produkte (Geldbeutel, Mäppchen, Schmuck…). Das nächste Mal treffen wir uns am 19. Juni um 13:10 Uhr in Raum 203. Wir werkeln von der siebten bis zur neunten Stunde und freuen uns über jeden, der Lust hat, dabei zu sein!",
+      "html_content": "Wer unseren Stand am MINT-Abend oder am Info-Abend entdeckt hat und schon immer mal kreativ werden wollte, ist bei uns genau richtig. In unserer Nachhaltigkeits-AG verwandeln wir die unterschiedlichsten gebrauchten Materialien in tolle neue Produkte (Geldbeutel, Mäppchen, Schmuck…). Das nächste Mal treffen wir uns am 19. Juni um 13:10 Uhr in Raum 203. Wir werkeln von der siebten bis zur neunten Stunde und freuen uns über jeden, der Lust hat, dabei zu sein!",
+      "created_date": "20. April 2026",
+      "views": 36557,
+      "url": "https://lessing-gymnasium-karlsruhe.de/cm3/index.php/neues/1001-aus-alt-mach-neu",
+      "links": [],
+      "standalone_links": [],
+      "images": [
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_nachhaltigkeitsag_2026//01.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_d5c38f221f_01.jpg",
+          "alt": "Click to enlarge image 01.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_nachhaltigkeitsag_2026//02.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_d5c38f221f_02.jpg",
+          "alt": "Click to enlarge image 02.jpg"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_nachhaltigkeitsag_2026//03.jpg",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_d5c38f221f_03.jpg",
+          "alt": "Click to enlarge image 03.jpg"
+        }
+      ],
+      "downloads": [],
+      "tags": [
+        "Nachhaltigkeit"
+      ],
+      "parsed_date": null
+    },
+    {
+      "title": "Austausch mit Nancy",
+      "author": "Dr. Daniel Roth",
+      "description": "Vom 19. bis zum 25. März 2026 besuchten 18 Schülerinnen und Schüler die Partnerschule des Lessing-Gymnasiums in Nancy. Den Bericht von Frau Bartl lesen Sie im Folgenden. Vive l’amitié franco-allemande!",
+      "content": "Vom 19. bis zum 25. März 2026 besuchten 18 Schülerinnen und Schüler die Partnerschule des Lessing-Gymnasiums in Nancy. Den Bericht von Frau Bartl lesen Sie im Folgenden.\n\nVive l’amitié franco-allemande!\n\nDeutsch-französischer Schüleraustausch – Rückebesuch in Nancy (19.03.–25.03.2026)\n\nBei strahlendem Frühlingswetter machten sich 18 Schülerinnen und Schüler der 9. Klassen gemeinsam mit Frau Bartl und Frau Glinz auf den Weg nach Nancy, um ihre Austauschpartnerinnen und -partner vom Collège de la Craffe wiederzusehen. Eine Woche voller spannender Begegnungen, neuer Eindrücke und gelebter deutsch-französischer Freundschaft lag vor ihnen.\n\nAm Donnerstag wurden wir herzlich in Nancy empfangen. Nach der Ankunft erkundeten die Schülerinnen und Schüler bei einer Stadtrallye die wunderschöne Altstadt, bevor sie im Rathaus offiziell begrüßt wurden.\n\nDer Freitag begann mit einem Einblick in den französischen Schulalltag beim Unterrichtsbesuch im Collège. Am Nachmittag stand ein Besuch der „Féru des Sciences“ auf dem Programm, wo sich alles rund um das Thema Stahl in Lothringen drehte – eine interessante Verbindung von Geschichte, Technik und Region.\n\nDas Wochenende verbrachten die Schülerinnen und Schüler in ihren Gastfamilien. Hier konnten sie den französischen Alltag hautnah erleben, ihre Sprachkenntnisse anwenden und vor allem die persönlichen Beziehungen weiter vertiefen.\n\nAm Montag erhielten die deutschen Gäste zunächst eine Schulführung, bevor sie bei einer historischen Stadtbesichtigung Nancy noch besser kennenlernten. Am Nachmittag wurde es dann knifflig: In einem deutsch-französischen Escape-Game war Teamarbeit gefragt – natürlich zweisprachig!\n\nEin weiteres Highlight folgte am Dienstag mit einem Ausflug nach Metz. Nach einer Stadtrallye und einem gemeinsamen Picknick im Park ging es weiter nach Scy-Chazelles. Dort besichtigten die Schülerinnen und Schüler das Haus von Robert Schuman, einem der Gründungsväter Europas, und stellten ihr Wissen bei einem interaktiven Europaquiz unter Beweis. Den Abschluss des Tages bildete die traditionelle Abschiedsdisko.\n\nAm Mittwoch hieß es dann Abschied nehmen. Bei einem gemeinsamen Rückblick über die Wochen in Karlsruhe und Nancy und einem „pot d’adieu“ wurden Erinnerungen geteilt, Kontakte gefestigt und die ereignisreiche Woche reflektiert.\n\nDer Austausch hat einmal mehr gezeigt: Frankreichfahrten sind nicht nur eine wertvolle Gelegenheit, die Sprachkenntnisse zu verbessern und Freundschaften im Nachbarland zu knüpfen. Sie bieten auch die Chance, kulturelle Unterschiede zu entdecken, den eigenen Horizont zu erweitern – und dabei auch ein Stück mehr über sich selbst zu erfahren.\n\nEin herzlicher Dank gilt dem Förderverein des Lessing-Gymnasiums, der diesen Austausch mit einem großzügigen Zuschuss unterstützt hat.\n\nVive l’amitié franco-allemande!",
+      "html_content": "Vom 19. bis zum 25. März 2026 besuchten 18 Schülerinnen und Schüler die Partnerschule des Lessing-Gymnasiums in Nancy. Den Bericht von Frau Bartl lesen Sie <a title=\"im Folgenden\" href=\"/cm3/index.php/neues/1000-austausch-mit-nancy-3\">im Folgenden</a>.\n\nVive l’amitié franco-allemande!\n\n<strong>Deutsch-französischer Schüleraustausch – Rückebesuch in Nancy (19.03.–25.03.2026)</strong>\n\nBei strahlendem Frühlingswetter machten sich 18 Schülerinnen und Schüler der 9. Klassen gemeinsam mit Frau Bartl und Frau Glinz auf den Weg nach Nancy, um ihre Austauschpartnerinnen und -partner vom Collège de la Craffe wiederzusehen. Eine Woche voller spannender Begegnungen, neuer Eindrücke und gelebter deutsch-französischer Freundschaft lag vor ihnen.\n\nAm Donnerstag wurden wir herzlich in Nancy empfangen. Nach der Ankunft erkundeten die Schülerinnen und Schüler bei einer Stadtrallye die wunderschöne Altstadt, bevor sie im Rathaus offiziell begrüßt wurden.\n\n<img src=\"/cm3/images/nf/nf_nancy_wir_2026.jpg\" width=\"1200\" height=\"900\" loading=\"lazy\" data-path=\"local-images:/nf/nf_nancy_wir_2026.jpg\">\n\nDer Freitag begann mit einem Einblick in den französischen Schulalltag beim Unterrichtsbesuch im Collège. Am Nachmittag stand ein Besuch der „Féru des Sciences“ auf dem Programm, wo sich alles rund um das Thema Stahl in Lothringen drehte – eine interessante Verbindung von Geschichte, Technik und Region.\n\nDas Wochenende verbrachten die Schülerinnen und Schüler in ihren Gastfamilien. Hier konnten sie den französischen Alltag hautnah erleben, ihre Sprachkenntnisse anwenden und vor allem die persönlichen Beziehungen weiter vertiefen.\n\nAm Montag erhielten die deutschen Gäste zunächst eine Schulführung, bevor sie bei einer historischen Stadtbesichtigung Nancy noch besser kennenlernten. Am Nachmittag wurde es dann knifflig: In einem deutsch-französischen Escape-Game war Teamarbeit gefragt – natürlich zweisprachig!\n\nEin weiteres Highlight folgte am Dienstag mit einem Ausflug nach Metz. Nach einer Stadtrallye und einem gemeinsamen Picknick im Park ging es weiter nach Scy-Chazelles. Dort besichtigten die Schülerinnen und Schüler das Haus von Robert Schuman, einem der Gründungsväter Europas, und stellten ihr Wissen bei einem interaktiven Europaquiz unter Beweis. Den Abschluss des Tages bildete die traditionelle Abschiedsdisko.\n\nAm Mittwoch hieß es dann Abschied nehmen. Bei einem gemeinsamen Rückblick über die Wochen in Karlsruhe und Nancy und einem „pot d’adieu“ wurden Erinnerungen geteilt, Kontakte gefestigt und die ereignisreiche Woche reflektiert.\n\nDer Austausch hat einmal mehr gezeigt: Frankreichfahrten sind nicht nur eine wertvolle Gelegenheit, die Sprachkenntnisse zu verbessern und Freundschaften im Nachbarland zu knüpfen. Sie bieten auch die Chance, kulturelle Unterschiede zu entdecken, den eigenen Horizont zu erweitern – und dabei auch ein Stück mehr über sich selbst zu erfahren.\n\nEin herzlicher Dank gilt dem Förderverein des Lessing-Gymnasiums, der diesen Austausch mit einem großzügigen Zuschuss unterstützt hat.\n\nVive l’amitié franco-allemande!",
+      "created_date": "13. April 2026",
+      "views": 39635,
+      "url": "https://lessing-gymnasium-karlsruhe.de/cm3/index.php/neues/1000-austausch-mit-nancy-3",
+      "links": [
+        {
+          "text": "im Folgenden",
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/index.php/neues/1000-austausch-mit-nancy-3"
+        }
+      ],
+      "standalone_links": [],
+      "images": [
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/nf/nf_nancy_wir_2026.jpg"
+        }
+      ],
+      "downloads": [],
+      "tags": [],
+      "parsed_date": null
+    },
+    {
+      "title": "MINT-Abend 2026",
+      "author": "Dr. Daniel Roth",
+      "description": "Am 26. März 2026 fand der zweite MINT-Abend des Lessing-Gymnasiums statt. Einige Impressionen des Abends finden Sie im Folgenden.",
+      "content": "Am 26. März 2026 fand der zweite MINT-Abend des Lessing-Gymnasiums statt. Einige Impressionen des Abends finden Sie im Folgenden.\n\nFalls Sie nicht mit dabei waren, können Sie hier erfahren, was Sie verpasst haben:",
+      "html_content": "Am 26. März 2026 fand der zweite MINT-Abend des Lessing-Gymnasiums statt. Einige Impressionen des Abends finden Sie <a title=\"im Folgenden\" href=\"/cm3/index.php/neues/995-mint-abend-2026\">im Folgenden</a>.\n\nFalls Sie nicht mit dabei waren, können Sie hier erfahren, was Sie verpasst haben:\n\n<br>\n\n<a title=\"MINT-Abend 2026 zum Erforschen\" href=\"/cm3/../mintabend/\" target=\"_blank\" rel=\"noopener\"><img src=\"/cm3/images/nf/nf_mintabend_2026.gif\" width=\"640\" height=\"360\" loading=\"lazy\" data-path=\"local-images:/nf/nf_mintabend_2026.gif\"></a>",
+      "created_date": "25. März 2026",
+      "views": 59623,
+      "url": "https://lessing-gymnasium-karlsruhe.de/cm3/index.php/neues/995-mint-abend-2026",
+      "links": [
+        {
+          "text": "im Folgenden",
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/index.php/neues/995-mint-abend-2026"
+        }
+      ],
+      "standalone_links": [],
+      "images": [
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_mintabend_2026//01.JPG",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_8e977edb3a_01.jpg",
+          "alt": "Click to enlarge image 01.JPG"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_mintabend_2026//02.JPG",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_8e977edb3a_02.jpg",
+          "alt": "Click to enlarge image 02.JPG"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_mintabend_2026//03.JPG",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_8e977edb3a_03.jpg",
+          "alt": "Click to enlarge image 03.JPG"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_mintabend_2026//04.JPG",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_8e977edb3a_04.jpg",
+          "alt": "Click to enlarge image 04.JPG"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_mintabend_2026//05.JPG",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_8e977edb3a_05.jpg",
+          "alt": "Click to enlarge image 05.JPG"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_mintabend_2026//06.JPG",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_8e977edb3a_06.jpg",
+          "alt": "Click to enlarge image 06.JPG"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_mintabend_2026//07.JPG",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_8e977edb3a_07.jpg",
+          "alt": "Click to enlarge image 07.JPG"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_mintabend_2026//08.JPG",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_8e977edb3a_08.jpg",
+          "alt": "Click to enlarge image 08.JPG"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_mintabend_2026//09.JPG",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_8e977edb3a_09.jpg",
+          "alt": "Click to enlarge image 09.JPG"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_mintabend_2026//10.JPG",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_8e977edb3a_10.jpg",
+          "alt": "Click to enlarge image 10.JPG"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_mintabend_2026//11.JPG",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_8e977edb3a_11.jpg",
+          "alt": "Click to enlarge image 11.JPG"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_mintabend_2026//12.JPG",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_8e977edb3a_12.jpg",
+          "alt": "Click to enlarge image 12.JPG"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_mintabend_2026//13.JPG",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_8e977edb3a_13.jpg",
+          "alt": "Click to enlarge image 13.JPG"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_mintabend_2026//14.JPG",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_8e977edb3a_14.jpg",
+          "alt": "Click to enlarge image 14.JPG"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_mintabend_2026//15.JPG",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_8e977edb3a_15.jpg",
+          "alt": "Click to enlarge image 15.JPG"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_mintabend_2026//16.JPG",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_8e977edb3a_16.jpg",
+          "alt": "Click to enlarge image 16.JPG"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_mintabend_2026//17.JPG",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_8e977edb3a_17.jpg",
+          "alt": "Click to enlarge image 17.JPG"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_mintabend_2026//18.JPG",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_8e977edb3a_18.jpg",
+          "alt": "Click to enlarge image 18.JPG"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_mintabend_2026//19.JPG",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_8e977edb3a_19.jpg",
+          "alt": "Click to enlarge image 19.JPG"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_mintabend_2026//20.JPG",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_8e977edb3a_20.jpg",
+          "alt": "Click to enlarge image 20.JPG"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_mintabend_2026//21.JPG",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_8e977edb3a_21.jpg",
+          "alt": "Click to enlarge image 21.JPG"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_mintabend_2026//22.JPG",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_8e977edb3a_22.jpg",
+          "alt": "Click to enlarge image 22.JPG"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_mintabend_2026//23.JPG",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_8e977edb3a_23.jpg",
+          "alt": "Click to enlarge image 23.JPG"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_mintabend_2026//24.JPG",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_8e977edb3a_24.jpg",
+          "alt": "Click to enlarge image 24.JPG"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_mintabend_2026//25.JPG",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_8e977edb3a_25.jpg",
+          "alt": "Click to enlarge image 25.JPG"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_mintabend_2026//26.JPG",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_8e977edb3a_26.jpg",
+          "alt": "Click to enlarge image 26.JPG"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_mintabend_2026//27.JPG",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_8e977edb3a_27.jpg",
+          "alt": "Click to enlarge image 27.JPG"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_mintabend_2026//28.JPG",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_8e977edb3a_28.jpg",
+          "alt": "Click to enlarge image 28.JPG"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_mintabend_2026//29.JPG",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_8e977edb3a_29.jpg",
+          "alt": "Click to enlarge image 29.JPG"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_mintabend_2026//30.JPG",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_8e977edb3a_30.jpg",
+          "alt": "Click to enlarge image 30.JPG"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_mintabend_2026//31.JPG",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_8e977edb3a_31.jpg",
+          "alt": "Click to enlarge image 31.JPG"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_mintabend_2026//32.JPG",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_8e977edb3a_32.jpg",
+          "alt": "Click to enlarge image 32.JPG"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_mintabend_2026//33.JPG",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_8e977edb3a_33.jpg",
+          "alt": "Click to enlarge image 33.JPG"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_mintabend_2026//34.JPG",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_8e977edb3a_34.jpg",
+          "alt": "Click to enlarge image 34.JPG"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_mintabend_2026//35.JPG",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_8e977edb3a_35.jpg",
+          "alt": "Click to enlarge image 35.JPG"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_mintabend_2026//36.JPG",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_8e977edb3a_36.jpg",
+          "alt": "Click to enlarge image 36.JPG"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_mintabend_2026//37.JPG",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_8e977edb3a_37.jpg",
+          "alt": "Click to enlarge image 37.JPG"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_mintabend_2026//38.JPG",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_8e977edb3a_38.jpg",
+          "alt": "Click to enlarge image 38.JPG"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_mintabend_2026//39.JPG",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_8e977edb3a_39.jpg",
+          "alt": "Click to enlarge image 39.JPG"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_mintabend_2026//40.JPG",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_8e977edb3a_40.jpg",
+          "alt": "Click to enlarge image 40.JPG"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_mintabend_2026//41.JPG",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_8e977edb3a_41.jpg",
+          "alt": "Click to enlarge image 41.JPG"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_mintabend_2026//42.JPG",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_8e977edb3a_42.jpg",
+          "alt": "Click to enlarge image 42.JPG"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/galleries/nf/nf_mintabend_2026//43.JPG",
+          "thumbnail_url": "https://lessing-gymnasium-karlsruhe.de/cm3/cache/jw_sig/jw_sig_cache_8e977edb3a_43.jpg",
+          "alt": "Click to enlarge image 43.JPG"
+        },
+        {
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/images/nf/nf_mintabend_2026.gif"
+        }
+      ],
+      "downloads": [
+        {
+          "title": "MINT-Abend - Einladung",
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/index.php/medien/dokumente/sonstiges/416-mint-abend-einladung-2",
+          "file_type": "default"
+        },
+        {
+          "title": "MINT-Abend 2026 - Einladung",
+          "url": "https://lessing-gymnasium-karlsruhe.de/cm3/index.php/medien/dokumente/sonstiges/436-mint-abend-2026-einladung",
+          "file_type": "pdf",
+          "size": "725 KB"
+        }
+      ],
+      "tags": [
+        "NwT",
+        "Informatik",
+        "Mathematik",
+        "Biologie",
+        "Astronomie",
+        "Physik",
+        "Nachhaltigkeit"
+      ],
+      "parsed_date": null
+    }
+  ]
+}

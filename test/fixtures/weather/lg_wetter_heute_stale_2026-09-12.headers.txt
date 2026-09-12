@@ -1,0 +1,11 @@
+HTTP/2 200 
+strict-transport-security: max-age=31536000
+x-content-type-options: nosniff
+last-modified: Tue, 30 Jun 2026 15:29:17 GMT
+etag: "439-6557a3cf89123"
+accept-ranges: bytes
+content-length: 1081
+content-type: text/csv
+date: Sat, 12 Sep 2026 15:05:56 GMT
+server: Apache
+

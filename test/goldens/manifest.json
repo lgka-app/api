@@ -1,0 +1,27 @@
+{
+  "generatedAt": "2026-09-12T11:09:21.760435Z",
+  "appRepo": "https://github.com/luka-loehr/LGKA",
+  "appCommit": "e8063835f7795c8a28048d79988996b39eac3c24",
+  "extractor": "syncfusion_flutter_pdf (see pubspec.lock for version)",
+  "flutter": {
+    "frameworkVersion": "3.44.2",
+    "channel": "stable",
+    "repositoryUrl": "https://github.com/flutter/flutter.git",
+    "frameworkRevision": "c9a6c484230f8b5e408ec57be1ef71dee1e77020",
+    "frameworkCommitDate": "2026-06-10 15:52:41 -0700",
+    "engineRevision": "77e2e94772b6eb43759e34ed1ad7da4674e19cab",
+    "engineCommitDate": "2026-06-10 19:59:06.000Z",
+    "engineContentHash": "04efd7c093d4e9281d5526ebcad6ecc60ba8badf",
+    "engineBuildDate": "2026-06-10 22:49:23.194",
+    "dartSdkVersion": "3.12.2",
+    "devToolsVersion": "2.57.0",
+    "flutterVersion": "3.44.2",
+    "flutterRoot": "/opt/homebrew/share/flutter"
+  },
+  "contract": {
+    "substitution": "metadata extraction from page 0: weekday (German, capitalized; \"weekend\" sentinel when text < 50 chars), date (DD.MM.YYYY), lastUpdated (D.M.YYYY HH:MM as printed in the PDF)",
+    "scheduleHtml": "anchor scrape of #mod-custom213 a[href*=stundenplan]: title, href, halbjahr (from hj1/hj2 in href), gradeLevel, absolute URL",
+    "classIndex": "lowercased page text scan, classes 5a-10e, first page containing the class string wins, stored page number is pageIndex + 2 (1-based + cover offset); j11/j12 constant {j11:2, j12:3}",
+    "note": "rawtext.txt files are Syncfusion diagnostics, NOT normative — native extractors emit different raw text and must only match the expected JSON values"
+  }
+}
