@@ -1,0 +1,11 @@
+{
+  "input": {
+    "file": "fixtures/schedule/stundenplan_hj1_11_09092026_10h42m_2026-09-12.pdf",
+    "sha256": "e45f3b277cd54644f7dc1890947b4811e3e4a3d5b1815ea323b7c078bdb582e2",
+    "bytes": 113166,
+    "pageCount": 1
+  },
+  "expected": {
+    "classIndex5to10": {}
+  }
+}

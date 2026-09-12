@@ -1,0 +1,30 @@
+{
+  "name": "lgka-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "LGKA+ API — Cloudflare Worker that mirrors, parses and hash-syncs the Lessing-Gymnasium Karlsruhe data for the LGKA+ apps",
+  "homepage": "https://api.lgka.app",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "types": "wrangler types",
+    "sync-goldens": "tool/sync-goldens.sh"
+  },
+  "dependencies": {
+    "hono": "^4.13.7",
+    "node-html-parser": "^9.0.4",
+    "unpdf": "^1.8.1"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "^0.22.0",
+    "@types/node": "^24",
+    "typescript": "^5.9",
+    "vitest": "^4.1.0",
+    "wrangler": "^4.131.1"
+  }
+}

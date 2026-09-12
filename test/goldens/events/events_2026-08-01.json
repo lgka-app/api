@@ -1,0 +1,10 @@
+{
+  "input": {
+    "manifest": "fixtures/events/manifest_2026-08-01.json",
+    "sha256": "43e526149991b8417bc437c62da9afd4c0e1a200f59b7df3b6c59b9525dc39d6"
+  },
+  "params": {
+    "today": "2026-08-01"
+  },
+  "expected": []
+}

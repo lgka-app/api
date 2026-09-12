@@ -1,0 +1,111 @@
+{
+  "input": {
+    "manifest": "fixtures/events/manifest_2026-09-12.json",
+    "sha256": "c65c49a8391d68bef87f18b9c7762bb1c1b699ff785470a99fcaf022e8c9628b"
+  },
+  "params": {
+    "today": "2026-09-12"
+  },
+  "expected": [
+    {
+      "date": "2026-09-14T00:00:00.000",
+      "time": "07:45",
+      "title": "J11: Oberstufeninfo"
+    },
+    {
+      "date": "2026-09-14T00:00:00.000",
+      "time": "07:45",
+      "title": "J12: Oberstufeninfo"
+    },
+    {
+      "date": "2026-09-14T00:00:00.000",
+      "time": "07:45",
+      "title": "J12: Sicherheitsunterweisung"
+    },
+    {
+      "date": "2026-09-14T00:00:00.000",
+      "time": "08:35",
+      "title": "J11: Sicherheitsunterweisung"
+    },
+    {
+      "date": "2026-09-15T00:00:00.000",
+      "time": "15:00",
+      "title": "Kl.5a: Einschulung"
+    },
+    {
+      "date": "2026-09-15T00:00:00.000",
+      "time": "16:00",
+      "title": "Kl.5b: Einschulung"
+    },
+    {
+      "date": "2026-09-15T00:00:00.000",
+      "time": "17:00",
+      "title": "Kl.5c: Einschulung"
+    },
+    {
+      "date": "2026-09-16T00:00:00.000",
+      "time": "07:45",
+      "title": "Kl.5: Einführungstag"
+    },
+    {
+      "date": "2026-09-17T00:00:00.000",
+      "time": null,
+      "title": "Kl.5: Kennenlerntag"
+    },
+    {
+      "date": "2026-09-17T00:00:00.000",
+      "time": "07:45",
+      "title": "Kl.6: Stufentag"
+    },
+    {
+      "date": "2026-09-17T00:00:00.000",
+      "time": "08:35",
+      "title": "Kl.7: Stufentag"
+    },
+    {
+      "date": "2026-09-17T00:00:00.000",
+      "time": "09:35",
+      "title": "Kl.8: Stufentag"
+    },
+    {
+      "date": "2026-09-17T00:00:00.000",
+      "time": "10:25",
+      "title": "Kl.9: Stufentag"
+    },
+    {
+      "date": "2026-09-17T00:00:00.000",
+      "time": "11:30",
+      "title": "Kl.10: Stufentag"
+    },
+    {
+      "date": "2026-09-17T00:00:00.000",
+      "time": "12:20",
+      "title": "J11/12: Stufentag"
+    },
+    {
+      "date": "2026-09-21T00:00:00.000",
+      "time": null,
+      "title": "Hectortests"
+    },
+    {
+      "date": "2026-09-21T00:00:00.000",
+      "time": null,
+      "title": "J11 Helmholtz BK: Exkursion"
+    },
+    {
+      "date": "2026-09-21T00:00:00.000",
+      "time": null,
+      "title": "Kl.5: Lernstandserhebungen"
+    },
+    {
+      "date": "2026-09-21T00:00:00.000",
+      "time": "13:15",
+      "title": "J11 F: Exkursion"
+    },
+    {
+      "date": "2026-09-23T00:00:00.000",
+      "time": null,
+      "title": "Exkursion: LK G, Gk"
+    }
+  ]
+}

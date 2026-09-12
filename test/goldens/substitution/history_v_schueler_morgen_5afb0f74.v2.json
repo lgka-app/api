@@ -1,0 +1,122 @@
+{
+  "input": {
+    "file": "fixtures/substitution/history_v_schueler_morgen_5afb0f74.pdf",
+    "sha256": "dcb02893327ac7a894c97393482f381a9be3f2d33c66c02473dcdb0dcceeaad4",
+    "bytes": 42709
+  },
+  "expected": {
+    "school": "Lessing-Gymnasium Karlsruhe",
+    "address": "D-76135, Sophienstr. 147",
+    "schoolYear": "SJ 2025-2026",
+    "untisVersion": "Untis 2026",
+    "generatedAt": "18.9.2025 7:04",
+    "planDate": "19.09.2025",
+    "weekday": "Freitag",
+    "isEmpty": false,
+    "announcements": [
+      "Hofdienst 8a",
+      "Blockierte Räume: EBad1, EBad2"
+    ],
+    "absentTeachers": [],
+    "absentClasses": [],
+    "entries": [
+      {
+        "type": "Unterricht",
+        "period": "1",
+        "classes": [
+          "6a"
+        ],
+        "substitute": "Nam",
+        "subject": "Bio",
+        "room": "209",
+        "originalSubject": "Bio",
+        "originalTeacher": "Nam",
+        "originalRoom": "209",
+        "note": "Findet in Raum 209 statt!",
+        "classesRaw": "6a"
+      },
+      {
+        "type": "Unterricht",
+        "period": "3",
+        "classes": [
+          "6a"
+        ],
+        "substitute": "Glz",
+        "subject": "F",
+        "room": "110",
+        "originalSubject": "F",
+        "originalTeacher": "Glz",
+        "originalRoom": "110",
+        "note": "Findet in 110 statt!",
+        "classesRaw": "6a"
+      },
+      {
+        "type": "Unterricht",
+        "period": "3",
+        "classes": [
+          "6a",
+          "6b"
+        ],
+        "substitute": "Stz",
+        "subject": "L",
+        "room": "209",
+        "originalSubject": "L",
+        "originalTeacher": "Stz",
+        "originalRoom": "209",
+        "note": "Findet in Raum 209 statt!",
+        "classesRaw": "6ab"
+      },
+      {
+        "type": "Unterricht",
+        "period": "3",
+        "classes": [
+          "10d"
+        ],
+        "substitute": "Nm",
+        "subject": "F",
+        "room": "112",
+        "originalSubject": "F",
+        "originalTeacher": "Nm",
+        "originalRoom": "112",
+        "note": "Findet in Raum 112 statt!",
+        "classesRaw": "10d"
+      },
+      {
+        "type": "Unterricht",
+        "period": "3",
+        "classes": [
+          "J11"
+        ],
+        "substitute": "Web",
+        "subject": "M2",
+        "room": "211",
+        "originalSubject": "M2",
+        "originalTeacher": "Web",
+        "originalRoom": "211",
+        "note": "Findet in Raum 211 statt!",
+        "classesRaw": "J11"
+      },
+      {
+        "type": "Unterricht",
+        "period": "4",
+        "classes": [
+          "J11"
+        ],
+        "substitute": "Web",
+        "subject": "M2",
+        "room": "211",
+        "originalSubject": "M2",
+        "originalTeacher": "Web",
+        "originalRoom": "211",
+        "note": null,
+        "classesRaw": "J11"
+      }
+    ],
+    "footer": {
+      "untisPeriod": null,
+      "date": "19.09.2025",
+      "calendarWeek": 38,
+      "schoolYearShort": "SJ 25/26"
+    }
+  }
+}
