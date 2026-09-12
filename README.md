@@ -103,12 +103,13 @@ stored `pageIndex + 2` for a viewer quirk — adapt on the client).
 ## Efficiency & cost
 
 Measured against the school server ([docs/BENCHMARK.md](docs/BENCHMARK.md), regenerate with `SCHOOL_AUTH=user:pass node tool/benchmark.mjs 5 --md docs/BENCHMARK.md`):
-an app cold start drops from 34 requests / ~780 KB / ~6.5 s to 1 request / 27 KB / ~60 ms on the wire (with all five PDFs inlined: ~570 KB / ~90 ms), and a launch where nothing changed to 1 request of ~0.5 KB / ~55 ms. Send `Accept-Encoding` — Cloudflare compresses the JSON (news is 18 KB on the wire, 98 KB decoded).
+an app cold start drops from 34 requests / ~790 KB / ~7.2 s to 1 request / 27 KB / ~110 ms on the wire (with all five PDFs inlined: ~570 KB / ~100 ms), and a launch where nothing changed to 1 request of ~0.2 KB / ~75 ms. Send `Accept-Encoding` — Cloudflare compresses the JSON (news is 18 KB on the wire, 98 KB decoded).
 
 
 * One `/v1/sync` per launch; `fresh` answers carry no payload.
-* KV reads are edge-cached (60 s) and memoised per isolate; PDFs are served
-  from R2 through the Cloudflare cache with immutable URLs.
+* Resources are read from the EU R2 bucket and memoised per isolate for a few
+  seconds; JSON is never put into an edge cache. PDFs are served from R2
+  through the Cloudflare cache with immutable URLs.
 * Upstream is polled with conditional requests; PDFs are re-parsed only when
   their bytes change. The school sees one poller instead of every phone.
 * At 500 daily users × 8 launches this stays a few percent inside the Workers
@@ -119,8 +120,14 @@ an app cold start drops from 34 requests / ~780 KB / ~6.5 s to 1 request / 27 KB
 * No request logging: Workers invocation logs are disabled
   (`observability.logs.invocation_logs=false`); only cron summaries are logged.
 * No cookies, IDs, analytics or per-user state. Auth is a shared secret.
-* Mirrored files live in an R2 bucket created with **EU jurisdiction**.
+* Everything the Worker persists — parsed resources, the `embed=pdf`
+  variants, job state, the cron lock and the mirrored PDFs — lives in one R2
+  bucket created with **EU jurisdiction**. Workers KV is not used. The only
+  other copy is the Cloudflare edge cache for the content-addressed PDFs,
+  which stays in the data centre that served them.
   Superseded PDFs are garbage-collected after two days.
+* The Worker validates the Basic Auth credentials itself (constant-time
+  comparison against its secrets); no credential sits in firewall rules.
 * The school credentials live only in Worker secrets, not in app binaries.
 
 ## Development
@@ -148,7 +155,7 @@ src/routes/           v1 (sync, resources, files) and admin
 src/jobs/             one refresh job per resource + scheduler + gc
 src/parsers/          substitution (Untis PDF), schedule, news, events, weather, station
 src/lib/              pdf.js wrapper, hashing, Berlin time
-src/store.ts          KV manifest/resources/state, R2 files, cron lock
+src/store.ts          R2 (EU): data/ manifest, resources, state · files/ PDFs · locks/ cron lock
 test/                 vitest; fixtures + goldens copied from the verification harness
 ```
 
