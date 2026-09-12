@@ -97,6 +97,10 @@ stored `pageIndex + 2` for a viewer quirk — adapt on the client).
 
 ## Efficiency & cost
 
+Measured against the school server ([docs/BENCHMARK.md](docs/BENCHMARK.md), regenerate with `SCHOOL_AUTH=user:pass node tool/benchmark.mjs 5 --md docs/BENCHMARK.md`):
+an app cold start drops from 34 requests / 1.3 MB / ~5.9 s to 1 request / 141 KB / ~70 ms, and a launch where nothing changed to 1 request of ~1 KB.
+
+
 * One `/v1/sync` per launch; `fresh` answers carry no payload.
 * KV reads are edge-cached (60 s) and memoised per isolate; PDFs are served
   from R2 through the Cloudflare cache with immutable URLs.
