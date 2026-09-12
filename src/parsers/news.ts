@@ -234,7 +234,8 @@ export function parseNewsArticle(html: string): NewsArticleContent {
   }
 
   const paragraphs = clone.querySelectorAll("p");
-  const cleanHtml = (h: string) => h.replace(/<!--[\s\S]*?-->/g, "").trim();
+  // ASCII trim only: a trailing non-breaking space is content, not padding.
+  const cleanHtml = (h: string) => h.replace(/<!--[\s\S]*?-->/g, "").replace(/^[ \t\r\n]+|[ \t\r\n]+$/g, "");
   let htmlContent: string;
   let content: string;
   if (paragraphs.length === 0) {

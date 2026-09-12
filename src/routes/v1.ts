@@ -1,7 +1,7 @@
 import { Hono } from "hono";
 import { requireSchoolAuth } from "../auth";
 import { isResourceName, RESOURCE_NAMES, type AppEnv, type ResourceName } from "../env";
-import { embeddedResourceJson, wantsEmbeddedPdf } from "../embed";
+import { embeddedResourceJson, embedTargets } from "../embed";
 import { fileKey, getManifest, getResource, type StoredResource } from "../store";
 
 export const v1Routes = new Hono<{ Bindings: AppEnv }>();
@@ -30,12 +30,13 @@ v1Routes.get("/v1/manifest", async (c) => {
  * "updated" (new hash + full data inline) or "unavailable" (never fetched).
  * Omit a hash (or send "") to always receive the data. `only=a,b` restricts
  * the set of resources considered. `embed=pdf` inlines the mirrored PDFs
- * (base64) into updated substitutions/schedules so no follow-up request is needed.
+ * (base64) into updated substitutions/schedules; `embed=substitutions.pdf`
+ * limits that to one resource (comma-separated list allowed).
  */
 v1Routes.get("/v1/sync", async (c) => {
   const q = c.req.query();
   const only = q.only ? q.only.split(",").map((s) => s.trim()).filter(isResourceName) : [...RESOURCE_NAMES];
-  const embed = wantsEmbeddedPdf(q);
+  const embed = embedTargets(q);
   const manifest = await getManifest(c.env);
 
   const out: Record<string, unknown> = {};
@@ -61,7 +62,7 @@ v1Routes.get("/v1/sync", async (c) => {
         out[name] = { status: "fresh", hash: stored.hash, updatedAt: stored.updatedAt };
         return;
       }
-      const data = embed ? (JSON.parse(await embeddedResourceJson(c.env, name, stored)) as StoredResource).data : stored.data;
+      const data = embed.has(name) ? (JSON.parse(await embeddedResourceJson(c.env, name, stored)) as StoredResource).data : stored.data;
       out[name] = { status: "updated", hash: stored.hash, updatedAt: stored.updatedAt, sourceUpdatedAt: stored.sourceUpdatedAt, data };
     }),
   );
@@ -99,7 +100,7 @@ v1Routes.get("/v1/:resource", async (c) => {
   if (!isResourceName(name)) return c.json({ error: "not found" }, 404);
   const stored: StoredResource | null = await getResource(c.env, name as ResourceName);
   if (!stored) return c.json({ error: "unavailable", resource: name }, 503, { "Retry-After": "60" });
-  const embed = wantsEmbeddedPdf(c.req.query());
+  const embed = embedTargets(c.req.query()).has(name);
   const etag = `"${stored.hash}${embed ? "+pdf" : ""}"`;
   if (c.req.header("if-none-match") === etag) return c.body(null, 304, { ETag: etag, "Cache-Control": "private, no-cache" });
   if (embed) {

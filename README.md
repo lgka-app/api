@@ -26,9 +26,13 @@ GET /v1/sync?substitutions=9c0f…&news=a41b…&weather=&schedules=77e2…&event
 | `events` | JEvents week list, 3 weeks | hourly | `{date, time, title}` deduplicated and sorted |
 | `weather` | **school rooftop station** (`/wetter/lg_wetter_heute.csv`), Open-Meteo forecast + fallback | 10 min | `source: "school" \| "open-meteo"`, current conditions, 72 h hourly, 3-day daily, station block with health + today's readings |
 
-All parsers are verified against the golden fixtures of the
-[verification harness](https://github.com/lgka-app/verification) (the same
-contract the native apps are held to). Run `npm test`.
+All parsers are verified against the golden fixtures that used to live in the
+[verification harness](https://github.com/lgka-app/verification); this repo is
+now their home (`test/fixtures`, `test/goldens`, and the Rust comparator in
+`tool/compare-report`). `npm test` runs the field-level checks; `npm run parity`
+dumps the parsers' output in golden shape and renders `build/parity/report.html`
+with a strict equality diff (exit 0 only on full parity). Native ports can be
+gated the same way with `--kotlin DIR` / `--swift DIR`.
 
 ### Weather source selection
 
@@ -53,7 +57,7 @@ time) against its secrets. `401` means the school rotated the password.
 | `GET /v1/sync?<resource>=<hash>…[&only=a,b]` | the launch call. Per resource: `fresh` (hash current, no data), `updated` (new `hash` + `data`), `unavailable` |
 | `GET /v1/manifest` | current hashes only |
 | `GET /v1/{substitutions\|schedules\|news\|events\|weather}` | one resource; `ETag` = hash, honours `If-None-Match` → `304` |
-| `…?embed=pdf` (on `/v1/sync`, `/v1/substitutions`, `/v1/schedules`) | inline the mirrored PDFs as `pdf.base64` so plan + files is one request |
+| `…?embed=pdf` (on `/v1/sync`, `/v1/substitutions`, `/v1/schedules`) | inline the mirrored PDFs as `pdf.base64` so plan + files is one request; `embed=substitutions.pdf` limits it to one resource — the apps use that and fetch timetables from `/v1/files` on first open |
 | `GET /v1/files/{sha256}.pdf` | mirrored PDF, content-addressed → `immutable`, `304` on `If-None-Match` |
 
 Hashes are 64-bit prefixes of SHA-256 over canonical JSON. `news` hashes

@@ -13,7 +13,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "types": "wrangler types",
-    "sync-goldens": "tool/sync-goldens.sh"
+    "sync-goldens": "tool/sync-goldens.sh",
+    "parity": "vitest run test/parity-dump.test.ts && cargo run --release --quiet --manifest-path tool/compare-report/Cargo.toml -- --api build/parity/api --out build/parity/report.html"
   },
   "dependencies": {
     "hono": "^4.13.7",

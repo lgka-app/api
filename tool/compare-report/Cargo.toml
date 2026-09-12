@@ -1,0 +1,8 @@
+[package]
+name = "compare-report"
+version = "0.1.0"
+edition = "2021"
+description = "Parity comparator: native extractor outputs vs the Dart v2 goldens. Emits report.html; exit 0 only on full parity."
+
+[dependencies]
+serde_json = "1"

@@ -1,8 +1,33 @@
-// `?embed=pdf`: inline the mirrored PDFs (base64) into a resource payload so a
-// client gets plan + files in one round trip. Used on change only (hash sync),
-// so the ~33 % base64 overhead is paid a few times a day, not per launch.
+// `?embed=…`: inline mirrored PDFs (base64) into a resource payload so a
+// client gets plan + files in one round trip. Only paid on change (hash sync).
+//
+//   embed=pdf                      every resource that has PDFs
+//   embed=substitutions.pdf        only that resource (comma-separated list ok)
 import type { AppEnv, ResourceName } from "./env";
+import { isResourceName } from "./env";
 import { fileKey, getEmbeddedRaw, putEmbedded, type StoredResource } from "./store";
+
+interface PdfRef {
+  sha256: string;
+  bytes: number;
+  base64?: string;
+}
+
+const PDF_RESOURCES: readonly ResourceName[] = ["substitutions", "schedules"];
+
+/** Which resources the caller wants PDFs inlined for (empty set = none). */
+export function embedTargets(query: Record<string, string>): Set<ResourceName> {
+  const out = new Set<ResourceName>();
+  for (const raw of (query.embed ?? "").split(",")) {
+    const token = raw.trim();
+    if (token === "pdf") for (const r of PDF_RESOURCES) out.add(r);
+    else if (token.endsWith(".pdf")) {
+      const name = token.slice(0, -4);
+      if (isResourceName(name) && PDF_RESOURCES.includes(name)) out.add(name);
+    }
+  }
+  return out;
+}
 
 /**
  * Returns the resource JSON with PDFs inlined. Served from the precomputed KV
@@ -18,16 +43,6 @@ export async function embeddedResourceJson(env: AppEnv, name: ResourceName, stor
   await embedPdfs(env, name, stored.data);
   await putEmbedded(env, name, stored);
   return JSON.stringify(stored);
-}
-
-interface PdfRef {
-  sha256: string;
-  bytes: number;
-  base64?: string;
-}
-
-export function wantsEmbeddedPdf(query: Record<string, string>): boolean {
-  return (query.embed ?? "").split(",").map((s) => s.trim()).includes("pdf");
 }
 
 /** Mutates `data` in place, adding `pdf.base64` to every PDF reference of the resource. */
