@@ -104,7 +104,7 @@ v1Routes.get("/v1/:resource", async (c) => {
   if (c.req.header("if-none-match") === etag) return c.body(null, 304, { ETag: etag, "Cache-Control": "private, no-cache" });
   if (embed) {
     return c.body(await embeddedResourceJson(c.env, name as ResourceName, stored), 200, {
-      "Content-Type": "application/json; charset=UTF-8",
+      "Content-Type": "application/json",
       ETag: etag,
       "Cache-Control": "private, no-cache",
     });

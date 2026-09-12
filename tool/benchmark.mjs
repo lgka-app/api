@@ -20,20 +20,40 @@ const API = process.env.API_BASE ?? "https://api.lgka.app";
 const UA = "LGKA+/2.5.0";
 const basic = "Basic " + Buffer.from(AUTH).toString("base64");
 
-async function get(url, { auth = false, method = "GET" } = {}, attempt = 0) {
-  const headers = { "User-Agent": UA };
+import { request as httpsRequest } from "node:https";
+import { brotliDecompressSync, gunzipSync, zstdDecompressSync } from "node:zlib";
+
+/**
+ * Wire-accurate GET: counts the bytes actually transferred (after
+ * Content-Encoding), then decodes for callers that need the body. Node's fetch
+ * decompresses transparently and would over-count compressed API responses.
+ */
+function get(url, { auth = false, method = "GET" } = {}, attempt = 0) {
+  const headers = { "User-Agent": UA, "Accept-Encoding": "zstd, br, gzip" };
   if (auth) headers.Authorization = basic;
-  const res = await fetch(url, { method, headers, cache: "no-store" });
-  const buf = method === "HEAD" ? new Uint8Array() : new Uint8Array(await res.arrayBuffer());
-  if (!res.ok) {
-    // third parties throttle bursts now and then; one retry keeps the run honest
-    if (attempt < 2 && (res.status === 429 || res.status >= 500)) {
-      await sleep(1500);
-      return get(url, { auth, method }, attempt + 1);
-    }
-    throw new Error(`${res.status} ${url}`);
-  }
-  return { bytes: buf.byteLength, text: () => new TextDecoder().decode(buf), res };
+  return new Promise((resolve, reject) => {
+    const req = httpsRequest(url, { method, headers }, (res) => {
+      const chunks = [];
+      res.on("data", (c) => chunks.push(c));
+      res.on("end", async () => {
+        const wire = Buffer.concat(chunks);
+        if (res.statusCode < 200 || res.statusCode >= 300) {
+          // third parties throttle bursts now and then; one retry keeps the run honest
+          if (attempt < 2 && (res.statusCode === 429 || res.statusCode >= 500)) {
+            await sleep(1500);
+            return resolve(get(url, { auth, method }, attempt + 1));
+          }
+          return reject(new Error(`${res.statusCode} ${url}`));
+        }
+        const enc = res.headers["content-encoding"];
+        const decode = () =>
+          enc === "gzip" ? gunzipSync(wire) : enc === "br" ? brotliDecompressSync(wire) : enc === "zstd" ? zstdDecompressSync(wire) : wire;
+        resolve({ bytes: wire.byteLength, text: () => decode().toString("utf8"), res });
+      });
+    });
+    req.on("error", reject);
+    req.end();
+  });
 }
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
@@ -126,7 +146,7 @@ const SCENARIOS = [
   ["Calendar", "3 JEvents week pages", schoolEvents, "/v1/events", apiResource("events")],
   ["Weather", "Open-Meteo direct", openMeteo, "/v1/weather", apiResource("weather")],
   ["App cold start (all of the above in parallel)", "everything above at once", schoolColdStart, "/v1/sync without hashes", apiSyncFull],
-  ["App cold start incl. substitution PDFs", "everything above at once", "reuse:cold", "/v1/sync?embed=pdf without hashes", apiSyncFullEmbed],
+  ["App cold start incl. all PDFs (2 plans + 3 timetables)", "everything above at once", "reuse:cold", "/v1/sync?embed=pdf without hashes", apiSyncFullEmbed],
   ["App launch, nothing changed", "everything above at once", "reuse:cold", "/v1/sync with current hashes", apiSyncFresh],
 ];
 
@@ -148,7 +168,7 @@ async function measure(fn) {
 }
 
 const fmtMs = (ms) => (ms >= 1000 ? `${(ms / 1000).toFixed(2)} s` : `${Math.round(ms)} ms`);
-const fmtKb = (b) => `${(b / 1024).toFixed(0)} KB`;
+const fmtKb = (b) => (b < 10240 ? `${(b / 1024).toFixed(1)} KB` : `${(b / 1024).toFixed(0)} KB`);
 
 const rows = [];
 for (const [name, schoolDesc, schoolFn, apiDesc, apiFn] of SCENARIOS) {
@@ -173,12 +193,12 @@ const lines = [
     `| **${name}**<br><sub>${schoolDesc} → ${apiDesc}</sub> | ${s.requests} | ${fmtKb(s.bytes)} | ${fmtMs(s.median)} (${fmtMs(s.min)}–${fmtMs(s.max)}) | ${a.requests} | ${fmtKb(a.bytes)} | ${fmtMs(a.median)} (${fmtMs(a.min)}–${fmtMs(a.max)}) | **${(s.median / a.median).toFixed(1)}×** |`,
   ),
   ``,
-  `Bytes are transfer sizes as seen by the client (the API responses are compressed by Cloudflare; the school's PDFs are not).`,
+  `Bytes are what actually crosses the wire (after Content-Encoding). The API's JSON is zstd/brotli-compressed by Cloudflare; the school's PDFs are served uncompressed (they are Flate-compressed internally, so gzip would only save ~5 %).`,
   ``,
   `## Reading the numbers`,
   ``,
   `* The school's Joomla pages (news, timetable page, calendar) cost 0.7–1 s **each**, and news needs one request per article. That is where a cold start's seconds go; the API answers all of it from one edge read.`,
-  `* The two substitution PDFs are static files on Apache and already fast. With \`embed=pdf\` the API inlines both PDFs (base64) into the JSON, so plan + files is still one request; that payload is only transferred when a plan's hash changed.`,
+  `* The two substitution PDFs are static files on Apache and already fast. With \`embed=pdf\` the API inlines both PDFs (base64) into the JSON; Cloudflare's compression takes the base64 back to roughly the raw PDF size, so plan + files is one request of about the same bytes — and it is only transferred when a plan's hash changed.`,
   `* Weather: Open-Meteo alone is a single fast API; the Worker adds the school station check and source selection for a few extra milliseconds. Both are well under 100 ms.`,
   `* "Nothing changed" is the everyday case: 34 requests and 1.3 MB against the school become one request of about 1 KB.`,
   `* Not measured here: PDF text extraction and HTML parsing on the phone, and the school server under load from many phones at 07:30 — both only widen the gap.`,

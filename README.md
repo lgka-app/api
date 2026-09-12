@@ -99,7 +99,7 @@ stored `pageIndex + 2` for a viewer quirk — adapt on the client).
 ## Efficiency & cost
 
 Measured against the school server ([docs/BENCHMARK.md](docs/BENCHMARK.md), regenerate with `SCHOOL_AUTH=user:pass node tool/benchmark.mjs 5 --md docs/BENCHMARK.md`):
-an app cold start drops from 34 requests / 1.3 MB / ~6–7 s to 1 request / 141 KB / ~70 ms (with both substitution PDFs inlined: ~1 MB / ~200 ms), and a launch where nothing changed to 1 request of ~1 KB / ~60 ms.
+an app cold start drops from 34 requests / ~780 KB / ~6.5 s to 1 request / 27 KB / ~60 ms on the wire (with all five PDFs inlined: ~570 KB / ~90 ms), and a launch where nothing changed to 1 request of ~0.5 KB / ~55 ms. Send `Accept-Encoding` — Cloudflare compresses the JSON (news is 18 KB on the wire, 98 KB decoded).
 
 
 * One `/v1/sync` per launch; `fresh` answers carry no payload.
