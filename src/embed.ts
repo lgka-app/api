@@ -30,7 +30,7 @@ export function embedTargets(query: Record<string, string>): Set<ResourceName> {
 }
 
 /**
- * Returns the resource JSON with PDFs inlined. Served from the precomputed KV
+ * Returns the resource JSON with PDFs inlined. Served from the precomputed R2
  * variant when it matches the current hash; otherwise built from R2 once and
  * stored for the next request (self-healing after deploys / restarts).
  */

@@ -1,5 +1,5 @@
 // Scheduler. One cron tick per minute; each job decides from Berlin time and
-// its own last run whether it is due. Jobs run sequentially under a KV lock so
+// its own last run whether it is due. Jobs run sequentially under an R2 lock so
 // there is exactly one writer to the manifest at any time.
 import type { AppEnv } from "../env";
 import { berlinTime, minutesSince, nowIso } from "../lib/time";

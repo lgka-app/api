@@ -58,7 +58,7 @@ v1Routes.get("/v1/sync", async (c) => {
         return;
       }
       if (claimed !== "" && claimed === stored.hash) {
-        // manifest raced ahead of the edge-cached resource; the client is current
+        // manifest memo raced ahead of the memoised resource; the client is current
         out[name] = { status: "fresh", hash: stored.hash, updatedAt: stored.updatedAt };
         return;
       }

@@ -22,7 +22,10 @@ export async function gcFiles(env: AppEnv): Promise<JobResult> {
   do {
     const page = await env.FILES.list({ prefix: "files/", cursor, limit: 500 });
     for (const obj of page.objects) {
-      const sha = obj.key.slice("files/".length, -".pdf".length);
+      // Only ever touch mirrored PDFs; data/ and locks/ live in the same bucket.
+      const match = /^files\/([0-9a-f]{64})\.pdf$/.exec(obj.key);
+      if (!match) continue;
+      const sha = match[1]!;
       const old = Date.now() - obj.uploaded.getTime() > GRACE_MS;
       if (!referenced.has(sha) && old) {
         await env.FILES.delete(obj.key);

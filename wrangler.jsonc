@@ -18,7 +18,7 @@
     "SCHOOL_BASE_URL": "https://lessing-gymnasium-karlsruhe.de",
     "USER_AGENT": "LGKA-API/1.0 (+https://api.lgka.app)"
   },
-  "kv_namespaces": [{ "binding": "DATA", "id": "da79cae535ec40b2836e7b6372f4daea" }],
+  // All persisted data (JSON + mirrored PDFs) lives in this EU-jurisdiction bucket.
   "r2_buckets": [{ "binding": "FILES", "bucket_name": "lgka-api-files", "jurisdiction": "eu" }],
   "triggers": {
     // One tick a minute; src/jobs/index.ts decides per job (Berlin time) what is due.
