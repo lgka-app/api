@@ -57,7 +57,7 @@ time) against its secrets. `401` means the school rotated the password.
 | `GET /v1/sync?<resource>=<hash>…[&only=a,b]` | the launch call. Per resource: `fresh` (hash current, no data), `updated` (new `hash` + `data`), `unavailable` |
 | `GET /v1/manifest` | current hashes only |
 | `GET /v1/{substitutions\|schedules\|news\|events\|weather}` | one resource; `ETag` = hash, honours `If-None-Match` → `304` |
-| `…?embed=pdf` (on `/v1/sync`, `/v1/substitutions`, `/v1/schedules`) | inline the mirrored PDFs as `pdf.base64` so plan + files is one request; `embed=substitutions.pdf` limits it to one resource — the apps use that and fetch timetables from `/v1/files` on first open |
+| `…?embed=pdf` (on `/v1/sync`, `/v1/substitutions`, `/v1/schedules`) | inline the mirrored PDFs as `pdf.base64` so plan + all files is one request — this is what the apps use. `embed=substitutions.pdf` (comma-separated list) restricts it to named resources for clients that want less |
 | `GET /v1/files/{sha256}.pdf` | mirrored PDF, content-addressed → `immutable`, `304` on `If-None-Match` |
 
 Hashes are 64-bit prefixes of SHA-256 over canonical JSON. `news` hashes
