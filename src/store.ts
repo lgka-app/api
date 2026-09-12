@@ -27,6 +27,8 @@ export interface StoredResource<T = unknown> extends ManifestEntry {
 
 const MANIFEST_KEY = "manifest";
 const resKey = (n: ResourceName) => `res:${n}`;
+/** Precomputed `?embed=pdf` variant (PDFs inlined as base64), so serving it is one KV read. */
+export const embeddedKey = (n: ResourceName) => `res:${n}+pdf`;
 const stateKey = (j: string) => `state:${j}`;
 
 // Per-isolate memo: collapses bursts of identical KV reads. Short TTL keeps
@@ -63,6 +65,19 @@ export async function getResourceRaw(env: AppEnv, name: ResourceName): Promise<s
   const value = await env.DATA.get(key, { type: "text", cacheTtl: 60 });
   if (value !== null) memoSet(key, value);
   return value;
+}
+
+export async function getEmbeddedRaw(env: AppEnv, name: ResourceName): Promise<string | null> {
+  const key = embeddedKey(name);
+  const hit = memoGet<string>(key);
+  if (hit !== undefined) return hit;
+  const value = await env.DATA.get(key, { type: "text", cacheTtl: 60 });
+  if (value !== null) memoSet(key, value);
+  return value;
+}
+
+export async function putEmbedded(env: AppEnv, name: ResourceName, stored: StoredResource): Promise<void> {
+  await env.DATA.put(embeddedKey(name), JSON.stringify(stored));
 }
 
 export async function getResource<T>(env: AppEnv, name: ResourceName): Promise<StoredResource<T> | null> {

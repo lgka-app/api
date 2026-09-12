@@ -4,6 +4,7 @@ import { nowIso } from "../lib/time";
 import { parseSubstitutionPlan, planMeta, type SubstitutionMeta, type SubstitutionPlan } from "../parsers/substitution";
 import { fetchResource, schoolUrl, type Validators } from "../sources/http";
 import { filePath, getResource, getState, putFile, putResource, putState } from "../store";
+import { embeddedResourceJson } from "../embed";
 import type { JobResult } from "./types";
 
 export const SUBSTITUTION_SOURCES = {
@@ -87,5 +88,9 @@ export async function refreshSubstitutions(env: AppEnv): Promise<JobResult> {
   if (!anyChange) return { job: "substitutions", changed: false, notes };
   const sourceUpdatedAt = [next.today?.sourceLastModified, next.tomorrow?.sourceLastModified].filter(Boolean).sort().at(-1) ?? null;
   const put = await putResource(env, "substitutions", next, { sourceUpdatedAt });
+  if (put.changed) {
+    const stored = await getResource(env, "substitutions");
+    if (stored) await embeddedResourceJson(env, "substitutions", stored); // precompute ?embed=pdf variant
+  }
   return { job: "substitutions", changed: put.changed, hash: put.hash, notes };
 }

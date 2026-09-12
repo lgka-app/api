@@ -53,6 +53,7 @@ time) against its secrets. `401` means the school rotated the password.
 | `GET /v1/sync?<resource>=<hash>…[&only=a,b]` | the launch call. Per resource: `fresh` (hash current, no data), `updated` (new `hash` + `data`), `unavailable` |
 | `GET /v1/manifest` | current hashes only |
 | `GET /v1/{substitutions\|schedules\|news\|events\|weather}` | one resource; `ETag` = hash, honours `If-None-Match` → `304` |
+| `…?embed=pdf` (on `/v1/sync`, `/v1/substitutions`, `/v1/schedules`) | inline the mirrored PDFs as `pdf.base64` so plan + files is one request |
 | `GET /v1/files/{sha256}.pdf` | mirrored PDF, content-addressed → `immutable`, `304` on `If-None-Match` |
 
 Hashes are 64-bit prefixes of SHA-256 over canonical JSON. `news` hashes
@@ -98,7 +99,7 @@ stored `pageIndex + 2` for a viewer quirk — adapt on the client).
 ## Efficiency & cost
 
 Measured against the school server ([docs/BENCHMARK.md](docs/BENCHMARK.md), regenerate with `SCHOOL_AUTH=user:pass node tool/benchmark.mjs 5 --md docs/BENCHMARK.md`):
-an app cold start drops from 34 requests / 1.3 MB / ~5.9 s to 1 request / 141 KB / ~70 ms, and a launch where nothing changed to 1 request of ~1 KB.
+an app cold start drops from 34 requests / 1.3 MB / ~6–7 s to 1 request / 141 KB / ~70 ms (with both substitution PDFs inlined: ~1 MB / ~200 ms), and a launch where nothing changed to 1 request of ~1 KB / ~60 ms.
 
 
 * One `/v1/sync` per launch; `fresh` answers carry no payload.

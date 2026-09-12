@@ -106,22 +106,27 @@ const apiResource = (name) => async () => {
   return { requests: 1, bytes: r.bytes };
 };
 async function apiSubstitutionsWithPdfs() {
-  const r = await api("/v1/substitutions");
+  const r = await api("/v1/substitutions?embed=pdf");
   const d = JSON.parse(r.text()).data;
-  const pdfs = await Promise.all([d.today, d.tomorrow].filter(Boolean).map((x) => api(x.pdf.url)));
-  return { requests: 1 + pdfs.length, bytes: r.bytes + pdfs.reduce((a, x) => a + x.bytes, 0) };
+  if (!d.today?.pdf?.base64) throw new Error("embed=pdf did not inline the PDF");
+  return { requests: 1, bytes: r.bytes };
+}
+async function apiSyncFullEmbed() {
+  const r = await api("/v1/sync?embed=pdf");
+  return { requests: 1, bytes: r.bytes };
 }
 
 // ---- runner ----------------------------------------------------------------
 
 const SCENARIOS = [
   ["Substitution plans", "2 PDFs (Basic Auth)", schoolSubstitutions, "/v1/substitutions (parsed JSON)", apiResource("substitutions")],
-  ["Substitution plans + PDFs", "2 PDFs (Basic Auth)", schoolSubstitutions, "/v1/substitutions + 2 mirrored PDFs", apiSubstitutionsWithPdfs],
+  ["Substitution plans + PDFs", "2 PDFs (Basic Auth)", schoolSubstitutions, "/v1/substitutions?embed=pdf (JSON with both PDFs inline)", apiSubstitutionsWithPdfs],
   ["News", "list page + every article page", schoolNews, "/v1/news", apiResource("news")],
   ["Timetables", "page + HEAD + download per PDF", schoolSchedules, "/v1/schedules (index + page text)", apiResource("schedules")],
   ["Calendar", "3 JEvents week pages", schoolEvents, "/v1/events", apiResource("events")],
   ["Weather", "Open-Meteo direct", openMeteo, "/v1/weather", apiResource("weather")],
   ["App cold start (all of the above in parallel)", "everything above at once", schoolColdStart, "/v1/sync without hashes", apiSyncFull],
+  ["App cold start incl. substitution PDFs", "everything above at once", "reuse:cold", "/v1/sync?embed=pdf without hashes", apiSyncFullEmbed],
   ["App launch, nothing changed", "everything above at once", "reuse:cold", "/v1/sync with current hashes", apiSyncFresh],
 ];
 
@@ -173,7 +178,7 @@ const lines = [
   `## Reading the numbers`,
   ``,
   `* The school's Joomla pages (news, timetable page, calendar) cost 0.7–1 s **each**, and news needs one request per article. That is where a cold start's seconds go; the API answers all of it from one edge read.`,
-  `* The two substitution PDFs are static files on Apache and already fast. "Substitution plans + PDFs" is the worst case for the API — JSON first, then two PDF downloads — and only happens when a plan's hash changed; the apps show the parsed JSON immediately and can fetch the PDF lazily.`,
+  `* The two substitution PDFs are static files on Apache and already fast. With \`embed=pdf\` the API inlines both PDFs (base64) into the JSON, so plan + files is still one request; that payload is only transferred when a plan's hash changed.`,
   `* Weather: Open-Meteo alone is a single fast API; the Worker adds the school station check and source selection for a few extra milliseconds. Both are well under 100 ms.`,
   `* "Nothing changed" is the everyday case: 34 requests and 1.3 MB against the school become one request of about 1 KB.`,
   `* Not measured here: PDF text extraction and HTML parsing on the phone, and the school server under load from many phones at 07:30 — both only widen the gap.`,

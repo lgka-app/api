@@ -4,6 +4,7 @@ import { nowIso } from "../lib/time";
 import { buildClassIndex, parseSchedulePage, type ScheduleLink } from "../parsers/schedule";
 import { fetchResource, schoolUrl, utf8, type Validators } from "../sources/http";
 import { filePath, getResource, getState, putFile, putResource, putState } from "../store";
+import { embeddedResourceJson } from "../embed";
 import type { JobResult } from "./types";
 
 export const SCHEDULE_PAGE = "/cm3/index.php/unterricht/stundenplan";
@@ -91,6 +92,10 @@ export async function refreshSchedules(env: AppEnv): Promise<JobResult> {
     const put = await putResource(env, "schedules", { items } satisfies SchedulesData, {
       sourceUpdatedAt: items.map((i) => i.pdf?.sourceLastModified).filter(Boolean).sort().at(-1) ?? null,
     });
+    if (put.changed) {
+      const stored = await getResource(env, "schedules");
+      if (stored) await embeddedResourceJson(env, "schedules", stored); // precompute ?embed=pdf variant
+    }
     return { job: "schedules", changed: changed || put.changed, hash: put.hash, notes };
   } catch (e) {
     state.lastError = String(e instanceof Error ? e.message : e);
