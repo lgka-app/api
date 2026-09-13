@@ -3,6 +3,7 @@
 // there is exactly one writer to the manifest at any time.
 import type { AppEnv } from "../env";
 import { berlinTime, minutesSince, nowIso } from "../lib/time";
+import { evaluateRun } from "../alerts";
 import { acquireLock, getState, putState, releaseLock } from "../store";
 import { refreshEvents } from "./events";
 import { gcFiles } from "./gc";
@@ -81,6 +82,8 @@ export async function runDueJobs(env: AppEnv, opts: { force?: JobName[] | "all" 
       console.log(JSON.stringify({ job, changed: result.changed, ms: Date.now() - started, error: result.error, notes: result.notes.slice(0, 8) }));
     }
     await putState(env, "runs", run);
+    // e-mail the owner about failures; never let alerting break the run itself
+    await evaluateRun(env, ran).catch((e) => console.log(JSON.stringify({ alerts: "evaluate failed", error: e instanceof Error ? e.message : String(e) })));
     return { ran, skipped };
   } finally {
     await releaseLock(env, "cron", token);

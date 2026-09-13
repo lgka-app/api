@@ -1,4 +1,5 @@
 import { Hono } from "hono";
+import { sendTestAlert } from "../alerts";
 import { requireAdmin } from "../auth";
 import type { AppEnv } from "../env";
 import { getRunState, JOB_NAMES, runDueJobs, type JobName } from "../jobs";
@@ -14,6 +15,12 @@ adminRoutes.post("/admin/refresh", async (c) => {
   if (force !== "all" && force.length === 0) return c.json({ error: "unknown job", jobs: JOB_NAMES }, 400);
   const result = await runDueJobs(c.env, { force });
   return c.json(result, result.locked ? 409 : 200);
+});
+
+/** POST /admin/test-alert — sends one clearly marked test alert e-mail to ALERT_TO. */
+adminRoutes.post("/admin/test-alert", async (c) => {
+  const result = await sendTestAlert(c.env);
+  return c.json(result, result.sent ? 200 : 502);
 });
 
 adminRoutes.get("/admin/status", async (c) => {

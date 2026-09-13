@@ -1,4 +1,5 @@
 import { Hono } from "hono";
+import { alertNow, errorText } from "./alerts";
 import type { AppEnv } from "./env";
 import { runDueJobs } from "./jobs";
 import { adminRoutes } from "./routes/admin";
@@ -27,13 +28,17 @@ app.route("/", adminRoutes);
 
 app.notFound((c) => c.json({ error: "not found" }, 404));
 app.onError((err, c) => {
-  console.log(JSON.stringify({ error: err.message, path: new URL(c.req.url).pathname }));
+  const path = new URL(c.req.url).pathname;
+  console.log(JSON.stringify({ error: err.message, path }));
+  c.executionCtx.waitUntil(alertNow(c.env, "http:500", "Unhandled API error (HTTP 500)", `${err.message} (${c.req.method} ${path})`));
   return c.json({ error: "internal error" }, 500);
 });
 
 export default {
   fetch: app.fetch,
   async scheduled(_controller: ScheduledController, env: AppEnv, ctx: ExecutionContext) {
-    ctx.waitUntil(runDueJobs(env));
+    ctx.waitUntil(
+      runDueJobs(env).catch((e) => alertNow(env, "cron:crash", "Cron run crashed", errorText(e))),
+    );
   },
 } satisfies ExportedHandler<AppEnv>;

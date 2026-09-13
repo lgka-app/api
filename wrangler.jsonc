@@ -16,8 +16,15 @@
   "vars": {
     "PUBLIC_BASE_URL": "https://api.lgka.app",
     "SCHOOL_BASE_URL": "https://lessing-gymnasium-karlsruhe.de",
-    "USER_AGENT": "LGKA-API/1.0 (+https://api.lgka.app)"
+    "USER_AGENT": "LGKA-API/1.0 (+https://api.lgka.app)",
+    // Failure alerts (src/alerts.ts)
+    "ALERT_FROM": "api@lgka.app",
+    "ALERT_TO": "luka@lukaloehr.com"
   },
+  // Cloudflare Email Service, locked to the alert sender and the owner's verified address.
+  "send_email": [
+    { "name": "EMAIL", "allowed_sender_addresses": ["api@lgka.app"], "allowed_destination_addresses": ["luka@lukaloehr.com"] }
+  ],
   // All persisted data (JSON + mirrored PDFs) lives in this EU-jurisdiction bucket.
   "r2_buckets": [{ "binding": "FILES", "bucket_name": "lgka-api-files", "jurisdiction": "eu" }],
   "triggers": {
