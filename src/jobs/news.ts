@@ -28,6 +28,8 @@ export async function refreshNews(env: AppEnv): Promise<JobResult> {
     const list = await fetchResource(env, schoolUrl(env, NEWS_LIST));
     if (list.status !== 200 || !list.bytes) throw new Error(`news list HTTP ${list.status}`);
     const entries = parseNewsList(utf8(list.bytes));
+    // an empty list means the page layout changed: keep the previous news instead of publishing nothing
+    if (entries.length === 0) throw new Error("news list parsed 0 articles (page layout changed?)");
     const fetchedAt = state.articleFetchedAt ?? {};
     const byUrl = new Map(current.articles.map((a) => [a.url, a]));
 

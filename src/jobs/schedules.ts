@@ -41,6 +41,8 @@ export async function refreshSchedules(env: AppEnv): Promise<JobResult> {
     const page = await fetchResource(env, schoolUrl(env, SCHEDULE_PAGE), { auth: true });
     if (page.status !== 200 || !page.bytes) throw new Error(`schedule page HTTP ${page.status}`);
     const links = parseSchedulePage(utf8(page.bytes));
+    // no PDF links means the page layout changed: keep the previous timetables instead of publishing none
+    if (links.length === 0) throw new Error("schedule page parsed 0 PDF links (page layout changed?)");
     state.page = { etag: page.etag, lastModified: page.lastModified, sha256: page.sha256 };
 
     const pdfs = state.pdfs ?? {};

@@ -1,5 +1,5 @@
 import { Hono } from "hono";
-import { alertNow, errorText } from "./alerts";
+import { alertNow, checkCronFreshness, errorText } from "./alerts";
 import type { AppEnv } from "./env";
 import { runDueJobs } from "./jobs";
 import { adminRoutes } from "./routes/admin";
@@ -23,6 +23,11 @@ app.get("/", (c) =>
   }),
 );
 
+// Watchdog: a cron that stopped running cannot alert, so app traffic checks it (throttled per isolate).
+app.use("/v1/*", async (c, next) => {
+  await next();
+  c.executionCtx.waitUntil(checkCronFreshness(c.env));
+});
 app.route("/", v1Routes);
 app.route("/", adminRoutes);
 

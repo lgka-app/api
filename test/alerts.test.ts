@@ -2,12 +2,15 @@ import { describe, expect, it } from "vitest";
 import {
   ALERT_STATE,
   alertNow,
+  checkCronFreshness,
+  CRON_STALE_AFTER_MS,
   evaluateRun,
   failuresFrom,
   FAILURES_BEFORE_ALERT,
   INSTANT_THROTTLE_MS,
   REMIND_EVERY_MS,
   renderMail,
+  resetWatchdog,
   sendTestAlert,
   type AlertState,
 } from "../src/alerts";
@@ -61,6 +64,55 @@ describe("failuresFrom", () => {
       ["job:news", "news list HTTP 503"],
       ["job:substitutions", "today: error HTTP 503"],
     ]);
+  });
+
+  it("catches partial failures that only show up in the notes", () => {
+    const failures = failuresFrom([
+      { job: "weather", changed: false, notes: ["source=open-meteo", "open-meteo: HTTP 502", "station: HTTP 404", "kept previous forecast"] },
+      { job: "schedules", changed: false, notes: ["5-10: 304", "J11: HTTP 500, keeping previous", "J12: not published yet (404)"] },
+      { job: "news", changed: false, notes: ["20 articles, 2 bodies refreshed", "Landesfinale: HTTP 503"] },
+    ]);
+    expect(failures.map((f) => [f.key, f.error])).toEqual([
+      ["job:weather", "open-meteo: HTTP 502"],
+      ["job:schedules", "J11: HTTP 500, keeping previous"],
+      ["job:news", "Landesfinale: HTTP 503"],
+    ]);
+  });
+
+  it("stays quiet for healthy runs: unpublished timetables, a news summary, a stale station", () => {
+    const failures = failuresFrom([
+      { job: "schedules", changed: false, notes: ["5-10: 304", "J12: not published yet (404)"] },
+      { job: "news", changed: false, notes: ["20 articles, 0 bodies refreshed"] },
+      { job: "weather", changed: false, notes: ["source=open-meteo", "station: unhealthy (no rows)"] },
+      { job: "substitutions", changed: false, notes: ["today: 304", "tomorrow: unchanged"] },
+      { job: "gc", changed: false, notes: ["deleted 0, kept 5, referenced 5"] },
+    ]);
+    expect(failures).toEqual([]);
+  });
+});
+
+describe("checkCronFreshness", () => {
+  it("alerts when no job ran for 90 minutes and the next finished run resolves it", async () => {
+    const { env, sent, state } = fakeEnv();
+    const now = Date.parse("2026-09-14T10:00:00Z");
+    await env.FILES.put(stateKey("runs"), JSON.stringify({ lastRunAt: { weather: new Date(now - 20 * MIN).toISOString() } }));
+    resetWatchdog();
+    await checkCronFreshness(env, now);
+    expect(sent).toHaveLength(0); // fresh
+
+    await env.FILES.put(stateKey("runs"), JSON.stringify({ lastRunAt: { weather: new Date(now - 2 * CRON_STALE_AFTER_MS).toISOString() } }));
+    await checkCronFreshness(env, now + MIN);
+    expect(sent).toHaveLength(0); // throttled: checked a minute ago
+
+    resetWatchdog();
+    await checkCronFreshness(env, now + MIN);
+    expect(sent).toHaveLength(1);
+    expect(sent[0]!.subject).toBe("[LGKA+ API] ALERT: Cron is not running");
+    expect(sent[0]!.text).toMatch(/Error: No job has run for 3 h/);
+
+    await evaluateRun(env, [ok("weather")], now + 2 * MIN);
+    expect(sent.at(-1)!.subject).toBe("[LGKA+ API] RESOLVED: Cron is not running");
+    expect(state().open["cron:stale"]).toBeUndefined();
   });
 });
 

@@ -59,15 +59,65 @@ const HINTS: Record<string, string> = {
   "http:500": "An API request hit an unhandled error. The apps may show errors until this is fixed.",
 };
 
-/** Failures in one cron run. Substitutions report per-day fetch errors only in their notes. */
+/**
+ * Partial failures a job reports only in its notes while it keeps serving the
+ * previous data. A stale school weather station is not one of them: Open-Meteo
+ * covers it, so it is expected and never alerts.
+ */
+function noteFailures(r: JobResult): string[] {
+  switch (r.job) {
+    case "substitutions":
+      return r.notes.filter((n) => n.includes(": error ")); // "today: error HTTP 401"
+    case "schedules":
+      return r.notes.filter((n) => /: HTTP \d+, keeping previous$/.test(n)); // a 404 "not published yet" is normal
+    case "news":
+      return r.notes.filter((n) => !/^\d+ articles, \d+ bodies refreshed$/.test(n)); // "<article title>: HTTP 503"
+    case "weather":
+      return r.notes.filter((n) => n.startsWith("open-meteo:")); // forecast goes stale while the previous one is kept
+    default:
+      return [];
+  }
+}
+
+/** Failures in one cron run: job errors plus partial failures from the notes. */
 export function failuresFrom(results: JobResult[]): Failure[] {
   const failures: Failure[] = [];
   for (const r of results) {
-    const dayErrors = r.job === "substitutions" ? r.notes.filter((n) => n.includes(": error ")) : [];
-    const error = r.error ?? (dayErrors.length > 0 ? dayErrors.join("; ") : undefined);
+    const partial = noteFailures(r);
+    const error = r.error ?? (partial.length > 0 ? partial.join("; ") : undefined);
     if (error) failures.push({ key: `job:${r.job}`, title: `${r.job} job failing`, error, notes: r.notes });
   }
   return failures;
+}
+
+/** No job may be quieter than this; the longest regular interval is 30 minutes (substitutions at night). */
+export const CRON_STALE_AFTER_MS = 90 * 60_000;
+const WATCHDOG_EVERY_MS = 5 * 60_000;
+let watchdogCheckedAt = 0;
+
+/**
+ * A cron that stopped running (trigger gone, broken deploy, stuck lock) cannot
+ * report itself, so the request path checks that jobs still run. At most one
+ * R2 read per isolate every few minutes.
+ */
+export async function checkCronFreshness(env: AppEnv, now = Date.now()): Promise<void> {
+  if (now - watchdogCheckedAt < WATCHDOG_EVERY_MS) return;
+  watchdogCheckedAt = now;
+  try {
+    const runs = await getState<{ lastRunAt?: Record<string, string> }>(env, "runs");
+    const times = Object.values(runs?.lastRunAt ?? {}).map((t) => Date.parse(t)).filter((t) => Number.isFinite(t));
+    const newest = times.length > 0 ? Math.max(...times) : 0;
+    if (newest > 0 && now - newest < CRON_STALE_AFTER_MS) return;
+    const quietFor = newest > 0 ? `No job has run for ${duration(now - newest)} (last run ${when(new Date(newest).toISOString())}).` : "No job run has ever been recorded.";
+    await alertNow(env, "cron:stale", "Cron is not running", quietFor, now);
+  } catch (e) {
+    console.log(JSON.stringify({ alerts: "watchdog failed", error: errorText(e) }));
+  }
+}
+
+/** Test hook: forget when the watchdog last looked. */
+export function resetWatchdog(): void {
+  watchdogCheckedAt = 0;
 }
 
 async function loadState(env: AppEnv): Promise<AlertState> {
@@ -99,7 +149,7 @@ export async function evaluateRun(env: AppEnv, results: JobResult[], now = Date.
   const ran = new Set(results.map((r) => `job:${r.job}`));
   for (const [key, incident] of Object.entries(state.open)) {
     const jobRecovered = key.startsWith("job:") && ran.has(key) && !failing.has(key);
-    const crashOver = key === "cron:crash"; // this run finished, so the crash is over
+    const crashOver = key === "cron:crash" || key === "cron:stale"; // this run finished, so the cron is alive again
     const expired = key.startsWith("http:") && now - Date.parse(incident.lastSeenAt) >= INSTANT_EXPIRES_MS;
     if (!jobRecovered && !crashOver && !expired) continue;
     if (incident.alertedAt && !expired) await sendMail(env, "resolved", incident, now);
