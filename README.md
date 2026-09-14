@@ -25,6 +25,7 @@ GET /v1/sync?substitutions=9c0f…&news=a41b…&weather=&schedules=77e2…&event
 | `news` | `/neues` list + article pages | 15 min (article bodies at most every 6 h) | field-compatible with the app's `NewsEvent`: cleaned HTML + text, embedded/standalone links, images, downloads, tags, `publishedAt` |
 | `events` | JEvents week list, 3 weeks | hourly | `{date, time, title}` deduplicated and sorted |
 | `weather` | **school rooftop station** (`/wetter/lg_wetter_heute.csv`), Open-Meteo forecast + fallback | 10 min | `source: "school" \| "open-meteo"`, current conditions, 72 h hourly, 3-day daily, station block with health + today's readings |
+| `kollegium` | public staff page `/ansprechpartner/kollegium` | once a day (retry after 3 h on failure) | staff index: Untis code → name, title, subjects, role. Sync opt-in, see below |
 
 All parsers are verified against the golden fixtures that used to live in the
 [verification harness](https://github.com/lgka-app/verification); this repo is
@@ -54,9 +55,9 @@ time) against its secrets. `401` means the school rotated the password.
 |---|---|
 | `GET /healthz` | liveness + last-update timestamps (no auth, no content) |
 | `GET /v1/auth/check` | `204` when credentials are valid (onboarding) |
-| `GET /v1/sync?<resource>=<hash>…[&only=a,b]` | the launch call. Per resource: `fresh` (hash current, no data), `updated` (new `hash` + `data`), `unavailable` |
+| `GET /v1/sync?<resource>=<hash>…[&only=a,b]` | the launch call. Per resource: `fresh` (hash current, no data), `updated` (new `hash` + `data`), `unavailable`. `kollegium` is opt-in: only included when the query names it (`kollegium=<hash>`, empty for the first sync, or `only=`), so older app versions never download it |
 | `GET /v1/manifest` | current hashes only |
-| `GET /v1/{substitutions\|schedules\|news\|events\|weather}` | one resource; `ETag` = hash, honours `If-None-Match` → `304` |
+| `GET /v1/{substitutions\|schedules\|news\|events\|weather\|kollegium}` | one resource; `ETag` = hash, honours `If-None-Match` → `304` |
 | `…?embed=pdf` (on `/v1/sync`, `/v1/substitutions`, `/v1/schedules`) | inline the mirrored PDFs as `pdf.base64` so plan + all files is one request — this is what the apps use. `embed=substitutions.pdf` (comma-separated list) restricts it to named resources for clients that want less |
 | `GET /v1/files/{sha256}.pdf` | mirrored PDF, content-addressed → `immutable`, `304` on `If-None-Match` |
 
@@ -95,7 +96,27 @@ runs jobs now; `GET /admin/status` shows manifest, per-job state and last result
   "station": { "healthy": false, "reason": "file is 106536 min old", "updatedAt": "2026-06-30T15:29:17.000Z",
                "rows": 29, "latest": null, "today": [], "units": { "windSpeed": "m/s", … } },
   "attribution": ["Wetterdaten: Open-Meteo.com (CC BY 4.0)"] }
+
+// /v1/kollegium → data
+{ "updatedAt": "2026-09-14T19:05:00.000Z",          // when the list last changed
+  "source": "https://lessing-gymnasium-karlsruhe.de/cm3/index.php/ansprechpartner/kollegium",
+  "schoolYear": "2024/2025",                          // null when the page states none
+  "staff": [ { "code": "Ro",                          // Untis code, unique
+               "lastName": "Roth", "firstName": "Daniel",
+               "title": "Dr.",                        // null when none
+               "displayName": "Dr. Daniel Roth",
+               "subjects": ["M", "Ph"],               // may be empty
+               "role": "abteilungsleitung",
+               "roleLabel": "Abteilungsleiter",       // page heading of `role`
+               "roleLabels": ["Abteilungsleiter"] } ] }  // every heading the person is under
 ```
+
+`role` is one of `schulleitung`, `stellvertretendeSchulleitung`,
+`abteilungsleitung`, `lehrkraft`, `referendar`, `sonstige` (a heading the parser
+does not know; decode unknown values as `sonstige`). A person listed under two
+headings appears once with the higher role and both labels. The list is only
+published with at least 30 people; a failed fetch or parse keeps the previous
+one. No e-mail addresses are stored.
 
 Timetable class index values are real 1-based PDF pages (the Flutter app
 stored `pageIndex + 2` for a viewer quirk — adapt on the client).
@@ -153,7 +174,7 @@ Secrets: `SCHOOL_USERNAME`, `SCHOOL_PASSWORD`, optional
 src/index.ts          Hono app + scheduled() entry
 src/routes/           v1 (sync, resources, files) and admin
 src/jobs/             one refresh job per resource + scheduler + gc
-src/parsers/          substitution (Untis PDF), schedule, news, events, weather, station
+src/parsers/          substitution (Untis PDF), schedule, news, events, weather, station, kollegium
 src/lib/              pdf.js wrapper, hashing, Berlin time
 src/store.ts          R2 (EU): data/ manifest, resources, state · files/ PDFs · locks/ cron lock
 test/                 vitest; fixtures + goldens copied from the verification harness

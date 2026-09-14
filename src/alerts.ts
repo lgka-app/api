@@ -54,6 +54,7 @@ const HINTS: Record<string, string> = {
   "job:news": "Check the news page on the school website. A changed page layout breaks the news parser.",
   "job:events": "Check the Termine / calendar pages on the school website.",
   "job:weather": "Open-Meteo is unreachable and there is no previous forecast to keep.",
+  "job:kollegium": "Check the Kollegium page (/ansprechpartner/kollegium) on the school website. A changed layout breaks the staff parser; the previous staff list stays published.",
   "job:gc": "Cleaning up unreferenced PDFs in R2 failed. Nothing user-facing, but storage grows.",
   "cron:crash": "The whole cron run threw before finishing, so nothing was refreshed. Check the Worker logs.",
   "http:500": "An API request hit an unhandled error. The apps may show errors until this is fixed.",

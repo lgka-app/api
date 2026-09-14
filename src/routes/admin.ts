@@ -1,7 +1,7 @@
 import { Hono } from "hono";
 import { sendTestAlert } from "../alerts";
 import { requireAdmin } from "../auth";
-import type { AppEnv } from "../env";
+import { RESOURCE_NAMES, type AppEnv } from "../env";
 import { getRunState, JOB_NAMES, runDueJobs, type JobName } from "../jobs";
 import { getManifest, getState } from "../store";
 
@@ -27,11 +27,11 @@ adminRoutes.get("/admin/status", async (c) => {
   const [manifest, runs, ...states] = await Promise.all([
     getManifest(c.env, { fresh: true }),
     getRunState(c.env),
-    ...["substitutions", "schedules", "news", "events", "weather"].map((j) => getState(c.env, j)),
+    ...RESOURCE_NAMES.map((j) => getState(c.env, j)),
   ]);
   return c.json({
     manifest,
     runs,
-    state: Object.fromEntries(["substitutions", "schedules", "news", "events", "weather"].map((j, i) => [j, states[i]])),
+    state: Object.fromEntries(RESOURCE_NAMES.map((j, i) => [j, states[i]])),
   });
 });

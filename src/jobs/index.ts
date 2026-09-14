@@ -7,14 +7,15 @@ import { evaluateRun } from "../alerts";
 import { acquireLock, getState, putState, releaseLock } from "../store";
 import { refreshEvents } from "./events";
 import { gcFiles } from "./gc";
+import { refreshKollegium } from "./kollegium";
 import { refreshNews } from "./news";
 import { refreshSchedules } from "./schedules";
 import { refreshSubstitutions } from "./substitutions";
 import type { JobResult } from "./types";
 import { refreshWeather } from "./weather";
 
-export type JobName = "substitutions" | "schedules" | "news" | "events" | "weather" | "gc";
-export const JOB_NAMES: JobName[] = ["substitutions", "weather", "news", "events", "schedules", "gc"];
+export type JobName = "substitutions" | "schedules" | "news" | "events" | "weather" | "kollegium" | "gc";
+export const JOB_NAMES: JobName[] = ["substitutions", "weather", "news", "events", "schedules", "kollegium", "gc"];
 
 const RUNNERS: Record<JobName, (env: AppEnv) => Promise<JobResult>> = {
   substitutions: refreshSubstitutions,
@@ -22,11 +23,12 @@ const RUNNERS: Record<JobName, (env: AppEnv) => Promise<JobResult>> = {
   news: refreshNews,
   events: refreshEvents,
   weather: refreshWeather,
+  kollegium: refreshKollegium,
   gc: gcFiles,
 };
 
-/** Minutes between runs, given the Berlin wall clock. */
-export function intervalMinutes(job: JobName, t = berlinTime()): number {
+/** Minutes between runs, given the Berlin wall clock and whether the job's last run failed. */
+export function intervalMinutes(job: JobName, t = berlinTime(), lastFailed = false): number {
   switch (job) {
     case "substitutions":
       if (!t.isWeekend && t.hour >= 6 && t.hour < 16) return 1; // school day: live
@@ -41,6 +43,9 @@ export function intervalMinutes(job: JobName, t = berlinTime()): number {
       return 60;
     case "schedules":
       return 60;
+    case "kollegium":
+      // the staff list changes a few times a year: once a day, retry a failure after 3 h
+      return lastFailed ? 3 * 60 : 24 * 60;
     case "gc":
       return 24 * 60;
   }
@@ -64,7 +69,7 @@ export async function runDueJobs(env: AppEnv, opts: { force?: JobName[] | "all" 
 
     for (const job of JOB_NAMES) {
       const forced = opts.force === "all" || (Array.isArray(opts.force) && opts.force.includes(job));
-      const due = forced || minutesSince(run.lastRunAt[job]) >= intervalMinutes(job, t) - 0.25;
+      const due = forced || minutesSince(run.lastRunAt[job]) >= intervalMinutes(job, t, !!run.lastResult[job]?.error) - 0.25;
       if (!due) {
         skipped.push(job);
         continue;

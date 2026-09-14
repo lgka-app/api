@@ -9,9 +9,22 @@ export interface AppEnv extends Env {
   ADMIN_TOKEN: string;
 }
 
-export const RESOURCE_NAMES = ["substitutions", "schedules", "news", "events", "weather"] as const;
+export const RESOURCE_NAMES = ["substitutions", "schedules", "news", "events", "weather", "kollegium"] as const;
 export type ResourceName = (typeof RESOURCE_NAMES)[number];
+
+/**
+ * Resources `/v1/sync` only includes when the client names them
+ * (`?kollegium=<hash>`, also empty, or `only=`), so app versions that predate
+ * them do not download them on every launch.
+ */
+export const SYNC_OPT_IN: readonly ResourceName[] = ["kollegium"];
 
 export function isResourceName(s: string): s is ResourceName {
   return (RESOURCE_NAMES as readonly string[]).includes(s);
+}
+
+/** Which resources a `/v1/sync` query covers. */
+export function syncTargets(query: Record<string, string>): ResourceName[] {
+  if (query.only) return query.only.split(",").map((s) => s.trim()).filter(isResourceName);
+  return RESOURCE_NAMES.filter((name) => !SYNC_OPT_IN.includes(name) || name in query);
 }

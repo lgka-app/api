@@ -19,7 +19,7 @@ app.get("/", (c) =>
   c.json({
     name: "LGKA+ API",
     docs: "https://github.com/lgka-app/api",
-    endpoints: ["/healthz", "/v1/sync", "/v1/manifest", "/v1/{substitutions|schedules|news|events|weather}", "/v1/files/{sha256}.pdf"],
+    endpoints: ["/healthz", "/v1/sync", "/v1/manifest", "/v1/{substitutions|schedules|news|events|weather|kollegium}", "/v1/files/{sha256}.pdf"],
   }),
 );
 

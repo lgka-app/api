@@ -1,6 +1,6 @@
 import { Hono } from "hono";
 import { requireSchoolAuth } from "../auth";
-import { isResourceName, RESOURCE_NAMES, type AppEnv, type ResourceName } from "../env";
+import { isResourceName, syncTargets, type AppEnv, type ResourceName } from "../env";
 import { embeddedResourceJson, embedTargets } from "../embed";
 import { fileKey, getManifest, getResource, type StoredResource } from "../store";
 
@@ -29,13 +29,14 @@ v1Routes.get("/v1/manifest", async (c) => {
  * For each known resource: "fresh" (your hash is current — no data sent),
  * "updated" (new hash + full data inline) or "unavailable" (never fetched).
  * Omit a hash (or send "") to always receive the data. `only=a,b` restricts
- * the set of resources considered. `embed=pdf` inlines the mirrored PDFs
+ * the set of resources considered. Opt-in resources (`kollegium`) are only
+ * considered when named. `embed=pdf` inlines the mirrored PDFs
  * (base64) into updated substitutions/schedules; `embed=substitutions.pdf`
  * limits that to one resource (comma-separated list allowed).
  */
 v1Routes.get("/v1/sync", async (c) => {
   const q = c.req.query();
-  const only = q.only ? q.only.split(",").map((s) => s.trim()).filter(isResourceName) : [...RESOURCE_NAMES];
+  const only = syncTargets(q);
   const embed = embedTargets(q);
   const manifest = await getManifest(c.env);
 
