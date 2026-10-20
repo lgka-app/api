@@ -35,20 +35,55 @@ export function basicAuthHeader(username: string, password: string): string {
   return `Basic ${btoa(`${username}:${password}`)}`;
 }
 
-export async function fetchResource(env: AppEnv, url: string, opts: FetchOptions = {}): Promise<FetchResult> {
-  const headers: Record<string, string> = { "User-Agent": env.USER_AGENT, Accept: "*/*" };
-  if (opts.auth) headers.Authorization = basicAuthHeader(env.SCHOOL_USERNAME, env.SCHOOL_PASSWORD);
-  if (opts.validators?.etag) headers["If-None-Match"] = opts.validators.etag;
-  if (opts.validators?.lastModified) headers["If-Modified-Since"] = opts.validators.lastModified;
+/**
+ * The school's Basic Auth may only travel to the school itself, over HTTPS.
+ * Links scraped from school pages (timetable PDFs) can point anywhere, and
+ * redirects can too, so every hop is checked against SCHOOL_BASE_URL.
+ */
+export function isSchoolOrigin(env: AppEnv, url: string): boolean {
+  try {
+    const u = new URL(url);
+    const school = new URL(env.SCHOOL_BASE_URL);
+    const host = school.hostname;
+    return u.protocol === "https:" && u.port === school.port && (u.hostname === host || u.hostname === `www.${host}`);
+  } catch {
+    return false;
+  }
+}
 
-  const res = await fetch(url, {
-    method: opts.method ?? "GET",
-    headers,
-    redirect: "follow",
-    signal: AbortSignal.timeout(opts.timeoutMs ?? 20_000),
-    // never let Cloudflare's cache answer for the origin here
-    cf: { cacheTtl: 0, cacheEverything: false },
-  });
+export const MAX_REDIRECTS = 5;
+
+/**
+ * GET/HEAD with the shared headers. Authenticated requests follow redirects by
+ * hand so the Authorization header is only ever sent to the school origin.
+ */
+async function send(env: AppEnv, url: string, opts: FetchOptions): Promise<Response> {
+  const signal = AbortSignal.timeout(opts.timeoutMs ?? 20_000);
+  let current = url;
+  for (let hop = 0; ; hop++) {
+    const headers: Record<string, string> = { "User-Agent": env.USER_AGENT, Accept: "*/*" };
+    if (opts.auth && isSchoolOrigin(env, current)) headers.Authorization = basicAuthHeader(env.SCHOOL_USERNAME, env.SCHOOL_PASSWORD);
+    if (opts.validators?.etag) headers["If-None-Match"] = opts.validators.etag;
+    if (opts.validators?.lastModified) headers["If-Modified-Since"] = opts.validators.lastModified;
+
+    const res = await fetch(current, {
+      method: opts.method ?? "GET",
+      headers,
+      redirect: opts.auth ? "manual" : "follow",
+      signal,
+      // never let Cloudflare's cache answer for the origin here
+      cf: { cacheTtl: 0, cacheEverything: false },
+    });
+    const location = res.headers.get("location");
+    if (!opts.auth || res.status < 300 || res.status > 399 || res.status === 304 || !location) return res;
+    await res.body?.cancel();
+    if (hop >= MAX_REDIRECTS) throw new Error(`too many redirects fetching ${url}`);
+    current = new URL(location, current).toString();
+  }
+}
+
+export async function fetchResource(env: AppEnv, url: string, opts: FetchOptions = {}): Promise<FetchResult> {
+  const res = await send(env, url, opts);
 
   const base = {
     status: res.status,
